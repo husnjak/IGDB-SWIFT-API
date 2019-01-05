@@ -133,6 +133,7 @@
 				TargetAttributes = {
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = WM577685PA;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -339,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68142E7167BBA623AEC15C0D /* Pods-IGDB-SWIFT-API_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = WM577685PA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -361,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69B185FD1E9887170658AD20 /* Pods-IGDB-SWIFT-API_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = WM577685PA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
