@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftHTTP
 import Just
 
 private let APIURL = "http://localhost:7002"//"https://api-v3.igdb.com"
