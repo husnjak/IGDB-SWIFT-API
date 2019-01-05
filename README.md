@@ -44,7 +44,7 @@ $ pod install
 * Create a new IGDBWrapper Object by passing and then pass it your API key.
 ```swift
 let wrapper: IGDBWrapper = IGDBWrapper()
-wrapper.userKey = "YOUR_API_KEY")
+wrapper.userKey = "YOUR_API_KEY"
 ```
 
 # How to use the wrapper
