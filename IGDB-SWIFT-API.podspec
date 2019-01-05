@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IGDB-SWIFT-API'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'Wrapper for IGDBs API written in Swift.'
 
   s.description      = "A Swift wrapper for the IGDB.com Free Video Game Database API."

@@ -17,6 +17,8 @@ public class APICalypse {
     private var sort = ""
     private var _where = ""
     
+    public init() {}
+    
     public func sort(field: String, order: Sort) -> APICalypse {
         self.sort = "s \(field) \(order.rawValue);"
         return self
