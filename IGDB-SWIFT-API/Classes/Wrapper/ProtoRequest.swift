@@ -9,7 +9,7 @@
 
 import Foundation
 
-extension IGDBWrapper {
+public extension IGDBWrapper {
     func achievements(apiCalypse: APICalypse, result: @escaping ([Proto_Achievement]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiRequest(endpoint: .ACHIEVEMENTS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
             let objects = try! Proto_AchievementResult(serializedData: bytes).achievements

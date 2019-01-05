@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension IGDBWrapper {
+public extension IGDBWrapper {
     func jsonAchievements(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiJsonRequest(endpoint: .ACHIEVEMENTS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
     }

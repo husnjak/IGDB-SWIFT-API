@@ -46,6 +46,7 @@
 		58ADC3433566517853CC228A74202CB4 /* api.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = B009D780912FCDDC5E554DF447EE1253 /* api.pb.swift */; };
 		5E649A6BD508E2845894C21AA45F3F1C /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927261FF8B6082FFA5D653ACD46F8D6 /* JSONEncoder.swift */; };
 		64E7189AC0029834CE8241C76340FC02 /* JSONDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656D5746589415B16C0718A7378B7DB /* JSONDecodingOptions.swift */; };
+		6E9B47D621E107BF0028BFF5 /* IGDBProtoFile.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9B47D521E107BF0028BFF5 /* IGDBProtoFile.pb.swift */; };
 		6ECDB70FFDEE1C0923E01D7ABAB58429 /* BinaryDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38E422444BB48A78F9B985FFB8CE44 /* BinaryDecodingError.swift */; };
 		6EFB929CEE3F0587B1133B0EE90AC78C /* Varint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E144A725541E06BE4D97DC6EC8CD22 /* Varint.swift */; };
 		706DA84CF391EB1A2821AFB3811BF4C7 /* ProtoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62829CFF197A62D774B7049A45E15F29 /* ProtoRequest.swift */; };
@@ -60,7 +61,6 @@
 		8DF52334F7627647CDA6CEE05CFD0441 /* struct.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85945650B0AE6CB835C2228956E075AD /* struct.pb.swift */; };
 		8E25B33CC178C7CA7E09261AC4FA12AD /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3392AC579F6A45604CD38184E679B38E /* Enum.swift */; };
 		8ED48CB285CEA787BFDF271CC1122DA7 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = F524AEE19C77A47EBAB481F890FAC08D /* Version.swift */; };
-		8FBC0E6CF26A472C2880919A039AADAC /* IGDBProtoFile.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F2B85F4CBFCEFB4ABECE9F120B5DC1 /* IGDBProtoFile.pb.swift */; };
 		9350B87D9AEE26970873375FBF713E44 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944EABEDF8F5F3FE8425775538551781 /* TimeUtils.swift */; };
 		9794701C2E9443E13E439239411C5DE9 /* ProtoNameProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0CC2120A6C4CD90FC2D77C83924D42 /* ProtoNameProviding.swift */; };
 		98C731E1CD2058CB8C66CB2FE252382A /* Message+AnyAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A26642A020EB25922EE66430849E6C /* Message+AnyAdditions.swift */; };
@@ -147,7 +147,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01381EBB628FABED8B80B38F8E883A87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		01381EBB628FABED8B80B38F8E883A87 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		01837333548F1FF834240D999486277B /* UnknownStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnknownStorage.swift; path = Sources/SwiftProtobuf/UnknownStorage.swift; sourceTree = "<group>"; };
 		0921DE77A13AEDD3130BF4117108B971 /* JSONDecodingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONDecodingError.swift; path = Sources/SwiftProtobuf/JSONDecodingError.swift; sourceTree = "<group>"; };
 		0987BFDF23DDE27DCC6E31145599D9C1 /* SwiftProtobuf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftProtobuf-prefix.pch"; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		28244F9BD468F1197F6B0533F9C180C7 /* WireFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WireFormat.swift; path = Sources/SwiftProtobuf/WireFormat.swift; sourceTree = "<group>"; };
 		291C85B2AA93A3690EE139C0D62D6319 /* TextFormatEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFormatEncoder.swift; path = Sources/SwiftProtobuf/TextFormatEncoder.swift; sourceTree = "<group>"; };
 		2A4C76323C0C9120B83C08A7E1FA6EA0 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Sources/SwiftProtobuf/Internal.swift; sourceTree = "<group>"; };
-		2FF30148A330F4D7BFAE30FC26258A11 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftProtobuf.framework; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF30148A330F4D7BFAE30FC26258A11 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftProtobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F25E1ED3365A911DF79FEC8058672A /* IGDB-SWIFT-API-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGDB-SWIFT-API-prefix.pch"; sourceTree = "<group>"; };
 		30F860E5003D2AC46E6F6EAEA38E21AC /* Message+JSONArrayAdditions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+JSONArrayAdditions.swift"; path = "Sources/SwiftProtobuf/Message+JSONArrayAdditions.swift"; sourceTree = "<group>"; };
 		3307E3F8046275C969FFCB3EFE465C21 /* ProtobufAPIVersionCheck.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProtobufAPIVersionCheck.swift; path = Sources/SwiftProtobuf/ProtobufAPIVersionCheck.swift; sourceTree = "<group>"; };
@@ -189,10 +189,10 @@
 		4752F21D512E7E056CDAFA739D18FE96 /* IGDBWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGDBWrapper.swift; sourceTree = "<group>"; };
 		4909245FF8379C7BA40479FF810F0051 /* Just-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Just-dummy.m"; sourceTree = "<group>"; };
 		4CE509574943B2F90B41173F361F8E60 /* Just-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Just-umbrella.h"; sourceTree = "<group>"; };
-		4E728C9CA1CD7F6CFA794345925F99E3 /* Just.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Just.framework; path = Just.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E728C9CA1CD7F6CFA794345925F99E3 /* Just.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Just.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F4833FC24C4919373799FAF70DE3E7F /* timestamp.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = timestamp.pb.swift; path = Sources/SwiftProtobuf/timestamp.pb.swift; sourceTree = "<group>"; };
-		503A79B11E305A29C17C20AA78107C4A /* IGDB-SWIFT-API.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "IGDB-SWIFT-API.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5079852354297F331ADD29F3D1515D74 /* Pods_IGDB_SWIFT_API_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IGDB_SWIFT_API_Tests.framework; path = "Pods-IGDB-SWIFT-API_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		503A79B11E305A29C17C20AA78107C4A /* IGDB-SWIFT-API.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = "IGDB-SWIFT-API.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5079852354297F331ADD29F3D1515D74 /* Pods_IGDB_SWIFT_API_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGDB_SWIFT_API_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554AE7313BC92B97DF418780775A5142 /* IGDB-SWIFT-API.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "IGDB-SWIFT-API.xcconfig"; sourceTree = "<group>"; };
 		5552FAC2918DB5E4A8C7EB3C266B0B99 /* Just.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Just.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FFC135371E06DDDE6F6968F278F437 /* Google_Protobuf_Timestamp+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Google_Protobuf_Timestamp+Extensions.swift"; path = "Sources/SwiftProtobuf/Google_Protobuf_Timestamp+Extensions.swift"; sourceTree = "<group>"; };
@@ -206,9 +206,10 @@
 		62829CFF197A62D774B7049A45E15F29 /* ProtoRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProtoRequest.swift; sourceTree = "<group>"; };
 		63212A1D261EE3860446012487F5CD21 /* Pods-IGDB-SWIFT-API_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IGDB-SWIFT-API_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		63A48C6F0041344182F43F10031AB8D1 /* Endpoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		69802E1CEBDD315FBB66162DB7A2A80C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		69802E1CEBDD315FBB66162DB7A2A80C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6B5313038BFBD4D5AAFF7B14909E7C19 /* SwiftProtobuf.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftProtobuf.xcconfig; sourceTree = "<group>"; };
-		6BCFB8F48A61CE31D76F58D3F6EF61D6 /* IGDB_SWIFT_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IGDB_SWIFT_API.framework; path = "IGDB-SWIFT-API.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BCFB8F48A61CE31D76F58D3F6EF61D6 /* IGDB_SWIFT_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGDB_SWIFT_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9B47D521E107BF0028BFF5 /* IGDBProtoFile.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGDBProtoFile.pb.swift; sourceTree = "<group>"; };
 		6FC8F79743DA8BC68AF5FE544D529EFA /* AnyUnpackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyUnpackError.swift; path = Sources/SwiftProtobuf/AnyUnpackError.swift; sourceTree = "<group>"; };
 		738BED4CB9A1C351704998C8C8C4F597 /* IGDB-SWIFT-API-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGDB-SWIFT-API-dummy.m"; sourceTree = "<group>"; };
 		743DC8DE683A9D0CB7D2F7561595BC08 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/SwiftProtobuf/Decoder.swift; sourceTree = "<group>"; };
@@ -226,8 +227,7 @@
 		8C01745FBA1CF4041D03C60154123971 /* NameMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NameMap.swift; path = Sources/SwiftProtobuf/NameMap.swift; sourceTree = "<group>"; };
 		8E9FE77A5EBBB6A6F763FE1D65BA5B78 /* IGDB-SWIFT-API.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "IGDB-SWIFT-API.modulemap"; sourceTree = "<group>"; };
 		9192BEBCE16DF58A9DA075C279F14420 /* Pods-IGDB-SWIFT-API_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IGDB-SWIFT-API_Tests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93F2B85F4CBFCEFB4ABECE9F120B5DC1 /* IGDBProtoFile.pb.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IGDBProtoFile.pb.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		944EABEDF8F5F3FE8425775538551781 /* TimeUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeUtils.swift; path = Sources/SwiftProtobuf/TimeUtils.swift; sourceTree = "<group>"; };
 		948FC1E168E4DD0145A2FDA5B3472232 /* HashVisitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HashVisitor.swift; path = Sources/SwiftProtobuf/HashVisitor.swift; sourceTree = "<group>"; };
 		9F3B5D0433EA0326B81EC43F9457E782 /* Just.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Just.xcconfig; sourceTree = "<group>"; };
@@ -414,14 +414,13 @@
 				D84D1FE50401BA03B12793927E467716 /* Just.swift */,
 				393AD245CE47C1B185A2A47E5A8DFC23 /* Support Files */,
 			);
-			name = Just;
 			path = Just;
 			sourceTree = "<group>";
 		};
 		8691576215830F949040D0C9E61F1B18 /* APIStructs */ = {
 			isa = PBXGroup;
 			children = (
-				93F2B85F4CBFCEFB4ABECE9F120B5DC1 /* IGDBProtoFile.pb.swift */,
+				6E9B47D521E107BF0028BFF5 /* IGDBProtoFile.pb.swift */,
 			);
 			name = APIStructs;
 			path = "IGDB-SWIFT-API/Classes/APIStructs";
@@ -564,7 +563,6 @@
 				1846345E8533F4B671069DD1DFDD158A /* ZigZag.swift */,
 				1729F97E6EB7986259FE264F761D5E0D /* Support Files */,
 			);
-			name = SwiftProtobuf;
 			path = SwiftProtobuf;
 			sourceTree = "<group>";
 		};
@@ -734,7 +732,7 @@
 				359A425DD840FEE224DB1CB2151837BC /* APICalypse.swift in Sources */,
 				215691F559AA0881FD1065194BC8B0BF /* Endpoints.swift in Sources */,
 				D42636D55E8C23A06D095E40BAEB82EB /* IGDB-SWIFT-API-dummy.m in Sources */,
-				8FBC0E6CF26A472C2880919A039AADAC /* IGDBProtoFile.pb.swift in Sources */,
+				6E9B47D621E107BF0028BFF5 /* IGDBProtoFile.pb.swift in Sources */,
 				70863A0FB49DCE503F7C3D21EAD2B3F0 /* IGDBWrapper.swift in Sources */,
 				ADBE2A3C31EA40E7E3F23045FBF4A2F6 /* JsonRequest.swift in Sources */,
 				706DA84CF391EB1A2821AFB3811BF4C7 /* ProtoRequest.swift in Sources */,

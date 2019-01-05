@@ -9,11 +9,11 @@
 import Foundation
 import Just
 
-private let APIURL = "http://localhost:7002"//"https://api-v3.igdb.com"
+private let APIURL = "https://api-v3.igdb.com"
 
 public class IGDBWrapper {
-    var userKey = ""
-    var request: URLSessionDataTask?
+    public var userKey = ""
+    public init() {}
     
     public func apiRequest(endpoint: Endpoint, apicalypseQuery: String, dataResponse: @escaping (Data) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         let requestURL = "\(APIURL)\(endpoint.url()).pb"
