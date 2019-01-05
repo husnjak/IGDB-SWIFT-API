@@ -37,8 +37,8 @@ public class IGDBWrapper {
     }
 }
 
-extension Endpoint {
-    func url() -> String {
+public extension Endpoint {
+    public func url() -> String {
         return "/\(self.rawValue.lowercased())"
     }
 }

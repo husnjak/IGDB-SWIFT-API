@@ -13,7 +13,7 @@ public struct RequestException: Error {
     let url: String
     let msg: String
     
-    init(statusCode: Int, url: String, msg: String) {
+    public init(statusCode: Int, url: String, msg: String) {
         self.statusCode = statusCode
         self.url = url
         self.msg = msg
