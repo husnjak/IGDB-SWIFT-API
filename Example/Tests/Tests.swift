@@ -1,5 +1,6 @@
+import UIKit
 import XCTest
-import IGDB-SWIFT-API
+import IGDB_SWIFT_API
 
 class Tests: XCTestCase {
     

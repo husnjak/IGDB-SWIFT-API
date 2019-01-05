@@ -1,0 +1,6 @@
+framework module IGDB_SWIFT_API {
+  umbrella header "IGDB-SWIFT-API-umbrella.h"
+
+  export *
+  module * { export * }
+}

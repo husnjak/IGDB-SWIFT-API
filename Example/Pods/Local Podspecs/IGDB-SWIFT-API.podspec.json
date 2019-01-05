@@ -1,0 +1,30 @@
+{
+  "name": "IGDB-SWIFT-API",
+  "version": "0.1.0",
+  "summary": "Wrapper for IGDBs API written in Swift.",
+  "description": "A Swift wrapper for the IGDB.com Free Video Game Database API.",
+  "homepage": "https://github.com/husnjak/IGDB-API-SWIFT",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "husnjak": "filip@igdb.com"
+  },
+  "source": {
+    "git": "https://github.com/husnjak/IGDB-API-SWIFT.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IGDB-SWIFT-API/Classes/**/*",
+  "dependencies": {
+    "SwiftProtobuf": [
+      "~> 1.0"
+    ],
+    "Just": [
+
+    ]
+  }
+}

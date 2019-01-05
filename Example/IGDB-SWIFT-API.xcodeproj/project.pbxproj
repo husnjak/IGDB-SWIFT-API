@@ -12,15 +12,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B3A3B8DC8AB213759DAC6DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2B3A3B8DC8AB213759DAC6DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4568A35CAC38FAF61DCE0958 /* Pods_IGDB_SWIFT_API_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGDB_SWIFT_API_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACE51AFB9204008FA782 /* IGDB-SWIFT-API_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IGDB-SWIFT-API_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		68142E7167BBA623AEC15C0D /* Pods-IGDB-SWIFT-API_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGDB-SWIFT-API_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGDB-SWIFT-API_Tests/Pods-IGDB-SWIFT-API_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		69B185FD1E9887170658AD20 /* Pods-IGDB-SWIFT-API_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGDB-SWIFT-API_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGDB-SWIFT-API_Tests/Pods-IGDB-SWIFT-API_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CEB951A0CC9BE9E08BE78F98 /* IGDB-SWIFT-API.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "IGDB-SWIFT-API.podspec"; path = "../IGDB-SWIFT-API.podspec"; sourceTree = "<group>"; };
-		FA5A5D62E47FA4EB8D0AF71C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CEB951A0CC9BE9E08BE78F98 /* IGDB-SWIFT-API.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "IGDB-SWIFT-API.podspec"; path = "../IGDB-SWIFT-API.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FA5A5D62E47FA4EB8D0AF71C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +131,6 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
@@ -194,10 +190,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IGDB-SWIFT-API_Tests/Pods-IGDB-SWIFT-API_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IGDB-SWIFT-API/IGDB_SWIFT_API.framework",
+				"${BUILT_PRODUCTS_DIR}/Just/Just.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGDB_SWIFT_API.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Just.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
