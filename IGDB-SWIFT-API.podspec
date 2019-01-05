@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IGDB-SWIFT-API'
-  s.version          = '0.1.8'
+  s.version          = '1.0.0'
   s.summary          = 'Wrapper for IGDBs API written in Swift.'
 
   s.description      = "A Swift wrapper for the IGDB.com Free Video Game Database API."
@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
+  # Pod Dependecies
   s.dependency 'SwiftProtobuf', '~> 1.0'
   s.dependency 'Just'
 end
