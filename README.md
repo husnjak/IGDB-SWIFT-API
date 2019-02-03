@@ -103,6 +103,20 @@ wrapper.jsonPlatforms(apiCalypse: APICalypse(), result: (String) -> (Void), erro
 wrapper.jsonGenres(apiCalypse: APICalypse(), result: (String) -> (Void), errorResponse: (RequestException) -> (Void))
 ...
 ```
+## ImageBuilder
+To simplify the process of building the image URLs for IGDB images there is a new function called `imageBuilder` which is a helping tool in requesting the perfect sized images for your project. The function requires you to get the `image_id` then set your desired size (resolution), set your desired image format (default is set to PNG).  
+```swift
+
+let image_id = "mnljdjtrh44x4snmierh"
+let imageURL = imageBuilder(imageID: image_id, size: .SCREENSHOT_HUGE, imageType: .PNG)
+
+/*
+* Result: 
+* imageURL = https://images.igdb.com/igdb/image/upload/t_screenshot_huge/mnljdjtrh44x4snmierh.png
+*/
+```
+
+More information about images can be found [here](https://api-docs.igdb.com/#images)
 
 ## Exceptions
 The wrapper returns an `RequestException` on every exception from the API. This exception hold three things:
