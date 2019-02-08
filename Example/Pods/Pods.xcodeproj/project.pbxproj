@@ -47,8 +47,8 @@
 		5E649A6BD508E2845894C21AA45F3F1C /* JSONEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F927261FF8B6082FFA5D653ACD46F8D6 /* JSONEncoder.swift */; };
 		64E7189AC0029834CE8241C76340FC02 /* JSONDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1656D5746589415B16C0718A7378B7DB /* JSONDecodingOptions.swift */; };
 		6E22D0972207201800382169 /* ImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E22D0962207201800382169 /* ImageBuilder.swift */; };
-		6E9B47D621E107BF0028BFF5 /* IGDBProtoFile.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9B47D521E107BF0028BFF5 /* IGDBProtoFile.pb.swift */; };
 		6ECDB70FFDEE1C0923E01D7ABAB58429 /* BinaryDecodingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B38E422444BB48A78F9B985FFB8CE44 /* BinaryDecodingError.swift */; };
+		6ECFB898220DDCFC00906A1E /* IGDBProto.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFB897220DDCFC00906A1E /* IGDBProto.pb.swift */; };
 		6EFB929CEE3F0587B1133B0EE90AC78C /* Varint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E144A725541E06BE4D97DC6EC8CD22 /* Varint.swift */; };
 		706DA84CF391EB1A2821AFB3811BF4C7 /* ProtoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62829CFF197A62D774B7049A45E15F29 /* ProtoRequest.swift */; };
 		70863A0FB49DCE503F7C3D21EAD2B3F0 /* IGDBWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4752F21D512E7E056CDAFA739D18FE96 /* IGDBWrapper.swift */; };
@@ -211,7 +211,7 @@
 		6B5313038BFBD4D5AAFF7B14909E7C19 /* SwiftProtobuf.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftProtobuf.xcconfig; sourceTree = "<group>"; };
 		6BCFB8F48A61CE31D76F58D3F6EF61D6 /* IGDB_SWIFT_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGDB_SWIFT_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E22D0962207201800382169 /* ImageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBuilder.swift; sourceTree = "<group>"; };
-		6E9B47D521E107BF0028BFF5 /* IGDBProtoFile.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGDBProtoFile.pb.swift; sourceTree = "<group>"; };
+		6ECFB897220DDCFC00906A1E /* IGDBProto.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGDBProto.pb.swift; sourceTree = "<group>"; };
 		6FC8F79743DA8BC68AF5FE544D529EFA /* AnyUnpackError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyUnpackError.swift; path = Sources/SwiftProtobuf/AnyUnpackError.swift; sourceTree = "<group>"; };
 		738BED4CB9A1C351704998C8C8C4F597 /* IGDB-SWIFT-API-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGDB-SWIFT-API-dummy.m"; sourceTree = "<group>"; };
 		743DC8DE683A9D0CB7D2F7561595BC08 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/SwiftProtobuf/Decoder.swift; sourceTree = "<group>"; };
@@ -423,7 +423,7 @@
 		8691576215830F949040D0C9E61F1B18 /* APIStructs */ = {
 			isa = PBXGroup;
 			children = (
-				6E9B47D521E107BF0028BFF5 /* IGDBProtoFile.pb.swift */,
+				6ECFB897220DDCFC00906A1E /* IGDBProto.pb.swift */,
 			);
 			name = APIStructs;
 			path = "IGDB-SWIFT-API/Classes/APIStructs";
@@ -735,10 +735,10 @@
 				359A425DD840FEE224DB1CB2151837BC /* APICalypse.swift in Sources */,
 				215691F559AA0881FD1065194BC8B0BF /* Endpoints.swift in Sources */,
 				D42636D55E8C23A06D095E40BAEB82EB /* IGDB-SWIFT-API-dummy.m in Sources */,
-				6E9B47D621E107BF0028BFF5 /* IGDBProtoFile.pb.swift in Sources */,
 				6E22D0972207201800382169 /* ImageBuilder.swift in Sources */,
 				70863A0FB49DCE503F7C3D21EAD2B3F0 /* IGDBWrapper.swift in Sources */,
 				ADBE2A3C31EA40E7E3F23045FBF4A2F6 /* JsonRequest.swift in Sources */,
+				6ECFB898220DDCFC00906A1E /* IGDBProto.pb.swift in Sources */,
 				706DA84CF391EB1A2821AFB3811BF4C7 /* ProtoRequest.swift in Sources */,
 				5451F9BD23514DAC29521548A80A97F6 /* RequestException.swift in Sources */,
 			);
