@@ -2455,6 +2455,11 @@ public struct Proto_Credit {
     set {_uniqueStorage()._characterCreditedName = newValue}
   }
 
+  public var comment: String {
+    get {return _storage._comment}
+    set {_uniqueStorage()._comment = newValue}
+  }
+
   public var company: Proto_Company {
     get {return _storage._company ?? Proto_Company()}
     set {_uniqueStorage()._company = newValue}
@@ -3879,6 +3884,11 @@ public struct Proto_List {
     set {_uniqueStorage()._description_p = newValue}
   }
 
+  public var entriesCount: Int32 {
+    get {return _storage._entriesCount}
+    set {_uniqueStorage()._entriesCount = newValue}
+  }
+
   public var listEntries: [Proto_ListEntry] {
     get {return _storage._listEntries}
     set {_uniqueStorage()._listEntries = newValue}
@@ -3887,6 +3897,11 @@ public struct Proto_List {
   public var listTags: [Int32] {
     get {return _storage._listTags}
     set {_uniqueStorage()._listTags = newValue}
+  }
+
+  public var listedGames: [Proto_Game] {
+    get {return _storage._listedGames}
+    set {_uniqueStorage()._listedGames = newValue}
   }
 
   public var name: String {
@@ -8937,15 +8952,16 @@ extension Proto_Credit: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     2: .same(proto: "category"),
     3: .same(proto: "character"),
     4: .same(proto: "characterCreditedName"),
-    5: .same(proto: "company"),
-    6: .same(proto: "country"),
-    7: .same(proto: "createdAt"),
-    8: .same(proto: "creditedName"),
-    9: .same(proto: "game"),
-    10: .same(proto: "person"),
-    11: .same(proto: "personTitle"),
-    12: .same(proto: "position"),
-    13: .same(proto: "updatedAt"),
+    5: .same(proto: "comment"),
+    6: .same(proto: "company"),
+    7: .same(proto: "country"),
+    8: .same(proto: "createdAt"),
+    9: .same(proto: "creditedName"),
+    10: .same(proto: "game"),
+    11: .same(proto: "person"),
+    12: .same(proto: "personTitle"),
+    13: .same(proto: "position"),
+    14: .same(proto: "updatedAt"),
   ]
 
   fileprivate class _StorageClass {
@@ -8953,6 +8969,7 @@ extension Proto_Credit: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     var _category: Proto_CreditCategoryEnum = .creditCategoryNull
     var _character: Proto_Character? = nil
     var _characterCreditedName: String = String()
+    var _comment: String = String()
     var _company: Proto_Company? = nil
     var _country: Int32 = 0
     var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
@@ -8972,6 +8989,7 @@ extension Proto_Credit: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
       _category = source._category
       _character = source._character
       _characterCreditedName = source._characterCreditedName
+      _comment = source._comment
       _company = source._company
       _country = source._country
       _createdAt = source._createdAt
@@ -9000,15 +9018,16 @@ extension Proto_Credit: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
         case 2: try decoder.decodeSingularEnumField(value: &_storage._category)
         case 3: try decoder.decodeSingularMessageField(value: &_storage._character)
         case 4: try decoder.decodeSingularStringField(value: &_storage._characterCreditedName)
-        case 5: try decoder.decodeSingularMessageField(value: &_storage._company)
-        case 6: try decoder.decodeSingularInt32Field(value: &_storage._country)
-        case 7: try decoder.decodeSingularMessageField(value: &_storage._createdAt)
-        case 8: try decoder.decodeSingularStringField(value: &_storage._creditedName)
-        case 9: try decoder.decodeSingularMessageField(value: &_storage._game)
-        case 10: try decoder.decodeSingularMessageField(value: &_storage._person)
-        case 11: try decoder.decodeSingularMessageField(value: &_storage._personTitle)
-        case 12: try decoder.decodeSingularInt32Field(value: &_storage._position)
-        case 13: try decoder.decodeSingularMessageField(value: &_storage._updatedAt)
+        case 5: try decoder.decodeSingularStringField(value: &_storage._comment)
+        case 6: try decoder.decodeSingularMessageField(value: &_storage._company)
+        case 7: try decoder.decodeSingularInt32Field(value: &_storage._country)
+        case 8: try decoder.decodeSingularMessageField(value: &_storage._createdAt)
+        case 9: try decoder.decodeSingularStringField(value: &_storage._creditedName)
+        case 10: try decoder.decodeSingularMessageField(value: &_storage._game)
+        case 11: try decoder.decodeSingularMessageField(value: &_storage._person)
+        case 12: try decoder.decodeSingularMessageField(value: &_storage._personTitle)
+        case 13: try decoder.decodeSingularInt32Field(value: &_storage._position)
+        case 14: try decoder.decodeSingularMessageField(value: &_storage._updatedAt)
         default: break
         }
       }
@@ -9029,32 +9048,35 @@ extension Proto_Credit: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
       if !_storage._characterCreditedName.isEmpty {
         try visitor.visitSingularStringField(value: _storage._characterCreditedName, fieldNumber: 4)
       }
+      if !_storage._comment.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._comment, fieldNumber: 5)
+      }
       if let v = _storage._company {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 6)
       }
       if _storage._country != 0 {
-        try visitor.visitSingularInt32Field(value: _storage._country, fieldNumber: 6)
+        try visitor.visitSingularInt32Field(value: _storage._country, fieldNumber: 7)
       }
       if let v = _storage._createdAt {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 7)
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 8)
       }
       if !_storage._creditedName.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._creditedName, fieldNumber: 8)
+        try visitor.visitSingularStringField(value: _storage._creditedName, fieldNumber: 9)
       }
       if let v = _storage._game {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 9)
-      }
-      if let v = _storage._person {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 10)
       }
-      if let v = _storage._personTitle {
+      if let v = _storage._person {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 11)
       }
+      if let v = _storage._personTitle {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 12)
+      }
       if _storage._position != 0 {
-        try visitor.visitSingularInt32Field(value: _storage._position, fieldNumber: 12)
+        try visitor.visitSingularInt32Field(value: _storage._position, fieldNumber: 13)
       }
       if let v = _storage._updatedAt {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 13)
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 14)
       }
     }
     try unknownFields.traverse(visitor: &visitor)
@@ -9069,6 +9091,7 @@ extension Proto_Credit: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
         if _storage._category != rhs_storage._category {return false}
         if _storage._character != rhs_storage._character {return false}
         if _storage._characterCreditedName != rhs_storage._characterCreditedName {return false}
+        if _storage._comment != rhs_storage._comment {return false}
         if _storage._company != rhs_storage._company {return false}
         if _storage._country != rhs_storage._country {return false}
         if _storage._createdAt != rhs_storage._createdAt {return false}
@@ -11620,24 +11643,28 @@ extension Proto_List: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
     1: .same(proto: "id"),
     2: .same(proto: "createdAt"),
     3: .same(proto: "description"),
-    4: .same(proto: "listEntries"),
-    5: .same(proto: "listTags"),
-    6: .same(proto: "name"),
-    7: .same(proto: "numbering"),
-    8: .same(proto: "private"),
-    9: .same(proto: "similarLists"),
-    10: .same(proto: "slug"),
-    11: .same(proto: "updatedAt"),
-    12: .same(proto: "url"),
-    13: .same(proto: "user"),
+    4: .same(proto: "entriesCount"),
+    5: .same(proto: "listEntries"),
+    6: .same(proto: "listTags"),
+    7: .same(proto: "listedGames"),
+    8: .same(proto: "name"),
+    9: .same(proto: "numbering"),
+    10: .same(proto: "private"),
+    11: .same(proto: "similarLists"),
+    12: .same(proto: "slug"),
+    13: .same(proto: "updatedAt"),
+    14: .same(proto: "url"),
+    15: .same(proto: "user"),
   ]
 
   fileprivate class _StorageClass {
     var _id: UInt64 = 0
     var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
     var _description_p: String = String()
+    var _entriesCount: Int32 = 0
     var _listEntries: [Proto_ListEntry] = []
     var _listTags: [Int32] = []
+    var _listedGames: [Proto_Game] = []
     var _name: String = String()
     var _numbering: Bool = false
     var _private: Bool = false
@@ -11655,8 +11682,10 @@ extension Proto_List: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
       _id = source._id
       _createdAt = source._createdAt
       _description_p = source._description_p
+      _entriesCount = source._entriesCount
       _listEntries = source._listEntries
       _listTags = source._listTags
+      _listedGames = source._listedGames
       _name = source._name
       _numbering = source._numbering
       _private = source._private
@@ -11683,16 +11712,18 @@ extension Proto_List: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
         case 1: try decoder.decodeSingularUInt64Field(value: &_storage._id)
         case 2: try decoder.decodeSingularMessageField(value: &_storage._createdAt)
         case 3: try decoder.decodeSingularStringField(value: &_storage._description_p)
-        case 4: try decoder.decodeRepeatedMessageField(value: &_storage._listEntries)
-        case 5: try decoder.decodeRepeatedInt32Field(value: &_storage._listTags)
-        case 6: try decoder.decodeSingularStringField(value: &_storage._name)
-        case 7: try decoder.decodeSingularBoolField(value: &_storage._numbering)
-        case 8: try decoder.decodeSingularBoolField(value: &_storage._private)
-        case 9: try decoder.decodeRepeatedMessageField(value: &_storage._similarLists)
-        case 10: try decoder.decodeSingularStringField(value: &_storage._slug)
-        case 11: try decoder.decodeSingularMessageField(value: &_storage._updatedAt)
-        case 12: try decoder.decodeSingularStringField(value: &_storage._url)
-        case 13: try decoder.decodeSingularMessageField(value: &_storage._user)
+        case 4: try decoder.decodeSingularInt32Field(value: &_storage._entriesCount)
+        case 5: try decoder.decodeRepeatedMessageField(value: &_storage._listEntries)
+        case 6: try decoder.decodeRepeatedInt32Field(value: &_storage._listTags)
+        case 7: try decoder.decodeRepeatedMessageField(value: &_storage._listedGames)
+        case 8: try decoder.decodeSingularStringField(value: &_storage._name)
+        case 9: try decoder.decodeSingularBoolField(value: &_storage._numbering)
+        case 10: try decoder.decodeSingularBoolField(value: &_storage._private)
+        case 11: try decoder.decodeRepeatedMessageField(value: &_storage._similarLists)
+        case 12: try decoder.decodeSingularStringField(value: &_storage._slug)
+        case 13: try decoder.decodeSingularMessageField(value: &_storage._updatedAt)
+        case 14: try decoder.decodeSingularStringField(value: &_storage._url)
+        case 15: try decoder.decodeSingularMessageField(value: &_storage._user)
         default: break
         }
       }
@@ -11710,35 +11741,41 @@ extension Proto_List: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
       if !_storage._description_p.isEmpty {
         try visitor.visitSingularStringField(value: _storage._description_p, fieldNumber: 3)
       }
+      if _storage._entriesCount != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._entriesCount, fieldNumber: 4)
+      }
       if !_storage._listEntries.isEmpty {
-        try visitor.visitRepeatedMessageField(value: _storage._listEntries, fieldNumber: 4)
+        try visitor.visitRepeatedMessageField(value: _storage._listEntries, fieldNumber: 5)
       }
       if !_storage._listTags.isEmpty {
-        try visitor.visitPackedInt32Field(value: _storage._listTags, fieldNumber: 5)
+        try visitor.visitPackedInt32Field(value: _storage._listTags, fieldNumber: 6)
+      }
+      if !_storage._listedGames.isEmpty {
+        try visitor.visitRepeatedMessageField(value: _storage._listedGames, fieldNumber: 7)
       }
       if !_storage._name.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._name, fieldNumber: 6)
+        try visitor.visitSingularStringField(value: _storage._name, fieldNumber: 8)
       }
       if _storage._numbering != false {
-        try visitor.visitSingularBoolField(value: _storage._numbering, fieldNumber: 7)
+        try visitor.visitSingularBoolField(value: _storage._numbering, fieldNumber: 9)
       }
       if _storage._private != false {
-        try visitor.visitSingularBoolField(value: _storage._private, fieldNumber: 8)
+        try visitor.visitSingularBoolField(value: _storage._private, fieldNumber: 10)
       }
       if !_storage._similarLists.isEmpty {
-        try visitor.visitRepeatedMessageField(value: _storage._similarLists, fieldNumber: 9)
+        try visitor.visitRepeatedMessageField(value: _storage._similarLists, fieldNumber: 11)
       }
       if !_storage._slug.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._slug, fieldNumber: 10)
+        try visitor.visitSingularStringField(value: _storage._slug, fieldNumber: 12)
       }
       if let v = _storage._updatedAt {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 11)
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 13)
       }
       if !_storage._url.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._url, fieldNumber: 12)
+        try visitor.visitSingularStringField(value: _storage._url, fieldNumber: 14)
       }
       if let v = _storage._user {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 13)
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 15)
       }
     }
     try unknownFields.traverse(visitor: &visitor)
@@ -11752,8 +11789,10 @@ extension Proto_List: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
         if _storage._id != rhs_storage._id {return false}
         if _storage._createdAt != rhs_storage._createdAt {return false}
         if _storage._description_p != rhs_storage._description_p {return false}
+        if _storage._entriesCount != rhs_storage._entriesCount {return false}
         if _storage._listEntries != rhs_storage._listEntries {return false}
         if _storage._listTags != rhs_storage._listTags {return false}
+        if _storage._listedGames != rhs_storage._listedGames {return false}
         if _storage._name != rhs_storage._name {return false}
         if _storage._numbering != rhs_storage._numbering {return false}
         if _storage._private != rhs_storage._private {return false}

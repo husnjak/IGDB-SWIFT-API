@@ -352,15 +352,16 @@ message Credit {
     CreditCategoryEnum category = 2; 
     Character character = 3; 
     string characterCreditedName = 4; 
-    Company company = 5; 
-    int32 country = 6; 
-    google.protobuf.Timestamp createdAt = 7; 
-    string creditedName = 8; 
-    Game game = 9; 
-    Person person = 10; 
-    Title personTitle = 11; 
-    int32 position = 12; 
-    google.protobuf.Timestamp updatedAt = 13; 
+    string comment = 5; 
+    Company company = 6; 
+    int32 country = 7; 
+    google.protobuf.Timestamp createdAt = 8; 
+    string creditedName = 9; 
+    Game game = 10; 
+    Person person = 11; 
+    Title personTitle = 12; 
+    int32 position = 13; 
+    google.protobuf.Timestamp updatedAt = 14; 
 }
 
 
@@ -708,16 +709,18 @@ message List {
     uint64 id = 1;
     google.protobuf.Timestamp createdAt = 2; 
     string description = 3; 
-    repeated ListEntry listEntries = 4; 
-    repeated int32 listTags = 5; 
-    string name = 6; 
-    bool numbering = 7; 
-    bool private = 8; 
-    repeated List similarLists = 9; 
-    string slug = 10; 
-    google.protobuf.Timestamp updatedAt = 11; 
-    string url = 12; 
-    User user = 13; 
+    int32 entriesCount = 4; 
+    repeated ListEntry listEntries = 5; 
+    repeated int32 listTags = 6; 
+    repeated Game listedGames = 7; 
+    string name = 8; 
+    bool numbering = 9; 
+    bool private = 10; 
+    repeated List similarLists = 11; 
+    string slug = 12; 
+    google.protobuf.Timestamp updatedAt = 13; 
+    string url = 14; 
+    User user = 15; 
 }
 
 message ListEntryResult {
