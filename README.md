@@ -142,7 +142,8 @@ wrapper.games(apiCalypse: apicalypse, result: { games in
 ```
 * Search in the API:
 __NOTE__  
-Search objects contain the objects from search ex: Characters, Collections, Games, People, Platforms, and Themes. 
+Search objects contain the objects from search ex: Characters, Collections, Games, Platforms, and Themes.  
+Search does not work with Sorting!
 ```swift
 let wrapper = IGDBWrapper(clientID: "CLIENT_ID", accessToken: "ACCESS_TOKEN")
 
