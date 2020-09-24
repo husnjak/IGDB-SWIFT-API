@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		597B46AB251C9C4D001029BB /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		597B46AD251C9D91001029BB /* TestIGDBWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B46AC251C9D91001029BB /* TestIGDBWrapper.swift */; };
+		597B46FD251CB37B001029BB /* TestApiCalypseQueryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B46FC251CB37B001029BB /* TestApiCalypseQueryParser.swift */; };
+		597B46FF251CBA35001029BB /* TestImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B46FE251CBA35001029BB /* TestImageBuilder.swift */; };
+		597B4701251CBDC1001029BB /* TestProtobufRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597B4700251CBDC1001029BB /* TestProtobufRequest.swift */; };
 		686E57C75AE59BB5267132F7 /* Pods_IGDB_SWIFT_API_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4568A35CAC38FAF61DCE0958 /* Pods_IGDB_SWIFT_API_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -16,9 +18,11 @@
 		2B3A3B8DC8AB213759DAC6DA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4568A35CAC38FAF61DCE0958 /* Pods_IGDB_SWIFT_API_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGDB_SWIFT_API_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		597B46AC251C9D91001029BB /* TestIGDBWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestIGDBWrapper.swift; sourceTree = "<group>"; };
+		597B46FC251CB37B001029BB /* TestApiCalypseQueryParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiCalypseQueryParser.swift; sourceTree = "<group>"; };
+		597B46FE251CBA35001029BB /* TestImageBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestImageBuilder.swift; sourceTree = "<group>"; };
+		597B4700251CBDC1001029BB /* TestProtobufRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProtobufRequest.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* IGDB-SWIFT-API_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IGDB-SWIFT-API_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		68142E7167BBA623AEC15C0D /* Pods-IGDB-SWIFT-API_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGDB-SWIFT-API_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGDB-SWIFT-API_Tests/Pods-IGDB-SWIFT-API_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		69B185FD1E9887170658AD20 /* Pods-IGDB-SWIFT-API_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGDB-SWIFT-API_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGDB-SWIFT-API_Tests/Pods-IGDB-SWIFT-API_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CEB951A0CC9BE9E08BE78F98 /* IGDB-SWIFT-API.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "IGDB-SWIFT-API.podspec"; path = "../IGDB-SWIFT-API.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -59,9 +63,11 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 				597B46AC251C9D91001029BB /* TestIGDBWrapper.swift */,
+				597B46FC251CB37B001029BB /* TestApiCalypseQueryParser.swift */,
+				597B46FE251CBA35001029BB /* TestImageBuilder.swift */,
+				597B4700251CBDC1001029BB /* TestProtobufRequest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -217,8 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				597B46AB251C9C4D001029BB /* Tests.swift in Sources */,
+				597B46FD251CB37B001029BB /* TestApiCalypseQueryParser.swift in Sources */,
 				597B46AD251C9D91001029BB /* TestIGDBWrapper.swift in Sources */,
+				597B4701251CBDC1001029BB /* TestProtobufRequest.swift in Sources */,
+				597B46FF251CBA35001029BB /* TestImageBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

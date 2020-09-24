@@ -3,7 +3,7 @@ A Swift wrapper for the IGDB.com Free Video Game Database API.
 
 __IMPORTANT__
 
-This wrapper is compatible with ONLY their newest release V3.
+This wrapper is compatible with ONLY their newest release V4.
 
 ## About IGDB
 One of the principles behind IGDB.com is accessibility of data. We wish to share the data with anyone who wants to build cool video game oriented websites, apps and services. This means that the information you contribute to IGDB.com can be used by other projects as well.
@@ -43,19 +43,22 @@ $ pod install
 ## Using your API key
 * Create a new IGDBWrapper Object by passing and then pass it your API key.
 ```swift
-let wrapper: IGDBWrapper = IGDBWrapper()
-wrapper.userKey = "YOUR_API_KEY"
+let wrapper: IGDBWrapper = IGDBWrapper(clientID: "CLIENT_ID", accessToken: "ACCESS_TOKEN")
 ```
+
+### Authentication on iOS
+It is not recommended to create new Access Tokens on the Users devices as you don't want to create multiple `access_tokens` for each device.
+It is recommended to create your token on a server and then use a proxy api to call the IGDB api, where you append the Bearer token for each request.
 
 # How to use the wrapper
 The wrapper has two "wrapping" functions and a lot of helper functions (one for each endpoint..)  
 The two main functions are called `apiRequest` and `apiJsonRequest` and they handle all of the requests to the api.  
 The class `APICalypse` handles the new querying language, so that you don't need to care about structure and syntax as much.
 
-* `apiRequest`  
+* `apiProtoRequest`  
   This method handles IGDB generated proto classes which returns Data to be used to fill the appropriate class.  
   ```swift
-  wrapper.apiRequest(endpoint: .GAMES, apicalypseQuery: "fields *;", dataResponse: { bytes in
+  wrapper.apiProtoRequest(endpoint: .GAMES, apicalypseQuery: "fields *;", dataResponse: { bytes in
             let games: [Proto_Game] = try! Proto_GameResult(serializedData: bytes) // This converts Binary to a struct
         }, errorResponse: { error in
             // Do Something
@@ -75,8 +78,7 @@ The class `APICalypse` handles the new querying language, so that you don't need
   returns a String.
   
 * `APICalypse`  
-  ```kotlin
-  // Kotlin Example
+  ```swift
   let apicalypse = APICalypse()
             .fields(fields: "*")
             .exclude(fields: "*")
@@ -92,8 +94,7 @@ __NOTE__
 These examples above are only here to show you how to use the "manual" part of the wrapper. This wrapper comes with complete functions for each endpoint in the API :) so you don't have to deal with the manual stuff..
 
 There are two functions for each endpoint, one for classes and one for json, for quick access. The difference between them is the name see the examples below:  
-```kotlin
-// Example of functions in Kotlin
+```swift
 wrapper.games(apiCalypse: APICalypse(), result: ([Proto_Game]) -> (Void), errorResponse: (RequestException) -> (Void))
 wrapper.platforms(apiCalypse: APICalypse(), result: ([Proto_Platforms]) -> (Void), errorResponse: (RequestException) -> (Void))
 wrapper.genres(apiCalypse: APICalypse(), result: ([Proto_Genres]) -> (Void), errorResponse: (RequestException) -> (Void))
@@ -127,8 +128,7 @@ The wrapper returns an `RequestException` on every exception from the API. This 
 ## Code Examples
 * Request games from the API:
 ```swift
-let wrapper = IGDBWrapper()
-wrapper.userKey = "YOUR_API_KEY"
+let wrapper = IGDBWrapper(clientID: "CLIENT_ID", accessToken: "ACCESS_TOKEN")
 
 let apicalypse = APICalypse()
     .fields(fields: "*")
@@ -144,8 +144,7 @@ wrapper.games(apiCalypse: apicalypse, result: { games in
 __NOTE__  
 Search objects contain the objects from search ex: Characters, Collections, Games, People, Platforms, and Themes. 
 ```swift
-let wrapper = IGDBWrapper()
-wrapper.userKey = "YOUR_API_KEY"
+let wrapper = IGDBWrapper(clientID: "CLIENT_ID", accessToken: "ACCESS_TOKEN")
 
 let apicalypse = APICalypse()
     .search(searchQuery: "Halo")
@@ -160,8 +159,7 @@ wrapper.search(apiCalypse: apicalypse, result: { searchResults in
 ```
 * Request filtered results:
 ```swift
-let wrapper = IGDBWrapper()
-wrapper.userKey = "YOUR_API_KEY"
+let wrapper = IGDBWrapper(clientID: "CLIENT_ID", accessToken: "ACCESS_TOKEN")
 
 let apicalypse = APICalypse()
     .fields(fields: "*")
