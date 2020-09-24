@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.swift_version         = '5.0'
   s.source_files          = 'IGDB-SWIFT-API/Sources/**/*.swift'
 
-  s.dependency 'SwiftProtobuf', '~> 1.12.0'
+  s.dependency 'SwiftProtobuf', '~> 1.6.0'
   s.dependency 'Just', '~> 0.8.0'
 end
