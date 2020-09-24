@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77e4b483-c1cd-4034-957e-e106dacd80df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/IGDB-SWIFT-API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/xcode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/Example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/runConfigurations/IGDB_SWIFT_API_Example.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/xcode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../IGDB-SWIFT-API/Classes/APIStructs/igdbapi.pb.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IGDB-SWIFT-API.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/../../IGDB-SWIFT-API.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IGDB-SWIFT-API/Classes/APIStructs/IGDBProto.pb.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IGDB-SWIFT-API/Classes/Wrapper/Endpoints.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../IGDB-SWIFT-API/Classes/Wrapper/Endpoints.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IGDB-SWIFT-API/Classes/Wrapper/IGDBWrapper.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../../IGDB-SWIFT-API/Classes/Wrapper/IGDBWrapper.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1huievXX0Klr0OtNtADdwPTUBjE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Pods.xcodeproj" />
+  </component>
+  <component name="RunManager">
+    <configuration name="IGDB-SWIFT-API" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_Pods" TARGET_NAME="IGDB-SWIFT-API" CONFIG_NAME="Debug" SCHEME_NAME="IGDB-SWIFT-API" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77e4b483-c1cd-4034-957e-e106dacd80df" name="Default Changelist" comment="" />
+      <created>1600867476804</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600867476804</updated>
+      <workItem from="1600867477866" duration="809000" />
+      <workItem from="1600870288175" duration="59000" />
+      <workItem from="1600871247680" duration="76000" />
+    </task>
+    <servers />
+  </component>
+</project>

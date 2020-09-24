@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ae5b1ad3-d477-488d-b135-1831d6193a15" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/IGDB-SWIFT-API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/.idea/Example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/.idea/runConfigurations/IGDB_SWIFT_API_Example.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Example/.idea/xcode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGDB-SWIFT-API/Classes/APIStructs/igdbapi.pb.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Example/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Example/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IGDB-SWIFT-API.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/IGDB-SWIFT-API.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IGDB-SWIFT-API/Classes/APIStructs/IGDBProto.pb.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IGDB-SWIFT-API/Classes/Wrapper/Endpoints.swift" beforeDir="false" afterPath="$PROJECT_DIR$/IGDB-SWIFT-API/Classes/Wrapper/Endpoints.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IGDB-SWIFT-API/Classes/Wrapper/IGDBWrapper.swift" beforeDir="false" afterPath="$PROJECT_DIR$/IGDB-SWIFT-API/Classes/Wrapper/IGDBWrapper.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_iosmac_x86_64" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hsi6YFNKuI77DQHJwyCxYgm5YE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="IGDB-SWIFT-API" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_Pods" TARGET_NAME="IGDB-SWIFT-API" CONFIG_NAME="Debug" SCHEME_NAME="IGDB-SWIFT-API" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ae5b1ad3-d477-488d-b135-1831d6193a15" name="Default Changelist" comment="" />
+      <created>1600806028401</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600806028401</updated>
+      <workItem from="1600806029753" duration="427000" />
+      <workItem from="1600870355358" duration="1000" />
+      <workItem from="1600871336995" duration="12000" />
+      <workItem from="1600871397523" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="349" y="164" key="SettingsEditor" timestamp="1600806074891">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1600806074891" />
+  </component>
+</project>

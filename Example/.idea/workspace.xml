@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f491217a-a219-48df-91bc-c20abf6f2bb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/IGDB-SWIFT-API.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/xcode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Example.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/IGDB_SWIFT_API_Example.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Pods_IGDB_SWIFT_API_Tests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pods/.idea/Pods.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/.idea/Pods.xcodeproj.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xctestplan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/APIStructs/igdbapi.pb.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IGDB-SWIFT-API.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/IGDB-SWIFT-API.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Tests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Tests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IGDB-SWIFT-API.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/../IGDB-SWIFT-API.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/APIStructs/IGDBProto.pb.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/Endpoints.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/Endpoints.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/IGDBWrapper.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/IGDBWrapper.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/JsonRequest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/JsonRequest.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/ProtoRequest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/ProtoRequest.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_3EFC6358-1217-43DE-8F31-93BCCB8B7553" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1hucHs8YpDoRGTS65WWrf6PAeTF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="IGDB-SWIFT-API" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CocoaPods" />
+  </component>
+  <component name="RunManager" selected="Application.Pods-IGDB-SWIFT-API_Tests">
+    <configuration default="false" name="IGDB-SWIFT-API" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pods" TARGET_NAME="IGDB-SWIFT-API" CONFIG_NAME="Debug" SCHEME_NAME="IGDB-SWIFT-API" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.IGDB-SWIFT-API" />
+      <item itemvalue="Application.IGDB-SWIFT-API-Example" />
+      <item itemvalue="Application.Pods-IGDB-SWIFT-API_Tests" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f491217a-a219-48df-91bc-c20abf6f2bb7" name="Default Changelist" comment="" />
+      <created>1600864336668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600864336668</updated>
+      <workItem from="1600864338372" duration="1175000" />
+      <workItem from="1600870142886" duration="64000" />
+      <workItem from="1600870472704" duration="715000" />
+      <workItem from="1600871192188" duration="50000" />
+      <workItem from="1600871382099" duration="3000" />
+      <workItem from="1600872158456" duration="855000" />
+      <workItem from="1600930985641" duration="264000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2102" y="388" key="SettingsEditor" timestamp="1600866193296">
+      <screen x="0" y="0" width="3440" height="1440" />
+    </state>
+    <state x="2102" y="388" key="SettingsEditor/0.0.3440.1440/3440.177.1680.1050@0.0.3440.1440" timestamp="1600866193296" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/../IGDB-SWIFT-API/Classes/Wrapper/IGDBWrapper.swift</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Tests/Tests.swift</url>
+          <line>19</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Tests/Tests.swift</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Tests/Tests.swift</url>
+          <line>25</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
