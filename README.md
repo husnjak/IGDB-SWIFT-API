@@ -53,7 +53,7 @@ Then, run the following command:
 $ pod install
 ```
 
-## Using your API key
+## Using your Twitch Developer Credentials
 * Create a new IGDBWrapper Object by passing and then pass it your API key.
 ```swift
 let wrapper: IGDBWrapper = IGDBWrapper(clientID: "CLIENT_ID", accessToken: "ACCESS_TOKEN")
