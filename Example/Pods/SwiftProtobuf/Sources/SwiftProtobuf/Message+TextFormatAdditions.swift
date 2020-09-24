@@ -24,12 +24,31 @@ extension Message {
   ///
   /// - Returns: A string containing the text format serialization of the
   ///   message.
-  /// - Throws: `TextFormatEncodingError` if encoding fails.
   public func textFormatString() -> String {
-    var visitor = TextFormatEncodingVisitor(message: self)
+    // This is implemented as a separate zero-argument function
+    // to preserve binary compatibility.
+    return textFormatString(options: TextFormatEncodingOptions())
+  }
+
+  /// Returns a string containing the Protocol Buffer text format serialization
+  /// of the message.
+  ///
+  /// Unlike binary encoding, presence of required fields is not enforced when
+  /// serializing to JSON.
+  ///
+  /// - Returns: A string containing the text format serialization of the message.
+  /// - Parameters:
+  ///   - options: The TextFormatEncodingOptions to use.
+  public func textFormatString(
+    options: TextFormatEncodingOptions
+  ) -> String {
+    var visitor = TextFormatEncodingVisitor(message: self, options: options)
     if let any = self as? Google_Protobuf_Any {
       any._storage.textTraverse(visitor: &visitor)
     } else {
+      // Although the general traversal/encoding infrastructure supports
+      // throwing errors (needed for JSON/Binary WKTs support, binary format
+      // missing required fields); TextEncoding never actually does throw.
       try! traverse(visitor: &visitor)
     }
     return visitor.result
@@ -51,14 +70,16 @@ extension Message {
     self.init()
     if !textFormatString.isEmpty {
       if let data = textFormatString.data(using: String.Encoding.utf8) {
-        try data.withUnsafeBytes { (bytes: UnsafePointer<UInt8>) in
-          var decoder = try TextFormatDecoder(messageType: Self.self,
-                                              utf8Pointer: bytes,
-                                              count: data.count,
-                                              extensions: extensions)
-          try decodeMessage(decoder: &decoder)
-          if !decoder.complete {
-            throw TextFormatDecodingError.trailingGarbage
+        try data.withUnsafeBytes { (body: UnsafeRawBufferPointer) in
+          if let baseAddress = body.baseAddress, body.count > 0 {
+            var decoder = try TextFormatDecoder(messageType: Self.self,
+                                                utf8Pointer: baseAddress,
+                                                count: body.count,
+                                                extensions: extensions)
+            try decodeMessage(decoder: &decoder)
+            if !decoder.complete {
+              throw TextFormatDecodingError.trailingGarbage
+            }
           }
         }
       }
