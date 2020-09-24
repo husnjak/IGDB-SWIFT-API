@@ -23,6 +23,19 @@ This wrapper is written and tested in Swift 4.
 The Wrapper can handle both the IGDB generated classes and JSON (Strings), I have chosen to make the Generated classes the standard way because it will make it easier to use as you don't have to create your own classes to hold the information.
 
 # Installation and setup
+### Swift Package
+You can either import this library using Xcode by simply pasting this repository link:  
+`XCode -> Swift Packages -> Add Package Dependecy`   
+Or if you have a `Package.swift` file you can add this:  
+```
+dependencies: [
+.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.3.3"),
+],
+targets: [
+    .target(name: "MyTarget", dependencies: ["IGDB-SWIFT-API"]),
+]
+```
+
 ### CocoaPods
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
 
