@@ -1,6 +1,0 @@
-framework module Just {
-  umbrella header "Just-umbrella.h"
-
-  export *
-  module * { export * }
-}

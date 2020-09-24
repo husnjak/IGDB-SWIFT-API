@@ -1,6 +1,0 @@
-use_frameworks!
-target 'IGDB-SWIFT-API_Tests' do
-  pod 'IGDB-SWIFT-API', :path => '../'
-  
-
-end
