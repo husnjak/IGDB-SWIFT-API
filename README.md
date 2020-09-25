@@ -1,3 +1,5 @@
+[![CocoaPods](https://img.shields.io/cocoapods/v/IGDB-SWIFT-API.svg)](https://cocoapods.org/pods/IGDB-SWIFT-API)
+
 # IGDB SWIFT-API
 A Swift wrapper for the IGDB.com Free Video Game Database API.
 
