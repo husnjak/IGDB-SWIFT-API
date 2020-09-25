@@ -27,7 +27,7 @@ The Wrapper can handle both the IGDB generated classes and JSON (Strings), I hav
 You can either import this library using Xcode by simply pasting this repository link:  
 `XCode -> Swift Packages -> Add Package Dependecy`   
 Or if you have a `Package.swift` file you can add this:  
-```
+```swift
 dependencies: [
 .package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.3.3"),
 ],
@@ -43,8 +43,8 @@ targets: [
 $ gem install cocoapods
 ```
 To integrate IGDBWrapper into your Xcode project using CocoaPods, specify it in your `Podfile`:
-```ruby
-pod 'IGDB-SWIFT-API', git: "https://github.com/husnjak/IGDB-API-SWIFT.git"
+```bash
+$ pod 'IGDB-SWIFT-API', git: "https://github.com/husnjak/IGDB-API-SWIFT.git"
 ```
 
 Then, run the following command:
