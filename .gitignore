@@ -19,6 +19,8 @@ DerivedData
 *.hmap
 *.ipa
 
+IGDB-SWIFT-API.xcodeproj/xcshareddata/xcschemes/*
+
 # Bundler
 .bundle
 

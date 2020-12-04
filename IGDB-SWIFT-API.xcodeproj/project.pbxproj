@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		59CBB7A0257A8498005808FE /* TestCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CBB79F257A8498005808FE /* TestCount.swift */; };
 		OBJ_131 /* IGDBProtoFile.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IGDBProtoFile.pb.swift */; };
 		OBJ_132 /* APICalypse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* APICalypse.swift */; };
 		OBJ_133 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Endpoints.swift */; };
@@ -174,6 +175,7 @@
 
 /* Begin PBXFileReference section */
 		59BE9028251CF1020048499D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		59CBB79F257A8498005808FE /* TestCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCount.swift; sourceTree = "<group>"; };
 		"IGDB-SWIFT-API::IGDB-SWIFT-API::Product" /* IGDB_SWIFT_API.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IGDB_SWIFT_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"IGDB-SWIFT-API::IGDB-SWIFT-APITests::Product" /* IGDB_SWIFT_APITests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = IGDB_SWIFT_APITests.xctest; path = "IGDB-SWIFT-APITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Just::Just::Product" /* Just.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Just.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -392,6 +394,7 @@
 				OBJ_22 /* TestIGDBWrapper.swift */,
 				OBJ_23 /* TestImageBuilder.swift */,
 				OBJ_24 /* TestProtobufRequest.swift */,
+				59CBB79F257A8498005808FE /* TestCount.swift */,
 			);
 			name = "IGDB-SWIFT-APITests";
 			path = "Tests/IGDB-SWIFT-APITests";
@@ -517,7 +520,7 @@
 			path = ".build/checkouts/swift-protobuf/Sources/SwiftProtobuf";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				59BE9028251CF1020048499D /* README.md */,
@@ -529,7 +532,6 @@
 				OBJ_124 /* LICENSE */,
 				OBJ_125 /* IGDB-SWIFT-API.podspec */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -688,7 +690,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_119 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -736,6 +738,7 @@
 				OBJ_162 /* TestApiCalypseQueryParser.swift in Sources */,
 				OBJ_163 /* TestIGDBWrapper.swift in Sources */,
 				OBJ_164 /* TestImageBuilder.swift in Sources */,
+				59CBB7A0257A8498005808FE /* TestCount.swift in Sources */,
 				OBJ_165 /* TestProtobufRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
