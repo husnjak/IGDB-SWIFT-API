@@ -9,9 +9,9 @@
 import Foundation
 import Just
 
-private let APIURL = "https://api.igdb.com/v4"
 
 public class IGDBWrapper {
+    private var APIURL: URL
     private var requestHeaders = ["x-user-agent": "igdb-api-swift"]
     public init(clientID: String, accessToken: String) {
         requestHeaders = ["x-user-agent": "igdb-api-swift", "client-id": clientID, "authorization": "Bearer \(accessToken)"]
