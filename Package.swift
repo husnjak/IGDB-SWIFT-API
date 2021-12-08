@@ -17,7 +17,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/dduan/Just.git",  from: "0.8.0"),
-        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.6.0")
+        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.18.0")
     ],
     targets: [
         .target(
