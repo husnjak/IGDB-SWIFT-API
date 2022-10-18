@@ -23,7 +23,6 @@ public class IGDBWrapper {
         requestHeaders["x-user-agent"] = "igdb-api-swift"
     }
     
-    
     public func apiProtoRequest(endpoint: Endpoint, apicalypseQuery: String, dataResponse: @escaping (Data) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         let requestURL = "\(APIURL)\(endpoint.url()).pb"
         Just.post(requestURL, headers: requestHeaders, requestBody: apicalypseQuery.data(using: .utf8, allowLossyConversion: false), asyncCompletionHandler:  { response in

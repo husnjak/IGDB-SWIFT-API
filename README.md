@@ -31,7 +31,7 @@ You can either import this library using Xcode by simply pasting this repository
 Or if you have a `Package.swift` file you can add this:  
 ```swift
 dependencies: [
-.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.3.6"),
+.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.3.7"),
 ],
 targets: [
     .target(name: "MyTarget", dependencies: ["IGDB-SWIFT-API"]),
