@@ -179,6 +179,27 @@ public extension IGDBWrapper {
         }, errorResponse: errorResponse)
     }
     
+    func languages(apiCalypse: APICalypse, result: @escaping ([Proto_Language]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .LANGUAGES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_LanguageResult(serializedData: bytes).languages
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func languageSupports(apiCalypse: APICalypse, result: @escaping ([Proto_LanguageSupport]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .LANGUAGE_SUPPORTS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_LanguageSupportResult(serializedData: bytes).languagesupports
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func languageSupportTypes(apiCalypse: APICalypse, result: @escaping ([Proto_LanguageSupportType]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .LANGUAGE_SUPPORT_TYPES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_LanguageSupportTypeResult(serializedData: bytes).languagesupporttypes
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
     func multiplayerModes(apiCalypse: APICalypse, result: @escaping ([Proto_MultiplayerMode]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiProtoRequest(endpoint: .MULTIPLAYER_MODES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
             let objects = try! Proto_MultiplayerModeResult(serializedData: bytes).multiplayermodes

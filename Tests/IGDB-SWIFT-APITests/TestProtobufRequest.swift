@@ -10,7 +10,7 @@ import XCTest
 import IGDB_SWIFT_API
 
 class TestProtobufRequest: XCTestCase {
-
+    
     private var wrapper = IGDBWrapper(
         clientID: ProcessInfo.processInfo.environment["client_id"]!,
         accessToken: ProcessInfo.processInfo.environment["access_token"]!
@@ -29,7 +29,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testAgeRatingContentDescriptions() {
         let expectation = self.expectation(description: "API Request")
         
@@ -43,7 +43,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testAlternativeNames() {
         let expectation = self.expectation(description: "API Request")
         
@@ -57,7 +57,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testArtwork() {
         let expectation = self.expectation(description: "API Request")
         
@@ -71,7 +71,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testCharacters() {
         let expectation = self.expectation(description: "API Request")
         
@@ -85,7 +85,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testCollections() {
         let expectation = self.expectation(description: "API Request")
         
@@ -99,7 +99,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testCharacterMugShots() {
         let expectation = self.expectation(description: "API Request")
         
@@ -113,7 +113,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testCompanies() {
         let expectation = self.expectation(description: "API Request")
         
@@ -127,7 +127,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testComapnyWebsites() {
         let expectation = self.expectation(description: "API Request")
         
@@ -141,7 +141,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testCompantLogos() {
         let expectation = self.expectation(description: "API Request")
         
@@ -155,7 +155,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testCover() {
         let expectation = self.expectation(description: "API Request")
         
@@ -169,7 +169,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testExternalGames() {
         let expectation = self.expectation(description: "API Request")
         
@@ -183,7 +183,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testFranschises() {
         let expectation = self.expectation(description: "API Request")
         
@@ -216,52 +216,52 @@ class TestProtobufRequest: XCTestCase {
             XCTAssertFalse(game.checksum.isEmpty)
             
             XCTAssertNotEqual(" ", game.checksum)
-
+            
             let ageRatings = game.ageRatings
             let ageRating = ageRatings[0]
             XCTAssertFalse(ageRating.contentDescriptions.isEmpty)
             
             XCTAssertFalse(ageRating.checksum.isEmpty)
             XCTAssertNotEqual(" ", ageRating.checksum)
-
+            
             let alternativeNames = game.alternativeNames
             XCTAssertFalse(alternativeNames.isEmpty)
             XCTAssertFalse(alternativeNames[0].checksum.isEmpty)
             XCTAssertNotEqual(" ", alternativeNames[0].checksum)
-
+            
             let cover = game.cover
             XCTAssertNotEqual(" ", cover.imageID)
             
             XCTAssertFalse(cover.checksum.isEmpty)
             XCTAssertNotEqual(" ", cover.checksum)
-
+            
             let externalGames = game.externalGames
             XCTAssertFalse(externalGames.isEmpty)
             
             XCTAssertFalse(externalGames[0].checksum.isEmpty)
             XCTAssertNotEqual(" ", externalGames[0].checksum)
-
+            
             let franchises = game.franchises
             XCTAssert(franchises[0].id == 452)
             XCTAssertEqual("the-witcher", franchises[0].slug)
             let franchiseGames = franchises[0].games
             XCTAssertFalse(franchiseGames.isEmpty)
-
+            
             let involvedCompany = game.involvedCompanies
             XCTAssertFalse(involvedCompany.isEmpty)
-
+            
             let genres = game.genres
             XCTAssertFalse(genres.isEmpty)
-
+            
             let releaseDates = game.releaseDates
             XCTAssertFalse(releaseDates.isEmpty)
-
+            
             let screenshots = game.screenshots
             XCTAssertFalse(screenshots.isEmpty)
             let screenshot = screenshots[0]
             XCTAssertNotEqual(" ", screenshot.imageID)
             XCTAssertNotEqual(" ", screenshot.checksum)
-
+            
             let videos = game.videos
             XCTAssertFalse(videos.isEmpty)
             let video = videos[0]
@@ -275,7 +275,7 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testGameEngines() {
+    func testGameEngines() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.gameEngines(apiCalypse: APICalypse(), result: { result in
@@ -288,7 +288,7 @@ func testGameEngines() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testGameEngineLogos() {
         let expectation = self.expectation(description: "API Request")
         
@@ -302,7 +302,7 @@ func testGameEngines() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testGameModes() {
         let expectation = self.expectation(description: "API Request")
         
@@ -316,7 +316,7 @@ func testGameEngines() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testGameVersions() {
         let expectation = self.expectation(description: "API Request")
         
@@ -330,7 +330,7 @@ func testGameEngines() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testGameVersionFeatures() {
         let expectation = self.expectation(description: "API Request")
         
@@ -344,7 +344,7 @@ func testGameEngines() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testGameVersionFeatureValues() {
         let expectation = self.expectation(description: "API Request")
         
@@ -358,7 +358,7 @@ func testGameEngines() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testGameVideos() {
         let expectation = self.expectation(description: "API Request")
         
@@ -372,7 +372,7 @@ func testGameEngines() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-
+    
     func testGenres() {
         let expectation = self.expectation(description: "API Request")
         
@@ -456,7 +456,7 @@ func testGameEngines() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testPlatformVersions() {
+    func testPlatformVersions() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.platformVersions(apiCalypse: APICalypse(), result: { result in
@@ -469,7 +469,7 @@ func testPlatformVersions() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testPlatformVerisonCompanies() {
+    func testPlatformVerisonCompanies() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.platformVersionCompanies(apiCalypse: APICalypse(), result: { result in
@@ -482,7 +482,7 @@ func testPlatformVerisonCompanies() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testPlatformVersionReleaseDates() {
+    func testPlatformVersionReleaseDates() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.platformVersionReleaseDates(apiCalypse: APICalypse(), result: { result in
@@ -495,7 +495,7 @@ func testPlatformVersionReleaseDates() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testPlatformWebsites() {
+    func testPlatformWebsites() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.platformWebsites(apiCalypse: APICalypse(), result: { result in
@@ -508,7 +508,7 @@ func testPlatformWebsites() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testPlayerPerspectives() {
+    func testPlayerPerspectives() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.playerPerspectives(apiCalypse: APICalypse(), result: { result in
@@ -521,7 +521,7 @@ func testPlayerPerspectives() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testPlatformFamilies() {
+    func testPlatformFamilies() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.platformFamilies(apiCalypse: APICalypse(), result: { result in
@@ -534,7 +534,7 @@ func testPlatformFamilies() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testReleaseDates() {
+    func testReleaseDates() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.releaseDates(apiCalypse: APICalypse(), result: { result in
@@ -547,7 +547,7 @@ func testReleaseDates() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testScreenshots() {
+    func testScreenshots() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.screenshots(apiCalypse: APICalypse(), result: { result in
@@ -560,7 +560,7 @@ func testScreenshots() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testSearch() {
+    func testSearch() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.search(apiCalypse: APICalypse(), result: { result in
@@ -573,7 +573,7 @@ func testSearch() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testThemes() {
+    func testThemes() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.themes(apiCalypse: APICalypse(), result: { result in
@@ -586,7 +586,7 @@ func testThemes() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-func testWebsites() {
+    func testWebsites() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.websites(apiCalypse: APICalypse(), result: { result in
@@ -599,5 +599,41 @@ func testWebsites() {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-    
+//    There is currently no data in these new endpoints so testing a 200 OK is good enough for now.
+    func testLanguages() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.languages(apiCalypse: APICalypse()) { result in
+//            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    func testLanguageSupports() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.languageSupports(apiCalypse: APICalypse()) { result in
+//            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    func testLanguageSupportTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.languageSupportTypes(apiCalypse: APICalypse()) { result in
+//            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
 }

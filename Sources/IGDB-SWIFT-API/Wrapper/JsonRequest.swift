@@ -106,6 +106,18 @@ public extension IGDBWrapper {
         apiJsonRequest(endpoint: .KEYWORDS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
     }
     
+    func jsonLanguages(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiJsonRequest(endpoint: .LANGUAGES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
+    }
+    
+    func jsonLanguageSupports(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiJsonRequest(endpoint: .LANGUAGE_SUPPORTS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
+    }
+    
+    func jsonLanguageSupportTypes(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiJsonRequest(endpoint: .LANGUAGE_SUPPORT_TYPES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
+    }
+    
     func jsonMultiplayerModes(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiJsonRequest(endpoint: .MULTIPLAYER_MODES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
     }

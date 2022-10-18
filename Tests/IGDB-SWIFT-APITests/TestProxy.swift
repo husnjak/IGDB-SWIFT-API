@@ -1,0 +1,86 @@
+//  TestProxy.swift
+//  IGDB-SWIFT-API_Tests
+//
+//  Created by Husnjak, Filip on 2022-10-18.
+//  Copyright © 2022 CocoaPods. All rights reserved.
+//
+
+
+import XCTest
+import IGDB_SWIFT_API
+
+class TestProxy: XCTestCase {
+    
+    private var wrapper = IGDBWrapper(
+        proxyURL: ProcessInfo.processInfo.environment["proxy_url"]!,
+        proxyHeaders: ["x-api-key": ProcessInfo.processInfo.environment["proxy_api_key"]!]
+    )
+    
+    func testComingSoonPS4Games() {
+        let date = String((Date().timeIntervalSince1970 / 1000))
+        let query = APICalypse().fields(fields: "*")
+            .where(query: "platforms = 48 & release_dates.date > \(date)")
+            .sort(field: "release_dates.date", order: Sort.ASCENDING)
+        
+        let expectation = self.expectation(description: "API Request")
+        wrapper.games(apiCalypse: query, result: { games in
+            XCTAssert(!games.isEmpty)
+            XCTAssertEqual(games.count, 10)
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testRecentlyReleasedPS4Games() {
+        let date = String((Date().timeIntervalSince1970 / 1000))
+        let query = APICalypse().fields(fields: "*")
+            .where(query: "platforms = 48 & release_dates.date < \(date)")
+            .sort(field: "release_dates.date", order: Sort.DESCENDING)
+
+        let expectation = self.expectation(description: "API Request")
+        wrapper.games(apiCalypse: query, result: { games in
+            XCTAssert(!games.isEmpty)
+            XCTAssertEqual(games.count, 10)
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testSearch() {
+        let query = APICalypse()
+            .search(searchQuery: "Assassins Creed")
+            .fields(fields: "game.name, game.involved_companies")
+            .where(query: "game != n & game.version_parent = n")
+
+        let expectation = self.expectation(description: "API Request")
+        wrapper.search(apiCalypse: query, result: { search in
+            XCTAssert(!search.isEmpty)
+            XCTAssertEqual(search.count, 10)
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testPS4Exclusives() {
+        let query = APICalypse()
+            .fields(fields: "name, category, platforms")
+            .where(query: "category = 0 & platforms = 48")
+
+        let expectation = self.expectation(description: "API Request")
+        wrapper.games(apiCalypse: query, result: { games in
+            XCTAssert(!games.isEmpty)
+            XCTAssertEqual(games.count, 10)
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+}

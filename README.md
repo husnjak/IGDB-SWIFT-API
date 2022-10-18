@@ -31,7 +31,7 @@ You can either import this library using Xcode by simply pasting this repository
 Or if you have a `Package.swift` file you can add this:  
 ```swift
 dependencies: [
-.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.3.6"),
+.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.3.7"),
 ],
 targets: [
     .target(name: "MyTarget", dependencies: ["IGDB-SWIFT-API"]),
@@ -64,6 +64,12 @@ let wrapper: IGDBWrapper = IGDBWrapper(clientID: "CLIENT_ID", accessToken: "ACCE
 ### Authentication on iOS
 It is not recommended to create new Access Tokens on the Users devices as you don't want to create multiple `access_tokens` for each device.
 It is recommended to create your token on a server and then use a proxy api to call the IGDB api, where you append the Bearer token for each request.
+
+IGDB provides a [free AWS CloudFormation template](https://api-docs.igdb.com/#proxy) that you can deploy for this purpose with instructions on how to use it.
+* Create a new IGDBWrapper Object connected to the AWS Proxy server.
+```swift
+let wrapper: IGDBWrapper = IGDBWrapper(proxyURL: "PROXY_URL/v4", proxyHeaders: ["x-api-key": "PROXY_API_KEY"])
+```
 
 # How to use the wrapper
 The wrapper has two "wrapping" functions and a lot of helper functions (one for each endpoint..)  
