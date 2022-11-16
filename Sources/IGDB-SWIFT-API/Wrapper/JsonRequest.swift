@@ -78,6 +78,10 @@ public extension IGDBWrapper {
         apiJsonRequest(endpoint: .GAME_MODES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
     }
     
+    func jsonGameLocalizations(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiJsonRequest(endpoint: .GAME_LOCALIZATIONS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
+    }
+    
     func jsonGameVersions(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiJsonRequest(endpoint: .GAME_VERSIONS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
     }
@@ -156,6 +160,10 @@ public extension IGDBWrapper {
     
     func jsonReleaseDates(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiJsonRequest(endpoint: .RELEASE_DATES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
+    }
+    
+    func jsonRegions(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiJsonRequest(endpoint: .REGIONS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
     }
     
     func jsonScreenshots(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {

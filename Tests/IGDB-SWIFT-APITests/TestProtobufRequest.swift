@@ -599,12 +599,12 @@ class TestProtobufRequest: XCTestCase {
         
         waitForExpectations(timeout: 5, handler: nil)
     }
-//    There is currently no data in these new endpoints so testing a 200 OK is good enough for now.
+    
     func testLanguages() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.languages(apiCalypse: APICalypse()) { result in
-//            XCTAssertFalse(result.isEmpty)
+            XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
         } errorResponse: { error in
@@ -612,11 +612,12 @@ class TestProtobufRequest: XCTestCase {
         }
         waitForExpectations(timeout: 5, handler: nil)
     }
+    
     func testLanguageSupports() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.languageSupports(apiCalypse: APICalypse()) { result in
-//            XCTAssertFalse(result.isEmpty)
+            XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
         } errorResponse: { error in
@@ -624,11 +625,38 @@ class TestProtobufRequest: XCTestCase {
         }
         waitForExpectations(timeout: 5, handler: nil)
     }
+    
     func testLanguageSupportTypes() {
         let expectation = self.expectation(description: "API Request")
         
         wrapper.languageSupportTypes(apiCalypse: APICalypse()) { result in
-//            XCTAssertFalse(result.isEmpty)
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testGameLocalizations() {
+        let expectation = self.expectation(description: "API Request")
+
+        wrapper.gameLocalizations(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testRegions() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.regions(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
         } errorResponse: { error in
