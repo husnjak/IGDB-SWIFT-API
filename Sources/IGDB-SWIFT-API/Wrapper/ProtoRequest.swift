@@ -130,6 +130,13 @@ public extension IGDBWrapper {
         }, errorResponse: errorResponse)
     }
     
+    func gameLocalizations(apiCalypse: APICalypse, result: @escaping ([Proto_GameLocalization]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .GAME_LOCALIZATIONS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_GameLocalizationResult(serializedData: bytes).gamelocalizations
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
     func gameVersions(apiCalypse: APICalypse, result: @escaping ([Proto_GameVersion]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiProtoRequest(endpoint: .GAME_VERSIONS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
             let objects = try! Proto_GameVersionResult(serializedData: bytes).gameversions
@@ -266,6 +273,13 @@ public extension IGDBWrapper {
     func releaseDates(apiCalypse: APICalypse, result: @escaping ([Proto_ReleaseDate]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiProtoRequest(endpoint: .RELEASE_DATES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
             let objects = try! Proto_ReleaseDateResult(serializedData: bytes).releasedates
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func regions(apiCalypse: APICalypse, result: @escaping ([Proto_Region]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .REGIONS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_RegionResult(serializedData: bytes).regions
             result(objects)
         }, errorResponse: errorResponse)
     }
