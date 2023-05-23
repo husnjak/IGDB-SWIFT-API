@@ -38,7 +38,7 @@ class TestCount: XCTestCase {
         }) { (RequestException) -> (Void) in
             XCTAssert(false)
         }
-        waitForExpectations(timeout: 5, handler: nil)
+        waitForExpectations(timeout: 30, handler: nil)
     }
 
 }
