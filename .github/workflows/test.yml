@@ -28,3 +28,5 @@ jobs:
         client_id: "${{ secrets.CLIENT_ID }}"
         client_secret: "{{ secrets.CLIENT_SECRET }}"
         access_token: "{{ secrets.BEARER }}"
+        proxy_url: "{{ secrets.PROXY_URL }}"
+        proxy_api_key: "{{ secrets.PROXY_API_KEY }}"
