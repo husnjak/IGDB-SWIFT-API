@@ -23,4 +23,4 @@ jobs:
       env:
         client_id: "${{ secrets.CLIENT_ID }}"
         client_secret: "{{ secrets.CLIENT_SECRET }}"
-        bearer: "{{ secrets.BEARER }}"
+        access_token: "{{ secrets.BEARER }}"
