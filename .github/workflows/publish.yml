@@ -1,0 +1,27 @@
+name: Publish Package
+
+on:
+  workflow_dispatch:
+    inputs:
+      packagePrefix:
+        required: true
+        default: 'SNAPSHOT'
+        description: "Packages require a package version, Keep SNAPSHOT for snapshot upload. Replace SNAPSHOT for a staging deploy."
+    release: 
+      types:
+        - created
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install Cocoapods
+        run: gem install cocoapods
+      - name: Deploy to Cocoapods
+        run: |
+          set -eo pipefail
+          pod lib lint --allow-warnings
+          pod trunk push --allow-warnings
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.TRUNK_TOKEN }}
