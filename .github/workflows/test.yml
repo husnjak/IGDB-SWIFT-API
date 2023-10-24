@@ -11,8 +11,6 @@ jobs:
     environment: apitesting
     steps:
     - uses: actions/checkout@v3
-    - name: Install Protoc
-      uses: arduino/setup-protoc@v2
     - name: Build
       run: swift build
     - name: Run tests
