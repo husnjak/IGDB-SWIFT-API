@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'IGDB-SWIFT-API'
-  s.version               =  ENV['LIB_VERSION'] || '4.3-alpha'
+  s.version               =  ENV['LIB_VERSION'] || '0.4.3-alpha'
   s.summary               = 'Wrapper for IGDBs API written in Swift.'
   s.description           = "A Swift wrapper for the IGDB.com Free Video Game Database API."
   s.documentation_url     = "https://api-docs.igdb.com"
