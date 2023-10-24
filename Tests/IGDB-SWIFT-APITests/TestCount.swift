@@ -19,6 +19,7 @@ class TestCount: XCTestCase {
         let expectation = self.expectation(description: "API Games Count request")
         
         wrapper.apiProtoCountRequest(endpoint: .GAMES, apicalypseQuery: "", dataResponse: { bytes -> (Void) in
+            print(bytes)
             let count = try! Proto_Count(serializedData: bytes).count
             XCTAssert(count > 0)
             
@@ -31,9 +32,10 @@ class TestCount: XCTestCase {
     }
     
     func testJsonCount() {
-        let expectation = self.expectation(description: "API Request")
+        let expectation = self.expectation(description: "API Games Count JSON request")
         
         wrapper.apiJsonCountRequest(endpoint: .GAMES, apicalypseQuery: "", dataResponse: { count -> (Void) in
+            print(count)
             XCTAssert(!count.isEmpty)
             expectation.fulfill()
         }) { (RequestException) -> (Void) in
