@@ -50,7 +50,7 @@ public class APICalypse {
     }
     
     public func `where`(query: String) -> APICalypse {
-        if query.contains("where") || query.contains("w") {
+        if query.starts(with: "where") || query.starts(with: "w") {
             self._where = query
         } else {
             if query.contains(";") {

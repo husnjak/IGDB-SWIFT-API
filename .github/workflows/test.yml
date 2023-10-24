@@ -1,13 +1,9 @@
 # This workflow will build a Swift project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
 
-name: Swift
+name: Build & Test
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
   build:
@@ -18,10 +14,10 @@ jobs:
     - name: Build
       run: swift build
     - name: Run tests
-      run: swift test -v
+      run: swift test
       env:
         client_id: "${{ secrets.CLIENT_ID }}"
-        client_secret: "{{ secrets.CLIENT_SECRET }}"
-        access_token: "{{ secrets.BEARER }}"
-        proxy_url: "{{ secrets.PROXY_URL }}"
-        proxy_api_key: "{{ secrets.PROXY_API_KEY }}"
+        client_secret: "${{ secrets.CLIENT_SECRET }}"
+        access_token: "${{ secrets.BEARER_TOKEN }}"
+        proxy_url: "${{ secrets.PROXY_URL }}"
+        proxy_api_key: "${{ secrets.PROXY_API_KEY }}"

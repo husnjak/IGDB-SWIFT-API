@@ -30,7 +30,7 @@ class TestCount: XCTestCase {
     }
     
     func testJsonCount() {
-        let expectation = self.expectation(description: "API Request")
+        let expectation = self.expectation(description: "API Games Count JSON request")
         
         wrapper.apiJsonCountRequest(endpoint: .GAMES, apicalypseQuery: "", dataResponse: { count -> (Void) in
             XCTAssert(!count.isEmpty)
@@ -38,7 +38,7 @@ class TestCount: XCTestCase {
         }) { (RequestException) -> (Void) in
             XCTAssert(false)
         }
-        waitForExpectations(timeout: 30, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
 }

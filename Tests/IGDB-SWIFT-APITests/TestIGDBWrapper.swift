@@ -82,5 +82,19 @@ class TestIGDBWrapper: XCTestCase {
         }
         waitForExpectations(timeout: 5, handler: nil)
     }
+    
+    func testStringFilter() {
+        let query = APICalypse()
+            .fields(fields: "id, name, category")
+            .where(query: "name = \"w\";")
+            .limit(value: 50)
+        let expectation = self.expectation(description: "API Request")
+        wrapper.games(apiCalypse: query, result: { games in
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
 
 }

@@ -14,14 +14,26 @@ on:
 jobs:
   build:
     runs-on: macos-latest
+    environment: apitesting
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Install Cocoapods
         run: gem install cocoapods
-      - name: Deploy to Cocoapods
+      - if: github.event.release.tag_name == ''
+        name: Deploy to Cocoapods Custom
         run: |
           set -eo pipefail
           pod lib lint --allow-warnings
           pod trunk push --allow-warnings
         env:
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.TRUNK_TOKEN }}
+          COCOAPODS_TRUNK_TOKEN: "${{ secrets.TRUNK_TOKEN }}"
+          LIB_VERSION: "${{ github.event.inputs.packagePrefix }}"
+      - if: github.event.inputs.packagePrefix == ''
+        name: Deploy to Cocoapods Release
+        run: |
+          set -eo pipefail
+          pod lib lint --allow-warnings
+          pod trunk push --allow-warnings
+        env:
+          COCOAPODS_TRUNK_TOKEN: "${{ secrets.TRUNK_TOKEN }}"
+          LIB_VERSION: "${{ github.event.release.tag_name }}"
