@@ -25,8 +25,8 @@ jobs:
           pod lib lint --allow-warnings
           pod trunk push --allow-warnings
         env:
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.TRUNK_TOKEN }}
-          LIB_VERSION: ${{ github.events.inputs.packagePrefix }}
+          COCOAPODS_TRUNK_TOKEN: "${{ secrets.TRUNK_TOKEN }}"
+          LIB_VERSION: "${{ github.event.inputs.packagePrefix }}"
       - if: github.event.inputs.packagePrefix == ''
         name: Deploy to Cocoapods
         run: |
@@ -34,5 +34,5 @@ jobs:
           pod lib lint --allow-warnings
           pod trunk push --allow-warnings
         env:
-          COCOAPODS_TRUNK_TOKEN: ${{ secrets.TRUNK_TOKEN }}
-          LIB_VERSION: ${{ github.event.release.tag_name }}
+          COCOAPODS_TRUNK_TOKEN: "${{ secrets.TRUNK_TOKEN }}"
+          LIB_VERSION: "${{ github.event.release.tag_name }}"
