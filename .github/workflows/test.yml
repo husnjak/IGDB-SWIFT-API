@@ -14,7 +14,7 @@ jobs:
     - name: Build
       run: swift build
     - name: Run tests
-      run: swift test --skip TestCount
+      run: swift test
       env:
         client_id: "${{ secrets.CLIENT_ID }}"
         client_secret: "{{ secrets.CLIENT_SECRET }}"
