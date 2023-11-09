@@ -20,8 +20,8 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
   typealias Version = _3
 }
 
-enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case ageratingCategoryNull // = 0
   case esrb // = 1
   case pegi // = 2
@@ -32,11 +32,11 @@ enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
   case acb // = 7
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .ageratingCategoryNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .ageratingCategoryNull
     case 1: self = .esrb
@@ -50,7 +50,7 @@ enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .ageratingCategoryNull: return 0
     case .esrb: return 1
@@ -65,7 +65,7 @@ enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_AgeRatingCategoryEnum] = [
+  public static let allCases: [Proto_AgeRatingCategoryEnum] = [
     .ageratingCategoryNull,
     .esrb,
     .pegi,
@@ -78,8 +78,8 @@ enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case ageratingRatingNull // = 0
   case three // = 1
   case seven // = 2
@@ -122,11 +122,11 @@ enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
   case acbRc // = 39
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .ageratingRatingNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .ageratingRatingNull
     case 1: self = .three
@@ -172,7 +172,7 @@ enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .ageratingRatingNull: return 0
     case .three: return 1
@@ -219,7 +219,7 @@ enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_AgeRatingRatingEnum] = [
+  public static let allCases: [Proto_AgeRatingRatingEnum] = [
     .ageratingRatingNull,
     .three,
     .seven,
@@ -264,8 +264,8 @@ enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case ageratingcontentdescriptionCategoryNull // = 0
   case esrbAlcoholReference // = 1
   case esrbAnimatedBlood // = 2
@@ -354,11 +354,11 @@ enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
   case classIndAtosCriminosos // = 85
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .ageratingcontentdescriptionCategoryNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .ageratingcontentdescriptionCategoryNull
     case 1: self = .esrbAlcoholReference
@@ -450,7 +450,7 @@ enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .ageratingcontentdescriptionCategoryNull: return 0
     case .esrbAlcoholReference: return 1
@@ -543,7 +543,7 @@ enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_AgeRatingContentDescriptionCategoryEnum] = [
+  public static let allCases: [Proto_AgeRatingContentDescriptionCategoryEnum] = [
     .ageratingcontentdescriptionCategoryNull,
     .esrbAlcoholReference,
     .esrbAnimatedBlood,
@@ -634,18 +634,18 @@ enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_GenderGenderEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_GenderGenderEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case male // = 0
   case female // = 1
   case other // = 2
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .male
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .male
     case 1: self = .female
@@ -654,7 +654,7 @@ enum Proto_GenderGenderEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .male: return 0
     case .female: return 1
@@ -664,7 +664,7 @@ enum Proto_GenderGenderEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_GenderGenderEnum] = [
+  public static let allCases: [Proto_GenderGenderEnum] = [
     .male,
     .female,
     .other,
@@ -672,8 +672,8 @@ enum Proto_GenderGenderEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case characterSpeciesNull // = 0
   case human // = 1
   case alien // = 2
@@ -682,11 +682,11 @@ enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
   case unknown // = 5
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .characterSpeciesNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .characterSpeciesNull
     case 1: self = .human
@@ -698,7 +698,7 @@ enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .characterSpeciesNull: return 0
     case .human: return 1
@@ -711,7 +711,7 @@ enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_CharacterSpeciesEnum] = [
+  public static let allCases: [Proto_CharacterSpeciesEnum] = [
     .characterSpeciesNull,
     .human,
     .alien,
@@ -722,8 +722,8 @@ enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case yyyymmmmdd // = 0
   case yyyymmmm // = 1
   case yyyy // = 2
@@ -734,11 +734,11 @@ enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
   case tbd // = 7
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .yyyymmmmdd
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .yyyymmmmdd
     case 1: self = .yyyymmmm
@@ -752,7 +752,7 @@ enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .yyyymmmmdd: return 0
     case .yyyymmmm: return 1
@@ -767,7 +767,7 @@ enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_DateFormatChangeDateCategoryEnum] = [
+  public static let allCases: [Proto_DateFormatChangeDateCategoryEnum] = [
     .yyyymmmmdd,
     .yyyymmmm,
     .yyyy,
@@ -780,8 +780,8 @@ enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case websiteCategoryNull // = 0
   case websiteOfficial // = 1
   case websiteWikia // = 2
@@ -802,11 +802,11 @@ enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
   case websiteDiscord // = 18
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .websiteCategoryNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .websiteCategoryNull
     case 1: self = .websiteOfficial
@@ -830,7 +830,7 @@ enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .websiteCategoryNull: return 0
     case .websiteOfficial: return 1
@@ -855,7 +855,7 @@ enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_WebsiteCategoryEnum] = [
+  public static let allCases: [Proto_WebsiteCategoryEnum] = [
     .websiteCategoryNull,
     .websiteOfficial,
     .websiteWikia,
@@ -878,8 +878,8 @@ enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case externalgameCategoryNull // = 0
   case externalgameSteam // = 1
   case externalgameGog // = 5
@@ -903,11 +903,11 @@ enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
   case externalgameGamejolt // = 55
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .externalgameCategoryNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .externalgameCategoryNull
     case 1: self = .externalgameSteam
@@ -934,7 +934,7 @@ enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .externalgameCategoryNull: return 0
     case .externalgameSteam: return 1
@@ -962,7 +962,7 @@ enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_ExternalGameCategoryEnum] = [
+  public static let allCases: [Proto_ExternalGameCategoryEnum] = [
     .externalgameCategoryNull,
     .externalgameSteam,
     .externalgameGog,
@@ -988,18 +988,18 @@ enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_ExternalGameMediaEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_ExternalGameMediaEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case externalgameMediaNull // = 0
   case externalgameDigital // = 1
   case externalgamePhysical // = 2
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .externalgameMediaNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .externalgameMediaNull
     case 1: self = .externalgameDigital
@@ -1008,7 +1008,7 @@ enum Proto_ExternalGameMediaEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .externalgameMediaNull: return 0
     case .externalgameDigital: return 1
@@ -1018,7 +1018,7 @@ enum Proto_ExternalGameMediaEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_ExternalGameMediaEnum] = [
+  public static let allCases: [Proto_ExternalGameMediaEnum] = [
     .externalgameMediaNull,
     .externalgameDigital,
     .externalgamePhysical,
@@ -1026,8 +1026,8 @@ enum Proto_ExternalGameMediaEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case mainGame // = 0
   case dlcAddon // = 1
   case expansion // = 2
@@ -1045,11 +1045,11 @@ enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
   case update // = 14
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .mainGame
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .mainGame
     case 1: self = .dlcAddon
@@ -1070,7 +1070,7 @@ enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .mainGame: return 0
     case .dlcAddon: return 1
@@ -1092,7 +1092,7 @@ enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_GameCategoryEnum] = [
+  public static let allCases: [Proto_GameCategoryEnum] = [
     .mainGame,
     .dlcAddon,
     .expansion,
@@ -1112,8 +1112,8 @@ enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case released // = 0
   case alpha // = 2
   case beta // = 3
@@ -1124,11 +1124,11 @@ enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
   case delisted // = 8
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .released
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .released
     case 2: self = .alpha
@@ -1142,7 +1142,7 @@ enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .released: return 0
     case .alpha: return 2
@@ -1157,7 +1157,7 @@ enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_GameStatusEnum] = [
+  public static let allCases: [Proto_GameStatusEnum] = [
     .released,
     .alpha,
     .beta,
@@ -1170,17 +1170,17 @@ enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_GameVersionFeatureCategoryEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_GameVersionFeatureCategoryEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case boolean // = 0
   case description_ // = 1
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .boolean
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .boolean
     case 1: self = .description_
@@ -1188,7 +1188,7 @@ enum Proto_GameVersionFeatureCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .boolean: return 0
     case .description_: return 1
@@ -1197,25 +1197,25 @@ enum Proto_GameVersionFeatureCategoryEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_GameVersionFeatureCategoryEnum] = [
+  public static let allCases: [Proto_GameVersionFeatureCategoryEnum] = [
     .boolean,
     .description_,
   ]
 
 }
 
-enum Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case notIncluded // = 0
   case included // = 1
   case preOrderOnly // = 2
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .notIncluded
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .notIncluded
     case 1: self = .included
@@ -1224,7 +1224,7 @@ enum Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .notIncluded: return 0
     case .included: return 1
@@ -1234,7 +1234,7 @@ enum Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_GameVersionFeatureValueIncludedFeatureEnum] = [
+  public static let allCases: [Proto_GameVersionFeatureValueIncludedFeatureEnum] = [
     .notIncluded,
     .included,
     .preOrderOnly,
@@ -1242,8 +1242,8 @@ enum Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case platformCategoryNull // = 0
   case console // = 1
   case arcade // = 2
@@ -1253,11 +1253,11 @@ enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
   case computer // = 6
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .platformCategoryNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .platformCategoryNull
     case 1: self = .console
@@ -1270,7 +1270,7 @@ enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .platformCategoryNull: return 0
     case .console: return 1
@@ -1284,7 +1284,7 @@ enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_PlatformCategoryEnum] = [
+  public static let allCases: [Proto_PlatformCategoryEnum] = [
     .platformCategoryNull,
     .console,
     .arcade,
@@ -1296,8 +1296,8 @@ enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case regionRegionNull // = 0
   case europe // = 1
   case northAmerica // = 2
@@ -1311,11 +1311,11 @@ enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
   case brazil // = 10
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .regionRegionNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .regionRegionNull
     case 1: self = .europe
@@ -1332,7 +1332,7 @@ enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .regionRegionNull: return 0
     case .europe: return 1
@@ -1350,7 +1350,7 @@ enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_RegionRegionEnum] = [
+  public static let allCases: [Proto_RegionRegionEnum] = [
     .regionRegionNull,
     .europe,
     .northAmerica,
@@ -1366,18 +1366,18 @@ enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
 
 }
 
-enum Proto_TestDummyEnumTestEnum: SwiftProtobuf.Enum {
-  typealias RawValue = Int
+public enum Proto_TestDummyEnumTestEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
   case testdummyEnumTestNull // = 0
   case enum1 // = 1
   case enum2 // = 2
   case UNRECOGNIZED(Int)
 
-  init() {
+  public init() {
     self = .testdummyEnumTestNull
   }
 
-  init?(rawValue: Int) {
+  public init?(rawValue: Int) {
     switch rawValue {
     case 0: self = .testdummyEnumTestNull
     case 1: self = .enum1
@@ -1386,7 +1386,7 @@ enum Proto_TestDummyEnumTestEnum: SwiftProtobuf.Enum {
     }
   }
 
-  var rawValue: Int {
+  public var rawValue: Int {
     switch self {
     case .testdummyEnumTestNull: return 0
     case .enum1: return 1
@@ -1396,7 +1396,7 @@ enum Proto_TestDummyEnumTestEnum: SwiftProtobuf.Enum {
   }
 
   // The compiler won't synthesize support with the UNRECOGNIZED case.
-  static let allCases: [Proto_TestDummyEnumTestEnum] = [
+  public static let allCases: [Proto_TestDummyEnumTestEnum] = [
     .testdummyEnumTestNull,
     .enum1,
     .enum2,
@@ -1404,646 +1404,646 @@ enum Proto_TestDummyEnumTestEnum: SwiftProtobuf.Enum {
 
 }
 
-struct Proto_Count: Sendable {
+public struct Proto_Count: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var count: Int64 = 0
+  public var count: Int64 = 0
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_MultiQueryResult: @unchecked Sendable {
+public struct Proto_MultiQueryResult: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var name: String = String()
+  public var name: String = String()
 
-  var results: [Data] = []
+  public var results: [Data] = []
 
-  var count: Int64 = 0
+  public var count: Int64 = 0
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_MultiQueryResultArray: Sendable {
+public struct Proto_MultiQueryResultArray: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var result: [Proto_MultiQueryResult] = []
+  public var result: [Proto_MultiQueryResult] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_AgeRatingResult: Sendable {
+public struct Proto_AgeRatingResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var ageratings: [Proto_AgeRating] = []
+  public var ageratings: [Proto_AgeRating] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_AgeRating: Sendable {
+public struct Proto_AgeRating: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var category: Proto_AgeRatingCategoryEnum = .ageratingCategoryNull
+  public var category: Proto_AgeRatingCategoryEnum = .ageratingCategoryNull
 
-  var contentDescriptions: [Proto_AgeRatingContentDescription] = []
+  public var contentDescriptions: [Proto_AgeRatingContentDescription] = []
 
-  var rating: Proto_AgeRatingRatingEnum = .ageratingRatingNull
+  public var rating: Proto_AgeRatingRatingEnum = .ageratingRatingNull
 
-  var ratingCoverURL: String = String()
+  public var ratingCoverURL: String = String()
 
-  var synopsis: String = String()
+  public var synopsis: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_AgeRatingContentDescriptionResult: Sendable {
+public struct Proto_AgeRatingContentDescriptionResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var ageratingcontentdescriptions: [Proto_AgeRatingContentDescription] = []
+  public var ageratingcontentdescriptions: [Proto_AgeRatingContentDescription] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_AgeRatingContentDescription: Sendable {
+public struct Proto_AgeRatingContentDescription: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var category: Proto_AgeRatingContentDescriptionCategoryEnum = .ageratingcontentdescriptionCategoryNull
+  public var category: Proto_AgeRatingContentDescriptionCategoryEnum = .ageratingcontentdescriptionCategoryNull
 
-  var description_p: String = String()
+  public var description_p: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_AlternativeNameResult: Sendable {
+public struct Proto_AlternativeNameResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var alternativenames: [Proto_AlternativeName] = []
+  public var alternativenames: [Proto_AlternativeName] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_AlternativeName: Sendable {
+public struct Proto_AlternativeName: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var comment: String = String()
+  public var comment: String = String()
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var name: String = String()
+  public var name: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _game: Proto_Game? = nil
 }
 
-struct Proto_ArtworkResult: Sendable {
+public struct Proto_ArtworkResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var artworks: [Proto_Artwork] = []
+  public var artworks: [Proto_Artwork] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Artwork: Sendable {
+public struct Proto_Artwork: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var alphaChannel: Bool = false
+  public var alphaChannel: Bool = false
 
-  var animated: Bool = false
+  public var animated: Bool = false
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var height: Int32 = 0
+  public var height: Int32 = 0
 
-  var imageID: String = String()
+  public var imageID: String = String()
 
-  var url: String = String()
+  public var url: String = String()
 
-  var width: Int32 = 0
+  public var width: Int32 = 0
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _game: Proto_Game? = nil
 }
 
-struct Proto_CharacterResult: Sendable {
+public struct Proto_CharacterResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var characters: [Proto_Character] = []
+  public var characters: [Proto_Character] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Character: @unchecked Sendable {
+public struct Proto_Character: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var akas: [String] {
+  public var akas: [String] {
     get {return _storage._akas}
     set {_uniqueStorage()._akas = newValue}
   }
 
-  var countryName: String {
+  public var countryName: String {
     get {return _storage._countryName}
     set {_uniqueStorage()._countryName = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var description_p: String {
+  public var description_p: String {
     get {return _storage._description_p}
     set {_uniqueStorage()._description_p = newValue}
   }
 
-  var games: [Proto_Game] {
+  public var games: [Proto_Game] {
     get {return _storage._games}
     set {_uniqueStorage()._games = newValue}
   }
 
-  var gender: Proto_GenderGenderEnum {
+  public var gender: Proto_GenderGenderEnum {
     get {return _storage._gender}
     set {_uniqueStorage()._gender = newValue}
   }
 
-  var mugShot: Proto_CharacterMugShot {
+  public var mugShot: Proto_CharacterMugShot {
     get {return _storage._mugShot ?? Proto_CharacterMugShot()}
     set {_uniqueStorage()._mugShot = newValue}
   }
   /// Returns true if `mugShot` has been explicitly set.
-  var hasMugShot: Bool {return _storage._mugShot != nil}
+  public var hasMugShot: Bool {return _storage._mugShot != nil}
   /// Clears the value of `mugShot`. Subsequent reads from it will return its default value.
-  mutating func clearMugShot() {_uniqueStorage()._mugShot = nil}
+  public mutating func clearMugShot() {_uniqueStorage()._mugShot = nil}
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var species: Proto_CharacterSpeciesEnum {
+  public var species: Proto_CharacterSpeciesEnum {
     get {return _storage._species}
     set {_uniqueStorage()._species = newValue}
   }
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_CharacterMugShotResult: Sendable {
+public struct Proto_CharacterMugShotResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var charactermugshots: [Proto_CharacterMugShot] = []
+  public var charactermugshots: [Proto_CharacterMugShot] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CharacterMugShot: Sendable {
+public struct Proto_CharacterMugShot: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var alphaChannel: Bool = false
+  public var alphaChannel: Bool = false
 
-  var animated: Bool = false
+  public var animated: Bool = false
 
-  var height: Int32 = 0
+  public var height: Int32 = 0
 
-  var imageID: String = String()
+  public var imageID: String = String()
 
-  var url: String = String()
+  public var url: String = String()
 
-  var width: Int32 = 0
+  public var width: Int32 = 0
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CollectionResult: Sendable {
+public struct Proto_CollectionResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var collections: [Proto_Collection] = []
+  public var collections: [Proto_Collection] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Collection: @unchecked Sendable {
+public struct Proto_Collection: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var games: [Proto_Game] {
+  public var games: [Proto_Game] {
     get {return _storage._games}
     set {_uniqueStorage()._games = newValue}
   }
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var type: Proto_CollectionType {
+  public var type: Proto_CollectionType {
     get {return _storage._type ?? Proto_CollectionType()}
     set {_uniqueStorage()._type = newValue}
   }
   /// Returns true if `type` has been explicitly set.
-  var hasType: Bool {return _storage._type != nil}
+  public var hasType: Bool {return _storage._type != nil}
   /// Clears the value of `type`. Subsequent reads from it will return its default value.
-  mutating func clearType() {_uniqueStorage()._type = nil}
+  public mutating func clearType() {_uniqueStorage()._type = nil}
 
-  var asParentRelations: [Proto_CollectionRelation] {
+  public var asParentRelations: [Proto_CollectionRelation] {
     get {return _storage._asParentRelations}
     set {_uniqueStorage()._asParentRelations = newValue}
   }
 
-  var asChildRelations: [Proto_CollectionRelation] {
+  public var asChildRelations: [Proto_CollectionRelation] {
     get {return _storage._asChildRelations}
     set {_uniqueStorage()._asChildRelations = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_CollectionMembershipResult: Sendable {
+public struct Proto_CollectionMembershipResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var collectionmemberships: [Proto_CollectionMembership] = []
+  public var collectionmemberships: [Proto_CollectionMembership] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CollectionMembership: @unchecked Sendable {
+public struct Proto_CollectionMembership: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _storage._game ?? Proto_Game()}
     set {_uniqueStorage()._game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return _storage._game != nil}
+  public var hasGame: Bool {return _storage._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {_uniqueStorage()._game = nil}
+  public mutating func clearGame() {_uniqueStorage()._game = nil}
 
-  var collection: Proto_Collection {
+  public var collection: Proto_Collection {
     get {return _storage._collection ?? Proto_Collection()}
     set {_uniqueStorage()._collection = newValue}
   }
   /// Returns true if `collection` has been explicitly set.
-  var hasCollection: Bool {return _storage._collection != nil}
+  public var hasCollection: Bool {return _storage._collection != nil}
   /// Clears the value of `collection`. Subsequent reads from it will return its default value.
-  mutating func clearCollection() {_uniqueStorage()._collection = nil}
+  public mutating func clearCollection() {_uniqueStorage()._collection = nil}
 
-  var type: Proto_CollectionMembershipType {
+  public var type: Proto_CollectionMembershipType {
     get {return _storage._type ?? Proto_CollectionMembershipType()}
     set {_uniqueStorage()._type = newValue}
   }
   /// Returns true if `type` has been explicitly set.
-  var hasType: Bool {return _storage._type != nil}
+  public var hasType: Bool {return _storage._type != nil}
   /// Clears the value of `type`. Subsequent reads from it will return its default value.
-  mutating func clearType() {_uniqueStorage()._type = nil}
+  public mutating func clearType() {_uniqueStorage()._type = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_CollectionMembershipTypeResult: Sendable {
+public struct Proto_CollectionMembershipTypeResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var collectionmembershiptypes: [Proto_CollectionMembershipType] = []
+  public var collectionmembershiptypes: [Proto_CollectionMembershipType] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CollectionMembershipType: Sendable {
+public struct Proto_CollectionMembershipType: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var name: String = String()
+  public var name: String = String()
 
-  var description_p: String = String()
+  public var description_p: String = String()
 
-  var allowedCollectionType: Proto_CollectionType {
+  public var allowedCollectionType: Proto_CollectionType {
     get {return _allowedCollectionType ?? Proto_CollectionType()}
     set {_allowedCollectionType = newValue}
   }
   /// Returns true if `allowedCollectionType` has been explicitly set.
-  var hasAllowedCollectionType: Bool {return self._allowedCollectionType != nil}
+  public var hasAllowedCollectionType: Bool {return self._allowedCollectionType != nil}
   /// Clears the value of `allowedCollectionType`. Subsequent reads from it will return its default value.
-  mutating func clearAllowedCollectionType() {self._allowedCollectionType = nil}
+  public mutating func clearAllowedCollectionType() {self._allowedCollectionType = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _allowedCollectionType: Proto_CollectionType? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_CollectionRelationResult: Sendable {
+public struct Proto_CollectionRelationResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var collectionrelations: [Proto_CollectionRelation] = []
+  public var collectionrelations: [Proto_CollectionRelation] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CollectionRelation: Sendable {
+public struct Proto_CollectionRelation: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var childCollection: Proto_Collection {
+  public var childCollection: Proto_Collection {
     get {return _childCollection ?? Proto_Collection()}
     set {_childCollection = newValue}
   }
   /// Returns true if `childCollection` has been explicitly set.
-  var hasChildCollection: Bool {return self._childCollection != nil}
+  public var hasChildCollection: Bool {return self._childCollection != nil}
   /// Clears the value of `childCollection`. Subsequent reads from it will return its default value.
-  mutating func clearChildCollection() {self._childCollection = nil}
+  public mutating func clearChildCollection() {self._childCollection = nil}
 
-  var parentCollection: Proto_Collection {
+  public var parentCollection: Proto_Collection {
     get {return _parentCollection ?? Proto_Collection()}
     set {_parentCollection = newValue}
   }
   /// Returns true if `parentCollection` has been explicitly set.
-  var hasParentCollection: Bool {return self._parentCollection != nil}
+  public var hasParentCollection: Bool {return self._parentCollection != nil}
   /// Clears the value of `parentCollection`. Subsequent reads from it will return its default value.
-  mutating func clearParentCollection() {self._parentCollection = nil}
+  public mutating func clearParentCollection() {self._parentCollection = nil}
 
-  var type: Proto_CollectionRelationType {
+  public var type: Proto_CollectionRelationType {
     get {return _type ?? Proto_CollectionRelationType()}
     set {_type = newValue}
   }
   /// Returns true if `type` has been explicitly set.
-  var hasType: Bool {return self._type != nil}
+  public var hasType: Bool {return self._type != nil}
   /// Clears the value of `type`. Subsequent reads from it will return its default value.
-  mutating func clearType() {self._type = nil}
+  public mutating func clearType() {self._type = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _childCollection: Proto_Collection? = nil
   fileprivate var _parentCollection: Proto_Collection? = nil
@@ -2052,708 +2052,708 @@ struct Proto_CollectionRelation: Sendable {
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_CollectionRelationTypeResult: Sendable {
+public struct Proto_CollectionRelationTypeResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var collectionrelationtypes: [Proto_CollectionRelationType] = []
+  public var collectionrelationtypes: [Proto_CollectionRelationType] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CollectionRelationType: @unchecked Sendable {
+public struct Proto_CollectionRelationType: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var description_p: String {
+  public var description_p: String {
     get {return _storage._description_p}
     set {_uniqueStorage()._description_p = newValue}
   }
 
-  var allowedChildType: Proto_CollectionType {
+  public var allowedChildType: Proto_CollectionType {
     get {return _storage._allowedChildType ?? Proto_CollectionType()}
     set {_uniqueStorage()._allowedChildType = newValue}
   }
   /// Returns true if `allowedChildType` has been explicitly set.
-  var hasAllowedChildType: Bool {return _storage._allowedChildType != nil}
+  public var hasAllowedChildType: Bool {return _storage._allowedChildType != nil}
   /// Clears the value of `allowedChildType`. Subsequent reads from it will return its default value.
-  mutating func clearAllowedChildType() {_uniqueStorage()._allowedChildType = nil}
+  public mutating func clearAllowedChildType() {_uniqueStorage()._allowedChildType = nil}
 
-  var allowedParentType: Proto_CollectionType {
+  public var allowedParentType: Proto_CollectionType {
     get {return _storage._allowedParentType ?? Proto_CollectionType()}
     set {_uniqueStorage()._allowedParentType = newValue}
   }
   /// Returns true if `allowedParentType` has been explicitly set.
-  var hasAllowedParentType: Bool {return _storage._allowedParentType != nil}
+  public var hasAllowedParentType: Bool {return _storage._allowedParentType != nil}
   /// Clears the value of `allowedParentType`. Subsequent reads from it will return its default value.
-  mutating func clearAllowedParentType() {_uniqueStorage()._allowedParentType = nil}
+  public mutating func clearAllowedParentType() {_uniqueStorage()._allowedParentType = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_CollectionTypeResult: Sendable {
+public struct Proto_CollectionTypeResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var collectiontypes: [Proto_CollectionType] = []
+  public var collectiontypes: [Proto_CollectionType] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CollectionType: Sendable {
+public struct Proto_CollectionType: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var name: String = String()
+  public var name: String = String()
 
-  var description_p: String = String()
+  public var description_p: String = String()
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_CompanyResult: Sendable {
+public struct Proto_CompanyResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var companies: [Proto_Company] = []
+  public var companies: [Proto_Company] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Company: @unchecked Sendable {
+public struct Proto_Company: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var changeDate: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var changeDate: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._changeDate ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._changeDate = newValue}
   }
   /// Returns true if `changeDate` has been explicitly set.
-  var hasChangeDate: Bool {return _storage._changeDate != nil}
+  public var hasChangeDate: Bool {return _storage._changeDate != nil}
   /// Clears the value of `changeDate`. Subsequent reads from it will return its default value.
-  mutating func clearChangeDate() {_uniqueStorage()._changeDate = nil}
+  public mutating func clearChangeDate() {_uniqueStorage()._changeDate = nil}
 
-  var changeDateCategory: Proto_DateFormatChangeDateCategoryEnum {
+  public var changeDateCategory: Proto_DateFormatChangeDateCategoryEnum {
     get {return _storage._changeDateCategory}
     set {_uniqueStorage()._changeDateCategory = newValue}
   }
 
-  var changedCompanyID: Proto_Company {
+  public var changedCompanyID: Proto_Company {
     get {return _storage._changedCompanyID ?? Proto_Company()}
     set {_uniqueStorage()._changedCompanyID = newValue}
   }
   /// Returns true if `changedCompanyID` has been explicitly set.
-  var hasChangedCompanyID: Bool {return _storage._changedCompanyID != nil}
+  public var hasChangedCompanyID: Bool {return _storage._changedCompanyID != nil}
   /// Clears the value of `changedCompanyID`. Subsequent reads from it will return its default value.
-  mutating func clearChangedCompanyID() {_uniqueStorage()._changedCompanyID = nil}
+  public mutating func clearChangedCompanyID() {_uniqueStorage()._changedCompanyID = nil}
 
-  var country: Int32 {
+  public var country: Int32 {
     get {return _storage._country}
     set {_uniqueStorage()._country = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var description_p: String {
+  public var description_p: String {
     get {return _storage._description_p}
     set {_uniqueStorage()._description_p = newValue}
   }
 
-  var developed: [Proto_Game] {
+  public var developed: [Proto_Game] {
     get {return _storage._developed}
     set {_uniqueStorage()._developed = newValue}
   }
 
-  var logo: Proto_CompanyLogo {
+  public var logo: Proto_CompanyLogo {
     get {return _storage._logo ?? Proto_CompanyLogo()}
     set {_uniqueStorage()._logo = newValue}
   }
   /// Returns true if `logo` has been explicitly set.
-  var hasLogo: Bool {return _storage._logo != nil}
+  public var hasLogo: Bool {return _storage._logo != nil}
   /// Clears the value of `logo`. Subsequent reads from it will return its default value.
-  mutating func clearLogo() {_uniqueStorage()._logo = nil}
+  public mutating func clearLogo() {_uniqueStorage()._logo = nil}
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var parent: Proto_Company {
+  public var parent: Proto_Company {
     get {return _storage._parent ?? Proto_Company()}
     set {_uniqueStorage()._parent = newValue}
   }
   /// Returns true if `parent` has been explicitly set.
-  var hasParent: Bool {return _storage._parent != nil}
+  public var hasParent: Bool {return _storage._parent != nil}
   /// Clears the value of `parent`. Subsequent reads from it will return its default value.
-  mutating func clearParent() {_uniqueStorage()._parent = nil}
+  public mutating func clearParent() {_uniqueStorage()._parent = nil}
 
-  var published: [Proto_Game] {
+  public var published: [Proto_Game] {
     get {return _storage._published}
     set {_uniqueStorage()._published = newValue}
   }
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var startDate: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var startDate: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._startDate ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._startDate = newValue}
   }
   /// Returns true if `startDate` has been explicitly set.
-  var hasStartDate: Bool {return _storage._startDate != nil}
+  public var hasStartDate: Bool {return _storage._startDate != nil}
   /// Clears the value of `startDate`. Subsequent reads from it will return its default value.
-  mutating func clearStartDate() {_uniqueStorage()._startDate = nil}
+  public mutating func clearStartDate() {_uniqueStorage()._startDate = nil}
 
-  var startDateCategory: Proto_DateFormatChangeDateCategoryEnum {
+  public var startDateCategory: Proto_DateFormatChangeDateCategoryEnum {
     get {return _storage._startDateCategory}
     set {_uniqueStorage()._startDateCategory = newValue}
   }
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var websites: [Proto_CompanyWebsite] {
+  public var websites: [Proto_CompanyWebsite] {
     get {return _storage._websites}
     set {_uniqueStorage()._websites = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_CompanyLogoResult: Sendable {
+public struct Proto_CompanyLogoResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var companylogos: [Proto_CompanyLogo] = []
+  public var companylogos: [Proto_CompanyLogo] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CompanyLogo: Sendable {
+public struct Proto_CompanyLogo: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var alphaChannel: Bool = false
+  public var alphaChannel: Bool = false
 
-  var animated: Bool = false
+  public var animated: Bool = false
 
-  var height: Int32 = 0
+  public var height: Int32 = 0
 
-  var imageID: String = String()
+  public var imageID: String = String()
 
-  var url: String = String()
+  public var url: String = String()
 
-  var width: Int32 = 0
+  public var width: Int32 = 0
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CompanyWebsiteResult: Sendable {
+public struct Proto_CompanyWebsiteResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var companywebsites: [Proto_CompanyWebsite] = []
+  public var companywebsites: [Proto_CompanyWebsite] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CompanyWebsite: Sendable {
+public struct Proto_CompanyWebsite: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var category: Proto_WebsiteCategoryEnum = .websiteCategoryNull
+  public var category: Proto_WebsiteCategoryEnum = .websiteCategoryNull
 
-  var trusted: Bool = false
+  public var trusted: Bool = false
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_CoverResult: Sendable {
+public struct Proto_CoverResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var covers: [Proto_Cover] = []
+  public var covers: [Proto_Cover] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Cover: @unchecked Sendable {
+public struct Proto_Cover: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var alphaChannel: Bool {
+  public var alphaChannel: Bool {
     get {return _storage._alphaChannel}
     set {_uniqueStorage()._alphaChannel = newValue}
   }
 
-  var animated: Bool {
+  public var animated: Bool {
     get {return _storage._animated}
     set {_uniqueStorage()._animated = newValue}
   }
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _storage._game ?? Proto_Game()}
     set {_uniqueStorage()._game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return _storage._game != nil}
+  public var hasGame: Bool {return _storage._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {_uniqueStorage()._game = nil}
+  public mutating func clearGame() {_uniqueStorage()._game = nil}
 
-  var height: Int32 {
+  public var height: Int32 {
     get {return _storage._height}
     set {_uniqueStorage()._height = newValue}
   }
 
-  var imageID: String {
+  public var imageID: String {
     get {return _storage._imageID}
     set {_uniqueStorage()._imageID = newValue}
   }
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var width: Int32 {
+  public var width: Int32 {
     get {return _storage._width}
     set {_uniqueStorage()._width = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var gameLocalization: Proto_GameLocalization {
+  public var gameLocalization: Proto_GameLocalization {
     get {return _storage._gameLocalization ?? Proto_GameLocalization()}
     set {_uniqueStorage()._gameLocalization = newValue}
   }
   /// Returns true if `gameLocalization` has been explicitly set.
-  var hasGameLocalization: Bool {return _storage._gameLocalization != nil}
+  public var hasGameLocalization: Bool {return _storage._gameLocalization != nil}
   /// Clears the value of `gameLocalization`. Subsequent reads from it will return its default value.
-  mutating func clearGameLocalization() {_uniqueStorage()._gameLocalization = nil}
+  public mutating func clearGameLocalization() {_uniqueStorage()._gameLocalization = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_EventResult: Sendable {
+public struct Proto_EventResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var events: [Proto_Event] = []
+  public var events: [Proto_Event] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Event: @unchecked Sendable {
+public struct Proto_Event: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var description_p: String {
+  public var description_p: String {
     get {return _storage._description_p}
     set {_uniqueStorage()._description_p = newValue}
   }
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var eventLogo: Proto_EventLogo {
+  public var eventLogo: Proto_EventLogo {
     get {return _storage._eventLogo ?? Proto_EventLogo()}
     set {_uniqueStorage()._eventLogo = newValue}
   }
   /// Returns true if `eventLogo` has been explicitly set.
-  var hasEventLogo: Bool {return _storage._eventLogo != nil}
+  public var hasEventLogo: Bool {return _storage._eventLogo != nil}
   /// Clears the value of `eventLogo`. Subsequent reads from it will return its default value.
-  mutating func clearEventLogo() {_uniqueStorage()._eventLogo = nil}
+  public mutating func clearEventLogo() {_uniqueStorage()._eventLogo = nil}
 
-  var startTime: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var startTime: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._startTime ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._startTime = newValue}
   }
   /// Returns true if `startTime` has been explicitly set.
-  var hasStartTime: Bool {return _storage._startTime != nil}
+  public var hasStartTime: Bool {return _storage._startTime != nil}
   /// Clears the value of `startTime`. Subsequent reads from it will return its default value.
-  mutating func clearStartTime() {_uniqueStorage()._startTime = nil}
+  public mutating func clearStartTime() {_uniqueStorage()._startTime = nil}
 
-  var timeZone: String {
+  public var timeZone: String {
     get {return _storage._timeZone}
     set {_uniqueStorage()._timeZone = newValue}
   }
 
-  var endTime: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var endTime: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._endTime ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._endTime = newValue}
   }
   /// Returns true if `endTime` has been explicitly set.
-  var hasEndTime: Bool {return _storage._endTime != nil}
+  public var hasEndTime: Bool {return _storage._endTime != nil}
   /// Clears the value of `endTime`. Subsequent reads from it will return its default value.
-  mutating func clearEndTime() {_uniqueStorage()._endTime = nil}
+  public mutating func clearEndTime() {_uniqueStorage()._endTime = nil}
 
-  var liveStreamURL: String {
+  public var liveStreamURL: String {
     get {return _storage._liveStreamURL}
     set {_uniqueStorage()._liveStreamURL = newValue}
   }
 
-  var games: [Proto_Game] {
+  public var games: [Proto_Game] {
     get {return _storage._games}
     set {_uniqueStorage()._games = newValue}
   }
 
-  var videos: [Proto_GameVideo] {
+  public var videos: [Proto_GameVideo] {
     get {return _storage._videos}
     set {_uniqueStorage()._videos = newValue}
   }
 
-  var eventNetworks: [Proto_EventNetwork] {
+  public var eventNetworks: [Proto_EventNetwork] {
     get {return _storage._eventNetworks}
     set {_uniqueStorage()._eventNetworks = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_EventLogoResult: Sendable {
+public struct Proto_EventLogoResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var eventlogos: [Proto_EventLogo] = []
+  public var eventlogos: [Proto_EventLogo] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_EventLogo: @unchecked Sendable {
+public struct Proto_EventLogo: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var event: Proto_Event {
+  public var event: Proto_Event {
     get {return _storage._event ?? Proto_Event()}
     set {_uniqueStorage()._event = newValue}
   }
   /// Returns true if `event` has been explicitly set.
-  var hasEvent: Bool {return _storage._event != nil}
+  public var hasEvent: Bool {return _storage._event != nil}
   /// Clears the value of `event`. Subsequent reads from it will return its default value.
-  mutating func clearEvent() {_uniqueStorage()._event = nil}
+  public mutating func clearEvent() {_uniqueStorage()._event = nil}
 
-  var alphaChannel: Bool {
+  public var alphaChannel: Bool {
     get {return _storage._alphaChannel}
     set {_uniqueStorage()._alphaChannel = newValue}
   }
 
-  var animated: Bool {
+  public var animated: Bool {
     get {return _storage._animated}
     set {_uniqueStorage()._animated = newValue}
   }
 
-  var height: Int32 {
+  public var height: Int32 {
     get {return _storage._height}
     set {_uniqueStorage()._height = newValue}
   }
 
-  var imageID: String {
+  public var imageID: String {
     get {return _storage._imageID}
     set {_uniqueStorage()._imageID = newValue}
   }
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var width: Int32 {
+  public var width: Int32 {
     get {return _storage._width}
     set {_uniqueStorage()._width = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_EventNetworkResult: Sendable {
+public struct Proto_EventNetworkResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var eventnetworks: [Proto_EventNetwork] = []
+  public var eventnetworks: [Proto_EventNetwork] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_EventNetwork: Sendable {
+public struct Proto_EventNetwork: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var event: Proto_Event {
+  public var event: Proto_Event {
     get {return _event ?? Proto_Event()}
     set {_event = newValue}
   }
   /// Returns true if `event` has been explicitly set.
-  var hasEvent: Bool {return self._event != nil}
+  public var hasEvent: Bool {return self._event != nil}
   /// Clears the value of `event`. Subsequent reads from it will return its default value.
-  mutating func clearEvent() {self._event = nil}
+  public mutating func clearEvent() {self._event = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var networkType: Proto_NetworkType {
+  public var networkType: Proto_NetworkType {
     get {return _networkType ?? Proto_NetworkType()}
     set {_networkType = newValue}
   }
   /// Returns true if `networkType` has been explicitly set.
-  var hasNetworkType: Bool {return self._networkType != nil}
+  public var hasNetworkType: Bool {return self._networkType != nil}
   /// Clears the value of `networkType`. Subsequent reads from it will return its default value.
-  mutating func clearNetworkType() {self._networkType = nil}
+  public mutating func clearNetworkType() {self._networkType = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _event: Proto_Event? = nil
   fileprivate var _networkType: Proto_NetworkType? = nil
@@ -2761,80 +2761,80 @@ struct Proto_EventNetwork: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_ExternalGameResult: Sendable {
+public struct Proto_ExternalGameResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var externalgames: [Proto_ExternalGame] = []
+  public var externalgames: [Proto_ExternalGame] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_ExternalGame: Sendable {
+public struct Proto_ExternalGame: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var category: Proto_ExternalGameCategoryEnum = .externalgameCategoryNull
+  public var category: Proto_ExternalGameCategoryEnum = .externalgameCategoryNull
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var name: String = String()
+  public var name: String = String()
 
-  var uid: String = String()
+  public var uid: String = String()
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var year: Int32 = 0
+  public var year: Int32 = 0
 
-  var media: Proto_ExternalGameMediaEnum = .externalgameMediaNull
+  public var media: Proto_ExternalGameMediaEnum = .externalgameMediaNull
 
-  var platform: Proto_Platform {
+  public var platform: Proto_Platform {
     get {return _platform ?? Proto_Platform()}
     set {_platform = newValue}
   }
   /// Returns true if `platform` has been explicitly set.
-  var hasPlatform: Bool {return self._platform != nil}
+  public var hasPlatform: Bool {return self._platform != nil}
   /// Clears the value of `platform`. Subsequent reads from it will return its default value.
-  mutating func clearPlatform() {self._platform = nil}
+  public mutating func clearPlatform() {self._platform = nil}
 
-  var countries: [Int32] = []
+  public var countries: [Int32] = []
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _game: Proto_Game? = nil
@@ -2842,985 +2842,985 @@ struct Proto_ExternalGame: Sendable {
   fileprivate var _platform: Proto_Platform? = nil
 }
 
-struct Proto_FranchiseResult: Sendable {
+public struct Proto_FranchiseResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var franchises: [Proto_Franchise] = []
+  public var franchises: [Proto_Franchise] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Franchise: Sendable {
+public struct Proto_Franchise: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var games: [Proto_Game] = []
+  public var games: [Proto_Game] = []
 
-  var name: String = String()
+  public var name: String = String()
 
-  var slug: String = String()
+  public var slug: String = String()
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_GameResult: Sendable {
+public struct Proto_GameResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var games: [Proto_Game] = []
+  public var games: [Proto_Game] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Game: @unchecked Sendable {
+public struct Proto_Game: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var ageRatings: [Proto_AgeRating] {
+  public var ageRatings: [Proto_AgeRating] {
     get {return _storage._ageRatings}
     set {_uniqueStorage()._ageRatings = newValue}
   }
 
-  var aggregatedRating: Double {
+  public var aggregatedRating: Double {
     get {return _storage._aggregatedRating}
     set {_uniqueStorage()._aggregatedRating = newValue}
   }
 
-  var aggregatedRatingCount: Int32 {
+  public var aggregatedRatingCount: Int32 {
     get {return _storage._aggregatedRatingCount}
     set {_uniqueStorage()._aggregatedRatingCount = newValue}
   }
 
-  var alternativeNames: [Proto_AlternativeName] {
+  public var alternativeNames: [Proto_AlternativeName] {
     get {return _storage._alternativeNames}
     set {_uniqueStorage()._alternativeNames = newValue}
   }
 
-  var artworks: [Proto_Artwork] {
+  public var artworks: [Proto_Artwork] {
     get {return _storage._artworks}
     set {_uniqueStorage()._artworks = newValue}
   }
 
-  var bundles: [Proto_Game] {
+  public var bundles: [Proto_Game] {
     get {return _storage._bundles}
     set {_uniqueStorage()._bundles = newValue}
   }
 
-  var category: Proto_GameCategoryEnum {
+  public var category: Proto_GameCategoryEnum {
     get {return _storage._category}
     set {_uniqueStorage()._category = newValue}
   }
 
-  var collection: Proto_Collection {
+  public var collection: Proto_Collection {
     get {return _storage._collection ?? Proto_Collection()}
     set {_uniqueStorage()._collection = newValue}
   }
   /// Returns true if `collection` has been explicitly set.
-  var hasCollection: Bool {return _storage._collection != nil}
+  public var hasCollection: Bool {return _storage._collection != nil}
   /// Clears the value of `collection`. Subsequent reads from it will return its default value.
-  mutating func clearCollection() {_uniqueStorage()._collection = nil}
+  public mutating func clearCollection() {_uniqueStorage()._collection = nil}
 
-  var cover: Proto_Cover {
+  public var cover: Proto_Cover {
     get {return _storage._cover ?? Proto_Cover()}
     set {_uniqueStorage()._cover = newValue}
   }
   /// Returns true if `cover` has been explicitly set.
-  var hasCover: Bool {return _storage._cover != nil}
+  public var hasCover: Bool {return _storage._cover != nil}
   /// Clears the value of `cover`. Subsequent reads from it will return its default value.
-  mutating func clearCover() {_uniqueStorage()._cover = nil}
+  public mutating func clearCover() {_uniqueStorage()._cover = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var dlcs: [Proto_Game] {
+  public var dlcs: [Proto_Game] {
     get {return _storage._dlcs}
     set {_uniqueStorage()._dlcs = newValue}
   }
 
-  var expansions: [Proto_Game] {
+  public var expansions: [Proto_Game] {
     get {return _storage._expansions}
     set {_uniqueStorage()._expansions = newValue}
   }
 
-  var externalGames: [Proto_ExternalGame] {
+  public var externalGames: [Proto_ExternalGame] {
     get {return _storage._externalGames}
     set {_uniqueStorage()._externalGames = newValue}
   }
 
-  var firstReleaseDate: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var firstReleaseDate: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._firstReleaseDate ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._firstReleaseDate = newValue}
   }
   /// Returns true if `firstReleaseDate` has been explicitly set.
-  var hasFirstReleaseDate: Bool {return _storage._firstReleaseDate != nil}
+  public var hasFirstReleaseDate: Bool {return _storage._firstReleaseDate != nil}
   /// Clears the value of `firstReleaseDate`. Subsequent reads from it will return its default value.
-  mutating func clearFirstReleaseDate() {_uniqueStorage()._firstReleaseDate = nil}
+  public mutating func clearFirstReleaseDate() {_uniqueStorage()._firstReleaseDate = nil}
 
-  var follows: Int32 {
+  public var follows: Int32 {
     get {return _storage._follows}
     set {_uniqueStorage()._follows = newValue}
   }
 
-  var franchise: Proto_Franchise {
+  public var franchise: Proto_Franchise {
     get {return _storage._franchise ?? Proto_Franchise()}
     set {_uniqueStorage()._franchise = newValue}
   }
   /// Returns true if `franchise` has been explicitly set.
-  var hasFranchise: Bool {return _storage._franchise != nil}
+  public var hasFranchise: Bool {return _storage._franchise != nil}
   /// Clears the value of `franchise`. Subsequent reads from it will return its default value.
-  mutating func clearFranchise() {_uniqueStorage()._franchise = nil}
+  public mutating func clearFranchise() {_uniqueStorage()._franchise = nil}
 
-  var franchises: [Proto_Franchise] {
+  public var franchises: [Proto_Franchise] {
     get {return _storage._franchises}
     set {_uniqueStorage()._franchises = newValue}
   }
 
-  var gameEngines: [Proto_GameEngine] {
+  public var gameEngines: [Proto_GameEngine] {
     get {return _storage._gameEngines}
     set {_uniqueStorage()._gameEngines = newValue}
   }
 
-  var gameModes: [Proto_GameMode] {
+  public var gameModes: [Proto_GameMode] {
     get {return _storage._gameModes}
     set {_uniqueStorage()._gameModes = newValue}
   }
 
-  var genres: [Proto_Genre] {
+  public var genres: [Proto_Genre] {
     get {return _storage._genres}
     set {_uniqueStorage()._genres = newValue}
   }
 
-  var hypes: Int32 {
+  public var hypes: Int32 {
     get {return _storage._hypes}
     set {_uniqueStorage()._hypes = newValue}
   }
 
-  var involvedCompanies: [Proto_InvolvedCompany] {
+  public var involvedCompanies: [Proto_InvolvedCompany] {
     get {return _storage._involvedCompanies}
     set {_uniqueStorage()._involvedCompanies = newValue}
   }
 
-  var keywords: [Proto_Keyword] {
+  public var keywords: [Proto_Keyword] {
     get {return _storage._keywords}
     set {_uniqueStorage()._keywords = newValue}
   }
 
-  var multiplayerModes: [Proto_MultiplayerMode] {
+  public var multiplayerModes: [Proto_MultiplayerMode] {
     get {return _storage._multiplayerModes}
     set {_uniqueStorage()._multiplayerModes = newValue}
   }
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var parentGame: Proto_Game {
+  public var parentGame: Proto_Game {
     get {return _storage._parentGame ?? Proto_Game()}
     set {_uniqueStorage()._parentGame = newValue}
   }
   /// Returns true if `parentGame` has been explicitly set.
-  var hasParentGame: Bool {return _storage._parentGame != nil}
+  public var hasParentGame: Bool {return _storage._parentGame != nil}
   /// Clears the value of `parentGame`. Subsequent reads from it will return its default value.
-  mutating func clearParentGame() {_uniqueStorage()._parentGame = nil}
+  public mutating func clearParentGame() {_uniqueStorage()._parentGame = nil}
 
-  var platforms: [Proto_Platform] {
+  public var platforms: [Proto_Platform] {
     get {return _storage._platforms}
     set {_uniqueStorage()._platforms = newValue}
   }
 
-  var playerPerspectives: [Proto_PlayerPerspective] {
+  public var playerPerspectives: [Proto_PlayerPerspective] {
     get {return _storage._playerPerspectives}
     set {_uniqueStorage()._playerPerspectives = newValue}
   }
 
-  var rating: Double {
+  public var rating: Double {
     get {return _storage._rating}
     set {_uniqueStorage()._rating = newValue}
   }
 
-  var ratingCount: Int32 {
+  public var ratingCount: Int32 {
     get {return _storage._ratingCount}
     set {_uniqueStorage()._ratingCount = newValue}
   }
 
-  var releaseDates: [Proto_ReleaseDate] {
+  public var releaseDates: [Proto_ReleaseDate] {
     get {return _storage._releaseDates}
     set {_uniqueStorage()._releaseDates = newValue}
   }
 
-  var screenshots: [Proto_Screenshot] {
+  public var screenshots: [Proto_Screenshot] {
     get {return _storage._screenshots}
     set {_uniqueStorage()._screenshots = newValue}
   }
 
-  var similarGames: [Proto_Game] {
+  public var similarGames: [Proto_Game] {
     get {return _storage._similarGames}
     set {_uniqueStorage()._similarGames = newValue}
   }
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var standaloneExpansions: [Proto_Game] {
+  public var standaloneExpansions: [Proto_Game] {
     get {return _storage._standaloneExpansions}
     set {_uniqueStorage()._standaloneExpansions = newValue}
   }
 
-  var status: Proto_GameStatusEnum {
+  public var status: Proto_GameStatusEnum {
     get {return _storage._status}
     set {_uniqueStorage()._status = newValue}
   }
 
-  var storyline: String {
+  public var storyline: String {
     get {return _storage._storyline}
     set {_uniqueStorage()._storyline = newValue}
   }
 
-  var summary: String {
+  public var summary: String {
     get {return _storage._summary}
     set {_uniqueStorage()._summary = newValue}
   }
 
-  var tags: [Int32] {
+  public var tags: [Int32] {
     get {return _storage._tags}
     set {_uniqueStorage()._tags = newValue}
   }
 
-  var themes: [Proto_Theme] {
+  public var themes: [Proto_Theme] {
     get {return _storage._themes}
     set {_uniqueStorage()._themes = newValue}
   }
 
-  var totalRating: Double {
+  public var totalRating: Double {
     get {return _storage._totalRating}
     set {_uniqueStorage()._totalRating = newValue}
   }
 
-  var totalRatingCount: Int32 {
+  public var totalRatingCount: Int32 {
     get {return _storage._totalRatingCount}
     set {_uniqueStorage()._totalRatingCount = newValue}
   }
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var versionParent: Proto_Game {
+  public var versionParent: Proto_Game {
     get {return _storage._versionParent ?? Proto_Game()}
     set {_uniqueStorage()._versionParent = newValue}
   }
   /// Returns true if `versionParent` has been explicitly set.
-  var hasVersionParent: Bool {return _storage._versionParent != nil}
+  public var hasVersionParent: Bool {return _storage._versionParent != nil}
   /// Clears the value of `versionParent`. Subsequent reads from it will return its default value.
-  mutating func clearVersionParent() {_uniqueStorage()._versionParent = nil}
+  public mutating func clearVersionParent() {_uniqueStorage()._versionParent = nil}
 
-  var versionTitle: String {
+  public var versionTitle: String {
     get {return _storage._versionTitle}
     set {_uniqueStorage()._versionTitle = newValue}
   }
 
-  var videos: [Proto_GameVideo] {
+  public var videos: [Proto_GameVideo] {
     get {return _storage._videos}
     set {_uniqueStorage()._videos = newValue}
   }
 
-  var websites: [Proto_Website] {
+  public var websites: [Proto_Website] {
     get {return _storage._websites}
     set {_uniqueStorage()._websites = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var remakes: [Proto_Game] {
+  public var remakes: [Proto_Game] {
     get {return _storage._remakes}
     set {_uniqueStorage()._remakes = newValue}
   }
 
-  var remasters: [Proto_Game] {
+  public var remasters: [Proto_Game] {
     get {return _storage._remasters}
     set {_uniqueStorage()._remasters = newValue}
   }
 
-  var expandedGames: [Proto_Game] {
+  public var expandedGames: [Proto_Game] {
     get {return _storage._expandedGames}
     set {_uniqueStorage()._expandedGames = newValue}
   }
 
-  var ports: [Proto_Game] {
+  public var ports: [Proto_Game] {
     get {return _storage._ports}
     set {_uniqueStorage()._ports = newValue}
   }
 
-  var forks: [Proto_Game] {
+  public var forks: [Proto_Game] {
     get {return _storage._forks}
     set {_uniqueStorage()._forks = newValue}
   }
 
-  var languageSupports: [Proto_LanguageSupport] {
+  public var languageSupports: [Proto_LanguageSupport] {
     get {return _storage._languageSupports}
     set {_uniqueStorage()._languageSupports = newValue}
   }
 
-  var gameLocalizations: [Proto_GameLocalization] {
+  public var gameLocalizations: [Proto_GameLocalization] {
     get {return _storage._gameLocalizations}
     set {_uniqueStorage()._gameLocalizations = newValue}
   }
 
-  var collections: [Proto_Collection] {
+  public var collections: [Proto_Collection] {
     get {return _storage._collections}
     set {_uniqueStorage()._collections = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_GameEngineResult: Sendable {
+public struct Proto_GameEngineResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var gameengines: [Proto_GameEngine] = []
+  public var gameengines: [Proto_GameEngine] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameEngine: @unchecked Sendable {
+public struct Proto_GameEngine: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var companies: [Proto_Company] {
+  public var companies: [Proto_Company] {
     get {return _storage._companies}
     set {_uniqueStorage()._companies = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var description_p: String {
+  public var description_p: String {
     get {return _storage._description_p}
     set {_uniqueStorage()._description_p = newValue}
   }
 
-  var logo: Proto_GameEngineLogo {
+  public var logo: Proto_GameEngineLogo {
     get {return _storage._logo ?? Proto_GameEngineLogo()}
     set {_uniqueStorage()._logo = newValue}
   }
   /// Returns true if `logo` has been explicitly set.
-  var hasLogo: Bool {return _storage._logo != nil}
+  public var hasLogo: Bool {return _storage._logo != nil}
   /// Clears the value of `logo`. Subsequent reads from it will return its default value.
-  mutating func clearLogo() {_uniqueStorage()._logo = nil}
+  public mutating func clearLogo() {_uniqueStorage()._logo = nil}
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var platforms: [Proto_Platform] {
+  public var platforms: [Proto_Platform] {
     get {return _storage._platforms}
     set {_uniqueStorage()._platforms = newValue}
   }
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_GameEngineLogoResult: Sendable {
+public struct Proto_GameEngineLogoResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var gameenginelogos: [Proto_GameEngineLogo] = []
+  public var gameenginelogos: [Proto_GameEngineLogo] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameEngineLogo: Sendable {
+public struct Proto_GameEngineLogo: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var alphaChannel: Bool = false
+  public var alphaChannel: Bool = false
 
-  var animated: Bool = false
+  public var animated: Bool = false
 
-  var height: Int32 = 0
+  public var height: Int32 = 0
 
-  var imageID: String = String()
+  public var imageID: String = String()
 
-  var url: String = String()
+  public var url: String = String()
 
-  var width: Int32 = 0
+  public var width: Int32 = 0
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameLocalizationResult: Sendable {
+public struct Proto_GameLocalizationResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var gamelocalizations: [Proto_GameLocalization] = []
+  public var gamelocalizations: [Proto_GameLocalization] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameLocalization: @unchecked Sendable {
+public struct Proto_GameLocalization: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var cover: Proto_Cover {
+  public var cover: Proto_Cover {
     get {return _storage._cover ?? Proto_Cover()}
     set {_uniqueStorage()._cover = newValue}
   }
   /// Returns true if `cover` has been explicitly set.
-  var hasCover: Bool {return _storage._cover != nil}
+  public var hasCover: Bool {return _storage._cover != nil}
   /// Clears the value of `cover`. Subsequent reads from it will return its default value.
-  mutating func clearCover() {_uniqueStorage()._cover = nil}
+  public mutating func clearCover() {_uniqueStorage()._cover = nil}
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _storage._game ?? Proto_Game()}
     set {_uniqueStorage()._game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return _storage._game != nil}
+  public var hasGame: Bool {return _storage._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {_uniqueStorage()._game = nil}
+  public mutating func clearGame() {_uniqueStorage()._game = nil}
 
-  var region: Proto_Region {
+  public var region: Proto_Region {
     get {return _storage._region ?? Proto_Region()}
     set {_uniqueStorage()._region = newValue}
   }
   /// Returns true if `region` has been explicitly set.
-  var hasRegion: Bool {return _storage._region != nil}
+  public var hasRegion: Bool {return _storage._region != nil}
   /// Clears the value of `region`. Subsequent reads from it will return its default value.
-  mutating func clearRegion() {_uniqueStorage()._region = nil}
+  public mutating func clearRegion() {_uniqueStorage()._region = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_GameModeResult: Sendable {
+public struct Proto_GameModeResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var gamemodes: [Proto_GameMode] = []
+  public var gamemodes: [Proto_GameMode] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameMode: Sendable {
+public struct Proto_GameMode: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var name: String = String()
+  public var name: String = String()
 
-  var slug: String = String()
+  public var slug: String = String()
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_GameVersionResult: Sendable {
+public struct Proto_GameVersionResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var gameversions: [Proto_GameVersion] = []
+  public var gameversions: [Proto_GameVersion] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameVersion: Sendable {
+public struct Proto_GameVersion: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var features: [Proto_GameVersionFeature] = []
+  public var features: [Proto_GameVersionFeature] = []
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var games: [Proto_Game] = []
+  public var games: [Proto_Game] = []
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _game: Proto_Game? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_GameVersionFeatureResult: Sendable {
+public struct Proto_GameVersionFeatureResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var gameversionfeatures: [Proto_GameVersionFeature] = []
+  public var gameversionfeatures: [Proto_GameVersionFeature] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameVersionFeature: Sendable {
+public struct Proto_GameVersionFeature: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var category: Proto_GameVersionFeatureCategoryEnum = .boolean
+  public var category: Proto_GameVersionFeatureCategoryEnum = .boolean
 
-  var description_p: String = String()
+  public var description_p: String = String()
 
-  var position: Int32 = 0
+  public var position: Int32 = 0
 
-  var title: String = String()
+  public var title: String = String()
 
-  var values: [Proto_GameVersionFeatureValue] = []
+  public var values: [Proto_GameVersionFeatureValue] = []
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameVersionFeatureValueResult: Sendable {
+public struct Proto_GameVersionFeatureValueResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var gameversionfeaturevalues: [Proto_GameVersionFeatureValue] = []
+  public var gameversionfeaturevalues: [Proto_GameVersionFeatureValue] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameVersionFeatureValue: Sendable {
+public struct Proto_GameVersionFeatureValue: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var gameFeature: Proto_GameVersionFeature {
+  public var gameFeature: Proto_GameVersionFeature {
     get {return _gameFeature ?? Proto_GameVersionFeature()}
     set {_gameFeature = newValue}
   }
   /// Returns true if `gameFeature` has been explicitly set.
-  var hasGameFeature: Bool {return self._gameFeature != nil}
+  public var hasGameFeature: Bool {return self._gameFeature != nil}
   /// Clears the value of `gameFeature`. Subsequent reads from it will return its default value.
-  mutating func clearGameFeature() {self._gameFeature = nil}
+  public mutating func clearGameFeature() {self._gameFeature = nil}
 
-  var includedFeature: Proto_GameVersionFeatureValueIncludedFeatureEnum = .notIncluded
+  public var includedFeature: Proto_GameVersionFeatureValueIncludedFeatureEnum = .notIncluded
 
-  var note: String = String()
+  public var note: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _game: Proto_Game? = nil
   fileprivate var _gameFeature: Proto_GameVersionFeature? = nil
 }
 
-struct Proto_GameVideoResult: Sendable {
+public struct Proto_GameVideoResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var gamevideos: [Proto_GameVideo] = []
+  public var gamevideos: [Proto_GameVideo] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_GameVideo: Sendable {
+public struct Proto_GameVideo: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var name: String = String()
+  public var name: String = String()
 
-  var videoID: String = String()
+  public var videoID: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _game: Proto_Game? = nil
 }
 
-struct Proto_GenreResult: Sendable {
+public struct Proto_GenreResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var genres: [Proto_Genre] = []
+  public var genres: [Proto_Genre] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Genre: Sendable {
+public struct Proto_Genre: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var name: String = String()
+  public var name: String = String()
 
-  var slug: String = String()
+  public var slug: String = String()
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_InvolvedCompanyResult: Sendable {
+public struct Proto_InvolvedCompanyResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var involvedcompanies: [Proto_InvolvedCompany] = []
+  public var involvedcompanies: [Proto_InvolvedCompany] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_InvolvedCompany: Sendable {
+public struct Proto_InvolvedCompany: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var company: Proto_Company {
+  public var company: Proto_Company {
     get {return _company ?? Proto_Company()}
     set {_company = newValue}
   }
   /// Returns true if `company` has been explicitly set.
-  var hasCompany: Bool {return self._company != nil}
+  public var hasCompany: Bool {return self._company != nil}
   /// Clears the value of `company`. Subsequent reads from it will return its default value.
-  mutating func clearCompany() {self._company = nil}
+  public mutating func clearCompany() {self._company = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var developer: Bool = false
+  public var developer: Bool = false
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var porting: Bool = false
+  public var porting: Bool = false
 
-  var publisher: Bool = false
+  public var publisher: Bool = false
 
-  var supporting: Bool = false
+  public var supporting: Bool = false
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _company: Proto_Company? = nil
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
@@ -3828,798 +3828,798 @@ struct Proto_InvolvedCompany: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_KeywordResult: Sendable {
+public struct Proto_KeywordResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var keywords: [Proto_Keyword] = []
+  public var keywords: [Proto_Keyword] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Keyword: Sendable {
+public struct Proto_Keyword: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var name: String = String()
+  public var name: String = String()
 
-  var slug: String = String()
+  public var slug: String = String()
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_LanguageResult: Sendable {
+public struct Proto_LanguageResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var languages: [Proto_Language] = []
+  public var languages: [Proto_Language] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Language: Sendable {
+public struct Proto_Language: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var name: String = String()
+  public var name: String = String()
 
-  var nativeName: String = String()
+  public var nativeName: String = String()
 
-  var locale: String = String()
+  public var locale: String = String()
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_LanguageSupportResult: Sendable {
+public struct Proto_LanguageSupportResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var languagesupports: [Proto_LanguageSupport] = []
+  public var languagesupports: [Proto_LanguageSupport] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_LanguageSupport: @unchecked Sendable {
+public struct Proto_LanguageSupport: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _storage._game ?? Proto_Game()}
     set {_uniqueStorage()._game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return _storage._game != nil}
+  public var hasGame: Bool {return _storage._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {_uniqueStorage()._game = nil}
+  public mutating func clearGame() {_uniqueStorage()._game = nil}
 
-  var language: Proto_Language {
+  public var language: Proto_Language {
     get {return _storage._language ?? Proto_Language()}
     set {_uniqueStorage()._language = newValue}
   }
   /// Returns true if `language` has been explicitly set.
-  var hasLanguage: Bool {return _storage._language != nil}
+  public var hasLanguage: Bool {return _storage._language != nil}
   /// Clears the value of `language`. Subsequent reads from it will return its default value.
-  mutating func clearLanguage() {_uniqueStorage()._language = nil}
+  public mutating func clearLanguage() {_uniqueStorage()._language = nil}
 
-  var languageSupportType: Proto_LanguageSupportType {
+  public var languageSupportType: Proto_LanguageSupportType {
     get {return _storage._languageSupportType ?? Proto_LanguageSupportType()}
     set {_uniqueStorage()._languageSupportType = newValue}
   }
   /// Returns true if `languageSupportType` has been explicitly set.
-  var hasLanguageSupportType: Bool {return _storage._languageSupportType != nil}
+  public var hasLanguageSupportType: Bool {return _storage._languageSupportType != nil}
   /// Clears the value of `languageSupportType`. Subsequent reads from it will return its default value.
-  mutating func clearLanguageSupportType() {_uniqueStorage()._languageSupportType = nil}
+  public mutating func clearLanguageSupportType() {_uniqueStorage()._languageSupportType = nil}
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_LanguageSupportTypeResult: Sendable {
+public struct Proto_LanguageSupportTypeResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var languagesupporttypes: [Proto_LanguageSupportType] = []
+  public var languagesupporttypes: [Proto_LanguageSupportType] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_LanguageSupportType: Sendable {
+public struct Proto_LanguageSupportType: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var name: String = String()
+  public var name: String = String()
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_MultiplayerModeResult: Sendable {
+public struct Proto_MultiplayerModeResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var multiplayermodes: [Proto_MultiplayerMode] = []
+  public var multiplayermodes: [Proto_MultiplayerMode] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_MultiplayerMode: Sendable {
+public struct Proto_MultiplayerMode: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var campaigncoop: Bool = false
+  public var campaigncoop: Bool = false
 
-  var dropin: Bool = false
+  public var dropin: Bool = false
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var lancoop: Bool = false
+  public var lancoop: Bool = false
 
-  var offlinecoop: Bool = false
+  public var offlinecoop: Bool = false
 
-  var offlinecoopmax: Int32 = 0
+  public var offlinecoopmax: Int32 = 0
 
-  var offlinemax: Int32 = 0
+  public var offlinemax: Int32 = 0
 
-  var onlinecoop: Bool = false
+  public var onlinecoop: Bool = false
 
-  var onlinecoopmax: Int32 = 0
+  public var onlinecoopmax: Int32 = 0
 
-  var onlinemax: Int32 = 0
+  public var onlinemax: Int32 = 0
 
-  var platform: Proto_Platform {
+  public var platform: Proto_Platform {
     get {return _platform ?? Proto_Platform()}
     set {_platform = newValue}
   }
   /// Returns true if `platform` has been explicitly set.
-  var hasPlatform: Bool {return self._platform != nil}
+  public var hasPlatform: Bool {return self._platform != nil}
   /// Clears the value of `platform`. Subsequent reads from it will return its default value.
-  mutating func clearPlatform() {self._platform = nil}
+  public mutating func clearPlatform() {self._platform = nil}
 
-  var splitscreen: Bool = false
+  public var splitscreen: Bool = false
 
-  var splitscreenonline: Bool = false
+  public var splitscreenonline: Bool = false
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _game: Proto_Game? = nil
   fileprivate var _platform: Proto_Platform? = nil
 }
 
-struct Proto_NetworkTypeResult: Sendable {
+public struct Proto_NetworkTypeResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var networktypes: [Proto_NetworkType] = []
+  public var networktypes: [Proto_NetworkType] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_NetworkType: Sendable {
+public struct Proto_NetworkType: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var name: String = String()
+  public var name: String = String()
 
-  var eventNetworks: [Proto_EventNetwork] = []
+  public var eventNetworks: [Proto_EventNetwork] = []
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_PlatformResult: Sendable {
+public struct Proto_PlatformResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var platforms: [Proto_Platform] = []
+  public var platforms: [Proto_Platform] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Platform: @unchecked Sendable {
+public struct Proto_Platform: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var abbreviation: String {
+  public var abbreviation: String {
     get {return _storage._abbreviation}
     set {_uniqueStorage()._abbreviation = newValue}
   }
 
-  var alternativeName: String {
+  public var alternativeName: String {
     get {return _storage._alternativeName}
     set {_uniqueStorage()._alternativeName = newValue}
   }
 
-  var category: Proto_PlatformCategoryEnum {
+  public var category: Proto_PlatformCategoryEnum {
     get {return _storage._category}
     set {_uniqueStorage()._category = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var generation: Int32 {
+  public var generation: Int32 {
     get {return _storage._generation}
     set {_uniqueStorage()._generation = newValue}
   }
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var platformLogo: Proto_PlatformLogo {
+  public var platformLogo: Proto_PlatformLogo {
     get {return _storage._platformLogo ?? Proto_PlatformLogo()}
     set {_uniqueStorage()._platformLogo = newValue}
   }
   /// Returns true if `platformLogo` has been explicitly set.
-  var hasPlatformLogo: Bool {return _storage._platformLogo != nil}
+  public var hasPlatformLogo: Bool {return _storage._platformLogo != nil}
   /// Clears the value of `platformLogo`. Subsequent reads from it will return its default value.
-  mutating func clearPlatformLogo() {_uniqueStorage()._platformLogo = nil}
+  public mutating func clearPlatformLogo() {_uniqueStorage()._platformLogo = nil}
 
-  var platformFamily: Proto_PlatformFamily {
+  public var platformFamily: Proto_PlatformFamily {
     get {return _storage._platformFamily ?? Proto_PlatformFamily()}
     set {_uniqueStorage()._platformFamily = newValue}
   }
   /// Returns true if `platformFamily` has been explicitly set.
-  var hasPlatformFamily: Bool {return _storage._platformFamily != nil}
+  public var hasPlatformFamily: Bool {return _storage._platformFamily != nil}
   /// Clears the value of `platformFamily`. Subsequent reads from it will return its default value.
-  mutating func clearPlatformFamily() {_uniqueStorage()._platformFamily = nil}
+  public mutating func clearPlatformFamily() {_uniqueStorage()._platformFamily = nil}
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var summary: String {
+  public var summary: String {
     get {return _storage._summary}
     set {_uniqueStorage()._summary = newValue}
   }
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var versions: [Proto_PlatformVersion] {
+  public var versions: [Proto_PlatformVersion] {
     get {return _storage._versions}
     set {_uniqueStorage()._versions = newValue}
   }
 
-  var websites: [Proto_PlatformWebsite] {
+  public var websites: [Proto_PlatformWebsite] {
     get {return _storage._websites}
     set {_uniqueStorage()._websites = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_PlatformFamilyResult: Sendable {
+public struct Proto_PlatformFamilyResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var platformfamilies: [Proto_PlatformFamily] = []
+  public var platformfamilies: [Proto_PlatformFamily] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlatformFamily: Sendable {
+public struct Proto_PlatformFamily: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var name: String = String()
+  public var name: String = String()
 
-  var slug: String = String()
+  public var slug: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlatformLogoResult: Sendable {
+public struct Proto_PlatformLogoResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var platformlogos: [Proto_PlatformLogo] = []
+  public var platformlogos: [Proto_PlatformLogo] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlatformLogo: Sendable {
+public struct Proto_PlatformLogo: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var alphaChannel: Bool = false
+  public var alphaChannel: Bool = false
 
-  var animated: Bool = false
+  public var animated: Bool = false
 
-  var height: Int32 = 0
+  public var height: Int32 = 0
 
-  var imageID: String = String()
+  public var imageID: String = String()
 
-  var url: String = String()
+  public var url: String = String()
 
-  var width: Int32 = 0
+  public var width: Int32 = 0
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlatformVersionResult: Sendable {
+public struct Proto_PlatformVersionResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var platformversions: [Proto_PlatformVersion] = []
+  public var platformversions: [Proto_PlatformVersion] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlatformVersion: @unchecked Sendable {
+public struct Proto_PlatformVersion: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var companies: [Proto_PlatformVersionCompany] {
+  public var companies: [Proto_PlatformVersionCompany] {
     get {return _storage._companies}
     set {_uniqueStorage()._companies = newValue}
   }
 
-  var connectivity: String {
+  public var connectivity: String {
     get {return _storage._connectivity}
     set {_uniqueStorage()._connectivity = newValue}
   }
 
-  var cpu: String {
+  public var cpu: String {
     get {return _storage._cpu}
     set {_uniqueStorage()._cpu = newValue}
   }
 
-  var graphics: String {
+  public var graphics: String {
     get {return _storage._graphics}
     set {_uniqueStorage()._graphics = newValue}
   }
 
-  var mainManufacturer: Proto_PlatformVersionCompany {
+  public var mainManufacturer: Proto_PlatformVersionCompany {
     get {return _storage._mainManufacturer ?? Proto_PlatformVersionCompany()}
     set {_uniqueStorage()._mainManufacturer = newValue}
   }
   /// Returns true if `mainManufacturer` has been explicitly set.
-  var hasMainManufacturer: Bool {return _storage._mainManufacturer != nil}
+  public var hasMainManufacturer: Bool {return _storage._mainManufacturer != nil}
   /// Clears the value of `mainManufacturer`. Subsequent reads from it will return its default value.
-  mutating func clearMainManufacturer() {_uniqueStorage()._mainManufacturer = nil}
+  public mutating func clearMainManufacturer() {_uniqueStorage()._mainManufacturer = nil}
 
-  var media: String {
+  public var media: String {
     get {return _storage._media}
     set {_uniqueStorage()._media = newValue}
   }
 
-  var memory: String {
+  public var memory: String {
     get {return _storage._memory}
     set {_uniqueStorage()._memory = newValue}
   }
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var online: String {
+  public var online: String {
     get {return _storage._online}
     set {_uniqueStorage()._online = newValue}
   }
 
-  var os: String {
+  public var os: String {
     get {return _storage._os}
     set {_uniqueStorage()._os = newValue}
   }
 
-  var output: String {
+  public var output: String {
     get {return _storage._output}
     set {_uniqueStorage()._output = newValue}
   }
 
-  var platformLogo: Proto_PlatformLogo {
+  public var platformLogo: Proto_PlatformLogo {
     get {return _storage._platformLogo ?? Proto_PlatformLogo()}
     set {_uniqueStorage()._platformLogo = newValue}
   }
   /// Returns true if `platformLogo` has been explicitly set.
-  var hasPlatformLogo: Bool {return _storage._platformLogo != nil}
+  public var hasPlatformLogo: Bool {return _storage._platformLogo != nil}
   /// Clears the value of `platformLogo`. Subsequent reads from it will return its default value.
-  mutating func clearPlatformLogo() {_uniqueStorage()._platformLogo = nil}
+  public mutating func clearPlatformLogo() {_uniqueStorage()._platformLogo = nil}
 
-  var platformVersionReleaseDates: [Proto_PlatformVersionReleaseDate] {
+  public var platformVersionReleaseDates: [Proto_PlatformVersionReleaseDate] {
     get {return _storage._platformVersionReleaseDates}
     set {_uniqueStorage()._platformVersionReleaseDates = newValue}
   }
 
-  var resolutions: String {
+  public var resolutions: String {
     get {return _storage._resolutions}
     set {_uniqueStorage()._resolutions = newValue}
   }
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var sound: String {
+  public var sound: String {
     get {return _storage._sound}
     set {_uniqueStorage()._sound = newValue}
   }
 
-  var storage: String {
+  public var storage: String {
     get {return _storage._storage}
     set {_uniqueStorage()._storage = newValue}
   }
 
-  var summary: String {
+  public var summary: String {
     get {return _storage._summary}
     set {_uniqueStorage()._summary = newValue}
   }
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_PlatformVersionCompanyResult: Sendable {
+public struct Proto_PlatformVersionCompanyResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var platformversioncompanies: [Proto_PlatformVersionCompany] = []
+  public var platformversioncompanies: [Proto_PlatformVersionCompany] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlatformVersionCompany: Sendable {
+public struct Proto_PlatformVersionCompany: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var comment: String = String()
+  public var comment: String = String()
 
-  var company: Proto_Company {
+  public var company: Proto_Company {
     get {return _company ?? Proto_Company()}
     set {_company = newValue}
   }
   /// Returns true if `company` has been explicitly set.
-  var hasCompany: Bool {return self._company != nil}
+  public var hasCompany: Bool {return self._company != nil}
   /// Clears the value of `company`. Subsequent reads from it will return its default value.
-  mutating func clearCompany() {self._company = nil}
+  public mutating func clearCompany() {self._company = nil}
 
-  var developer: Bool = false
+  public var developer: Bool = false
 
-  var manufacturer: Bool = false
+  public var manufacturer: Bool = false
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _company: Proto_Company? = nil
 }
 
-struct Proto_PlatformVersionReleaseDateResult: Sendable {
+public struct Proto_PlatformVersionReleaseDateResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var platformversionreleasedates: [Proto_PlatformVersionReleaseDate] = []
+  public var platformversionreleasedates: [Proto_PlatformVersionReleaseDate] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlatformVersionReleaseDate: Sendable {
+public struct Proto_PlatformVersionReleaseDate: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var category: Proto_DateFormatChangeDateCategoryEnum = .yyyymmmmdd
+  public var category: Proto_DateFormatChangeDateCategoryEnum = .yyyymmmmdd
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var date: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var date: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _date ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_date = newValue}
   }
   /// Returns true if `date` has been explicitly set.
-  var hasDate: Bool {return self._date != nil}
+  public var hasDate: Bool {return self._date != nil}
   /// Clears the value of `date`. Subsequent reads from it will return its default value.
-  mutating func clearDate() {self._date = nil}
+  public mutating func clearDate() {self._date = nil}
 
-  var human: String = String()
+  public var human: String = String()
 
-  var m: Int32 = 0
+  public var m: Int32 = 0
 
-  var platformVersion: Proto_PlatformVersion {
+  public var platformVersion: Proto_PlatformVersion {
     get {return _platformVersion ?? Proto_PlatformVersion()}
     set {_platformVersion = newValue}
   }
   /// Returns true if `platformVersion` has been explicitly set.
-  var hasPlatformVersion: Bool {return self._platformVersion != nil}
+  public var hasPlatformVersion: Bool {return self._platformVersion != nil}
   /// Clears the value of `platformVersion`. Subsequent reads from it will return its default value.
-  mutating func clearPlatformVersion() {self._platformVersion = nil}
+  public mutating func clearPlatformVersion() {self._platformVersion = nil}
 
-  var region: Proto_RegionRegionEnum = .regionRegionNull
+  public var region: Proto_RegionRegionEnum = .regionRegionNull
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var y: Int32 = 0
+  public var y: Int32 = 0
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _date: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
@@ -4627,700 +4627,700 @@ struct Proto_PlatformVersionReleaseDate: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_PlatformWebsiteResult: Sendable {
+public struct Proto_PlatformWebsiteResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var platformwebsites: [Proto_PlatformWebsite] = []
+  public var platformwebsites: [Proto_PlatformWebsite] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlatformWebsite: Sendable {
+public struct Proto_PlatformWebsite: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var category: Proto_WebsiteCategoryEnum = .websiteCategoryNull
+  public var category: Proto_WebsiteCategoryEnum = .websiteCategoryNull
 
-  var trusted: Bool = false
+  public var trusted: Bool = false
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlayerPerspectiveResult: Sendable {
+public struct Proto_PlayerPerspectiveResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var playerperspectives: [Proto_PlayerPerspective] = []
+  public var playerperspectives: [Proto_PlayerPerspective] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_PlayerPerspective: Sendable {
+public struct Proto_PlayerPerspective: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var name: String = String()
+  public var name: String = String()
 
-  var slug: String = String()
+  public var slug: String = String()
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_RegionResult: Sendable {
+public struct Proto_RegionResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var regions: [Proto_Region] = []
+  public var regions: [Proto_Region] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Region: Sendable {
+public struct Proto_Region: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var name: String = String()
+  public var name: String = String()
 
-  var category: String = String()
+  public var category: String = String()
 
-  var identifier: String = String()
+  public var identifier: String = String()
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_ReleaseDateResult: Sendable {
+public struct Proto_ReleaseDateResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var releasedates: [Proto_ReleaseDate] = []
+  public var releasedates: [Proto_ReleaseDate] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_ReleaseDate: @unchecked Sendable {
+public struct Proto_ReleaseDate: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var category: Proto_DateFormatChangeDateCategoryEnum {
+  public var category: Proto_DateFormatChangeDateCategoryEnum {
     get {return _storage._category}
     set {_uniqueStorage()._category = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var date: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var date: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._date ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._date = newValue}
   }
   /// Returns true if `date` has been explicitly set.
-  var hasDate: Bool {return _storage._date != nil}
+  public var hasDate: Bool {return _storage._date != nil}
   /// Clears the value of `date`. Subsequent reads from it will return its default value.
-  mutating func clearDate() {_uniqueStorage()._date = nil}
+  public mutating func clearDate() {_uniqueStorage()._date = nil}
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _storage._game ?? Proto_Game()}
     set {_uniqueStorage()._game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return _storage._game != nil}
+  public var hasGame: Bool {return _storage._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {_uniqueStorage()._game = nil}
+  public mutating func clearGame() {_uniqueStorage()._game = nil}
 
-  var human: String {
+  public var human: String {
     get {return _storage._human}
     set {_uniqueStorage()._human = newValue}
   }
 
-  var m: Int32 {
+  public var m: Int32 {
     get {return _storage._m}
     set {_uniqueStorage()._m = newValue}
   }
 
-  var platform: Proto_Platform {
+  public var platform: Proto_Platform {
     get {return _storage._platform ?? Proto_Platform()}
     set {_uniqueStorage()._platform = newValue}
   }
   /// Returns true if `platform` has been explicitly set.
-  var hasPlatform: Bool {return _storage._platform != nil}
+  public var hasPlatform: Bool {return _storage._platform != nil}
   /// Clears the value of `platform`. Subsequent reads from it will return its default value.
-  mutating func clearPlatform() {_uniqueStorage()._platform = nil}
+  public mutating func clearPlatform() {_uniqueStorage()._platform = nil}
 
-  var region: Proto_RegionRegionEnum {
+  public var region: Proto_RegionRegionEnum {
     get {return _storage._region}
     set {_uniqueStorage()._region = newValue}
   }
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var y: Int32 {
+  public var y: Int32 {
     get {return _storage._y}
     set {_uniqueStorage()._y = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var status: Proto_ReleaseDateStatus {
+  public var status: Proto_ReleaseDateStatus {
     get {return _storage._status ?? Proto_ReleaseDateStatus()}
     set {_uniqueStorage()._status = newValue}
   }
   /// Returns true if `status` has been explicitly set.
-  var hasStatus: Bool {return _storage._status != nil}
+  public var hasStatus: Bool {return _storage._status != nil}
   /// Clears the value of `status`. Subsequent reads from it will return its default value.
-  mutating func clearStatus() {_uniqueStorage()._status = nil}
+  public mutating func clearStatus() {_uniqueStorage()._status = nil}
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_ReleaseDateStatusResult: Sendable {
+public struct Proto_ReleaseDateStatusResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var releasedatestatuses: [Proto_ReleaseDateStatus] = []
+  public var releasedatestatuses: [Proto_ReleaseDateStatus] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_ReleaseDateStatus: Sendable {
+public struct Proto_ReleaseDateStatus: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var name: String = String()
+  public var name: String = String()
 
-  var description_p: String = String()
+  public var description_p: String = String()
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_ScreenshotResult: Sendable {
+public struct Proto_ScreenshotResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var screenshots: [Proto_Screenshot] = []
+  public var screenshots: [Proto_Screenshot] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Screenshot: Sendable {
+public struct Proto_Screenshot: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var alphaChannel: Bool = false
+  public var alphaChannel: Bool = false
 
-  var animated: Bool = false
+  public var animated: Bool = false
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var height: Int32 = 0
+  public var height: Int32 = 0
 
-  var imageID: String = String()
+  public var imageID: String = String()
 
-  var url: String = String()
+  public var url: String = String()
 
-  var width: Int32 = 0
+  public var width: Int32 = 0
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _game: Proto_Game? = nil
 }
 
-struct Proto_SearchResult: Sendable {
+public struct Proto_SearchResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var searches: [Proto_Search] = []
+  public var searches: [Proto_Search] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Search: @unchecked Sendable {
+public struct Proto_Search: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var alternativeName: String {
+  public var alternativeName: String {
     get {return _storage._alternativeName}
     set {_uniqueStorage()._alternativeName = newValue}
   }
 
-  var character: Proto_Character {
+  public var character: Proto_Character {
     get {return _storage._character ?? Proto_Character()}
     set {_uniqueStorage()._character = newValue}
   }
   /// Returns true if `character` has been explicitly set.
-  var hasCharacter: Bool {return _storage._character != nil}
+  public var hasCharacter: Bool {return _storage._character != nil}
   /// Clears the value of `character`. Subsequent reads from it will return its default value.
-  mutating func clearCharacter() {_uniqueStorage()._character = nil}
+  public mutating func clearCharacter() {_uniqueStorage()._character = nil}
 
-  var collection: Proto_Collection {
+  public var collection: Proto_Collection {
     get {return _storage._collection ?? Proto_Collection()}
     set {_uniqueStorage()._collection = newValue}
   }
   /// Returns true if `collection` has been explicitly set.
-  var hasCollection: Bool {return _storage._collection != nil}
+  public var hasCollection: Bool {return _storage._collection != nil}
   /// Clears the value of `collection`. Subsequent reads from it will return its default value.
-  mutating func clearCollection() {_uniqueStorage()._collection = nil}
+  public mutating func clearCollection() {_uniqueStorage()._collection = nil}
 
-  var company: Proto_Company {
+  public var company: Proto_Company {
     get {return _storage._company ?? Proto_Company()}
     set {_uniqueStorage()._company = newValue}
   }
   /// Returns true if `company` has been explicitly set.
-  var hasCompany: Bool {return _storage._company != nil}
+  public var hasCompany: Bool {return _storage._company != nil}
   /// Clears the value of `company`. Subsequent reads from it will return its default value.
-  mutating func clearCompany() {_uniqueStorage()._company = nil}
+  public mutating func clearCompany() {_uniqueStorage()._company = nil}
 
-  var description_p: String {
+  public var description_p: String {
     get {return _storage._description_p}
     set {_uniqueStorage()._description_p = newValue}
   }
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _storage._game ?? Proto_Game()}
     set {_uniqueStorage()._game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return _storage._game != nil}
+  public var hasGame: Bool {return _storage._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {_uniqueStorage()._game = nil}
+  public mutating func clearGame() {_uniqueStorage()._game = nil}
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var platform: Proto_Platform {
+  public var platform: Proto_Platform {
     get {return _storage._platform ?? Proto_Platform()}
     set {_uniqueStorage()._platform = newValue}
   }
   /// Returns true if `platform` has been explicitly set.
-  var hasPlatform: Bool {return _storage._platform != nil}
+  public var hasPlatform: Bool {return _storage._platform != nil}
   /// Clears the value of `platform`. Subsequent reads from it will return its default value.
-  mutating func clearPlatform() {_uniqueStorage()._platform = nil}
+  public mutating func clearPlatform() {_uniqueStorage()._platform = nil}
 
-  var publishedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var publishedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._publishedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._publishedAt = newValue}
   }
   /// Returns true if `publishedAt` has been explicitly set.
-  var hasPublishedAt: Bool {return _storage._publishedAt != nil}
+  public var hasPublishedAt: Bool {return _storage._publishedAt != nil}
   /// Clears the value of `publishedAt`. Subsequent reads from it will return its default value.
-  mutating func clearPublishedAt() {_uniqueStorage()._publishedAt = nil}
+  public mutating func clearPublishedAt() {_uniqueStorage()._publishedAt = nil}
 
-  var testDummy: Proto_TestDummy {
+  public var testDummy: Proto_TestDummy {
     get {return _storage._testDummy ?? Proto_TestDummy()}
     set {_uniqueStorage()._testDummy = newValue}
   }
   /// Returns true if `testDummy` has been explicitly set.
-  var hasTestDummy: Bool {return _storage._testDummy != nil}
+  public var hasTestDummy: Bool {return _storage._testDummy != nil}
   /// Clears the value of `testDummy`. Subsequent reads from it will return its default value.
-  mutating func clearTestDummy() {_uniqueStorage()._testDummy = nil}
+  public mutating func clearTestDummy() {_uniqueStorage()._testDummy = nil}
 
-  var theme: Proto_Theme {
+  public var theme: Proto_Theme {
     get {return _storage._theme ?? Proto_Theme()}
     set {_uniqueStorage()._theme = newValue}
   }
   /// Returns true if `theme` has been explicitly set.
-  var hasTheme: Bool {return _storage._theme != nil}
+  public var hasTheme: Bool {return _storage._theme != nil}
   /// Clears the value of `theme`. Subsequent reads from it will return its default value.
-  mutating func clearTheme() {_uniqueStorage()._theme = nil}
+  public mutating func clearTheme() {_uniqueStorage()._theme = nil}
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_TestDummyResult: Sendable {
+public struct Proto_TestDummyResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var testdummies: [Proto_TestDummy] = []
+  public var testdummies: [Proto_TestDummy] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_TestDummy: @unchecked Sendable {
+public struct Proto_TestDummy: @unchecked Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 {
+  public var id: UInt64 {
     get {return _storage._id}
     set {_uniqueStorage()._id = newValue}
   }
 
-  var boolValue: Bool {
+  public var boolValue: Bool {
     get {return _storage._boolValue}
     set {_uniqueStorage()._boolValue = newValue}
   }
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
 
-  var enumTest: Proto_TestDummyEnumTestEnum {
+  public var enumTest: Proto_TestDummyEnumTestEnum {
     get {return _storage._enumTest}
     set {_uniqueStorage()._enumTest = newValue}
   }
 
-  var floatValue: Double {
+  public var floatValue: Double {
     get {return _storage._floatValue}
     set {_uniqueStorage()._floatValue = newValue}
   }
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _storage._game ?? Proto_Game()}
     set {_uniqueStorage()._game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return _storage._game != nil}
+  public var hasGame: Bool {return _storage._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {_uniqueStorage()._game = nil}
+  public mutating func clearGame() {_uniqueStorage()._game = nil}
 
-  var integerArray: [Int32] {
+  public var integerArray: [Int32] {
     get {return _storage._integerArray}
     set {_uniqueStorage()._integerArray = newValue}
   }
 
-  var integerValue: Int32 {
+  public var integerValue: Int32 {
     get {return _storage._integerValue}
     set {_uniqueStorage()._integerValue = newValue}
   }
 
-  var name: String {
+  public var name: String {
     get {return _storage._name}
     set {_uniqueStorage()._name = newValue}
   }
 
-  var newIntegerValue: Int32 {
+  public var newIntegerValue: Int32 {
     get {return _storage._newIntegerValue}
     set {_uniqueStorage()._newIntegerValue = newValue}
   }
 
-  var `private`: Bool {
+  public var `private`: Bool {
     get {return _storage._private}
     set {_uniqueStorage()._private = newValue}
   }
 
-  var slug: String {
+  public var slug: String {
     get {return _storage._slug}
     set {_uniqueStorage()._slug = newValue}
   }
 
-  var stringArray: [String] {
+  public var stringArray: [String] {
     get {return _storage._stringArray}
     set {_uniqueStorage()._stringArray = newValue}
   }
 
-  var testDummies: [Proto_TestDummy] {
+  public var testDummies: [Proto_TestDummy] {
     get {return _storage._testDummies}
     set {_uniqueStorage()._testDummies = newValue}
   }
 
-  var testDummy: Proto_TestDummy {
+  public var testDummy: Proto_TestDummy {
     get {return _storage._testDummy ?? Proto_TestDummy()}
     set {_uniqueStorage()._testDummy = newValue}
   }
   /// Returns true if `testDummy` has been explicitly set.
-  var hasTestDummy: Bool {return _storage._testDummy != nil}
+  public var hasTestDummy: Bool {return _storage._testDummy != nil}
   /// Clears the value of `testDummy`. Subsequent reads from it will return its default value.
-  mutating func clearTestDummy() {_uniqueStorage()._testDummy = nil}
+  public mutating func clearTestDummy() {_uniqueStorage()._testDummy = nil}
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_uniqueStorage()._updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
 
-  var url: String {
+  public var url: String {
     get {return _storage._url}
     set {_uniqueStorage()._url = newValue}
   }
 
-  var checksum: String {
+  public var checksum: String {
     get {return _storage._checksum}
     set {_uniqueStorage()._checksum = newValue}
   }
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-struct Proto_ThemeResult: Sendable {
+public struct Proto_ThemeResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var themes: [Proto_Theme] = []
+  public var themes: [Proto_Theme] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Theme: Sendable {
+public struct Proto_Theme: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_createdAt = newValue}
   }
   /// Returns true if `createdAt` has been explicitly set.
-  var hasCreatedAt: Bool {return self._createdAt != nil}
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
   /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
-  mutating func clearCreatedAt() {self._createdAt = nil}
+  public mutating func clearCreatedAt() {self._createdAt = nil}
 
-  var name: String = String()
+  public var name: String = String()
 
-  var slug: String = String()
+  public var slug: String = String()
 
-  var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
     get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
     set {_updatedAt = newValue}
   }
   /// Returns true if `updatedAt` has been explicitly set.
-  var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
   /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
-  mutating func clearUpdatedAt() {self._updatedAt = nil}
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-struct Proto_WebsiteResult: Sendable {
+public struct Proto_WebsiteResult: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var websites: [Proto_Website] = []
+  public var websites: [Proto_Website] = []
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 }
 
-struct Proto_Website: Sendable {
+public struct Proto_Website: Sendable {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
 
-  var id: UInt64 = 0
+  public var id: UInt64 = 0
 
-  var category: Proto_WebsiteCategoryEnum = .websiteCategoryNull
+  public var category: Proto_WebsiteCategoryEnum = .websiteCategoryNull
 
-  var game: Proto_Game {
+  public var game: Proto_Game {
     get {return _game ?? Proto_Game()}
     set {_game = newValue}
   }
   /// Returns true if `game` has been explicitly set.
-  var hasGame: Bool {return self._game != nil}
+  public var hasGame: Bool {return self._game != nil}
   /// Clears the value of `game`. Subsequent reads from it will return its default value.
-  mutating func clearGame() {self._game = nil}
+  public mutating func clearGame() {self._game = nil}
 
-  var trusted: Bool = false
+  public var trusted: Bool = false
 
-  var url: String = String()
+  public var url: String = String()
 
-  var checksum: String = String()
+  public var checksum: String = String()
 
-  var unknownFields = SwiftProtobuf.UnknownStorage()
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
 
-  init() {}
+  public init() {}
 
   fileprivate var _game: Proto_Game? = nil
 }
@@ -5330,7 +5330,7 @@ struct Proto_Website: Sendable {
 fileprivate let _protobuf_package = "proto"
 
 extension Proto_AgeRatingCategoryEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "AGERATING_CATEGORY_NULL"),
     1: .same(proto: "ESRB"),
     2: .same(proto: "PEGI"),
@@ -5343,7 +5343,7 @@ extension Proto_AgeRatingCategoryEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_AgeRatingRatingEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "AGERATING_RATING_NULL"),
     1: .same(proto: "THREE"),
     2: .same(proto: "SEVEN"),
@@ -5388,7 +5388,7 @@ extension Proto_AgeRatingRatingEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "AGERATINGCONTENTDESCRIPTION_CATEGORY_NULL"),
     1: .same(proto: "ESRB_ALCOHOL_REFERENCE"),
     2: .same(proto: "ESRB_ANIMATED_BLOOD"),
@@ -5479,7 +5479,7 @@ extension Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf._ProtoNam
 }
 
 extension Proto_GenderGenderEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "MALE"),
     1: .same(proto: "FEMALE"),
     2: .same(proto: "OTHER"),
@@ -5487,7 +5487,7 @@ extension Proto_GenderGenderEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_CharacterSpeciesEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "CHARACTER_SPECIES_NULL"),
     1: .same(proto: "HUMAN"),
     2: .same(proto: "ALIEN"),
@@ -5498,7 +5498,7 @@ extension Proto_CharacterSpeciesEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "YYYYMMMMDD"),
     1: .same(proto: "YYYYMMMM"),
     2: .same(proto: "YYYY"),
@@ -5511,7 +5511,7 @@ extension Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf._ProtoNameProvid
 }
 
 extension Proto_WebsiteCategoryEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "WEBSITE_CATEGORY_NULL"),
     1: .same(proto: "WEBSITE_OFFICIAL"),
     2: .same(proto: "WEBSITE_WIKIA"),
@@ -5534,7 +5534,7 @@ extension Proto_WebsiteCategoryEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_ExternalGameCategoryEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "EXTERNALGAME_CATEGORY_NULL"),
     1: .same(proto: "EXTERNALGAME_STEAM"),
     5: .same(proto: "EXTERNALGAME_GOG"),
@@ -5560,7 +5560,7 @@ extension Proto_ExternalGameCategoryEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_ExternalGameMediaEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "EXTERNALGAME_MEDIA_NULL"),
     1: .same(proto: "EXTERNALGAME_DIGITAL"),
     2: .same(proto: "EXTERNALGAME_PHYSICAL"),
@@ -5568,7 +5568,7 @@ extension Proto_ExternalGameMediaEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_GameCategoryEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "MAIN_GAME"),
     1: .same(proto: "DLC_ADDON"),
     2: .same(proto: "EXPANSION"),
@@ -5588,7 +5588,7 @@ extension Proto_GameCategoryEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_GameStatusEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "RELEASED"),
     2: .same(proto: "ALPHA"),
     3: .same(proto: "BETA"),
@@ -5601,14 +5601,14 @@ extension Proto_GameStatusEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_GameVersionFeatureCategoryEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "BOOLEAN"),
     1: .same(proto: "DESCRIPTION"),
   ]
 }
 
 extension Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "NOT_INCLUDED"),
     1: .same(proto: "INCLUDED"),
     2: .same(proto: "PRE_ORDER_ONLY"),
@@ -5616,7 +5616,7 @@ extension Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf._Proto
 }
 
 extension Proto_PlatformCategoryEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "PLATFORM_CATEGORY_NULL"),
     1: .same(proto: "CONSOLE"),
     2: .same(proto: "ARCADE"),
@@ -5628,7 +5628,7 @@ extension Proto_PlatformCategoryEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_RegionRegionEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "REGION_REGION_NULL"),
     1: .same(proto: "EUROPE"),
     2: .same(proto: "NORTH_AMERICA"),
@@ -5644,7 +5644,7 @@ extension Proto_RegionRegionEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_TestDummyEnumTestEnum: SwiftProtobuf._ProtoNameProviding {
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "TESTDUMMY_ENUM_TEST_NULL"),
     1: .same(proto: "ENUM1"),
     2: .same(proto: "ENUM2"),
@@ -5652,12 +5652,12 @@ extension Proto_TestDummyEnumTestEnum: SwiftProtobuf._ProtoNameProviding {
 }
 
 extension Proto_Count: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Count"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Count"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "count"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5669,14 +5669,14 @@ extension Proto_Count: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.count != 0 {
       try visitor.visitSingularInt64Field(value: self.count, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Count, rhs: Proto_Count) -> Bool {
+  public static func ==(lhs: Proto_Count, rhs: Proto_Count) -> Bool {
     if lhs.count != rhs.count {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -5684,14 +5684,14 @@ extension Proto_Count: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
 }
 
 extension Proto_MultiQueryResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".MultiQueryResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".MultiQueryResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "name"),
     2: .same(proto: "results"),
     3: .same(proto: "count"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5705,7 +5705,7 @@ extension Proto_MultiQueryResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.name.isEmpty {
       try visitor.visitSingularStringField(value: self.name, fieldNumber: 1)
     }
@@ -5718,7 +5718,7 @@ extension Proto_MultiQueryResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_MultiQueryResult, rhs: Proto_MultiQueryResult) -> Bool {
+  public static func ==(lhs: Proto_MultiQueryResult, rhs: Proto_MultiQueryResult) -> Bool {
     if lhs.name != rhs.name {return false}
     if lhs.results != rhs.results {return false}
     if lhs.count != rhs.count {return false}
@@ -5728,12 +5728,12 @@ extension Proto_MultiQueryResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 }
 
 extension Proto_MultiQueryResultArray: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".MultiQueryResultArray"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".MultiQueryResultArray"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "result"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5745,14 +5745,14 @@ extension Proto_MultiQueryResultArray: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.result.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.result, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_MultiQueryResultArray, rhs: Proto_MultiQueryResultArray) -> Bool {
+  public static func ==(lhs: Proto_MultiQueryResultArray, rhs: Proto_MultiQueryResultArray) -> Bool {
     if lhs.result != rhs.result {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -5760,12 +5760,12 @@ extension Proto_MultiQueryResultArray: SwiftProtobuf.Message, SwiftProtobuf._Mes
 }
 
 extension Proto_AgeRatingResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".AgeRatingResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".AgeRatingResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "ageratings"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5777,14 +5777,14 @@ extension Proto_AgeRatingResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.ageratings.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.ageratings, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_AgeRatingResult, rhs: Proto_AgeRatingResult) -> Bool {
+  public static func ==(lhs: Proto_AgeRatingResult, rhs: Proto_AgeRatingResult) -> Bool {
     if lhs.ageratings != rhs.ageratings {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -5792,8 +5792,8 @@ extension Proto_AgeRatingResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_AgeRating: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".AgeRating"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".AgeRating"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .standard(proto: "content_descriptions"),
@@ -5803,7 +5803,7 @@ extension Proto_AgeRating: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5821,7 +5821,7 @@ extension Proto_AgeRating: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -5846,7 +5846,7 @@ extension Proto_AgeRating: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_AgeRating, rhs: Proto_AgeRating) -> Bool {
+  public static func ==(lhs: Proto_AgeRating, rhs: Proto_AgeRating) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.category != rhs.category {return false}
     if lhs.contentDescriptions != rhs.contentDescriptions {return false}
@@ -5860,12 +5860,12 @@ extension Proto_AgeRating: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
 }
 
 extension Proto_AgeRatingContentDescriptionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".AgeRatingContentDescriptionResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".AgeRatingContentDescriptionResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "ageratingcontentdescriptions"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5877,14 +5877,14 @@ extension Proto_AgeRatingContentDescriptionResult: SwiftProtobuf.Message, SwiftP
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.ageratingcontentdescriptions.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.ageratingcontentdescriptions, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_AgeRatingContentDescriptionResult, rhs: Proto_AgeRatingContentDescriptionResult) -> Bool {
+  public static func ==(lhs: Proto_AgeRatingContentDescriptionResult, rhs: Proto_AgeRatingContentDescriptionResult) -> Bool {
     if lhs.ageratingcontentdescriptions != rhs.ageratingcontentdescriptions {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -5892,15 +5892,15 @@ extension Proto_AgeRatingContentDescriptionResult: SwiftProtobuf.Message, SwiftP
 }
 
 extension Proto_AgeRatingContentDescription: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".AgeRatingContentDescription"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".AgeRatingContentDescription"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .same(proto: "description"),
     4: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5915,7 +5915,7 @@ extension Proto_AgeRatingContentDescription: SwiftProtobuf.Message, SwiftProtobu
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -5931,7 +5931,7 @@ extension Proto_AgeRatingContentDescription: SwiftProtobuf.Message, SwiftProtobu
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_AgeRatingContentDescription, rhs: Proto_AgeRatingContentDescription) -> Bool {
+  public static func ==(lhs: Proto_AgeRatingContentDescription, rhs: Proto_AgeRatingContentDescription) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.category != rhs.category {return false}
     if lhs.description_p != rhs.description_p {return false}
@@ -5942,12 +5942,12 @@ extension Proto_AgeRatingContentDescription: SwiftProtobuf.Message, SwiftProtobu
 }
 
 extension Proto_AlternativeNameResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".AlternativeNameResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".AlternativeNameResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "alternativenames"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5959,14 +5959,14 @@ extension Proto_AlternativeNameResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.alternativenames.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.alternativenames, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_AlternativeNameResult, rhs: Proto_AlternativeNameResult) -> Bool {
+  public static func ==(lhs: Proto_AlternativeNameResult, rhs: Proto_AlternativeNameResult) -> Bool {
     if lhs.alternativenames != rhs.alternativenames {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -5974,8 +5974,8 @@ extension Proto_AlternativeNameResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
 }
 
 extension Proto_AlternativeName: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".AlternativeName"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".AlternativeName"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "comment"),
     3: .same(proto: "game"),
@@ -5983,7 +5983,7 @@ extension Proto_AlternativeName: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     5: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -5999,7 +5999,7 @@ extension Proto_AlternativeName: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -6022,7 +6022,7 @@ extension Proto_AlternativeName: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_AlternativeName, rhs: Proto_AlternativeName) -> Bool {
+  public static func ==(lhs: Proto_AlternativeName, rhs: Proto_AlternativeName) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.comment != rhs.comment {return false}
     if lhs._game != rhs._game {return false}
@@ -6034,12 +6034,12 @@ extension Proto_AlternativeName: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_ArtworkResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ArtworkResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ArtworkResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "artworks"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6051,14 +6051,14 @@ extension Proto_ArtworkResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.artworks.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.artworks, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ArtworkResult, rhs: Proto_ArtworkResult) -> Bool {
+  public static func ==(lhs: Proto_ArtworkResult, rhs: Proto_ArtworkResult) -> Bool {
     if lhs.artworks != rhs.artworks {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -6066,8 +6066,8 @@ extension Proto_ArtworkResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
 }
 
 extension Proto_Artwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Artwork"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Artwork"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "alpha_channel"),
     3: .same(proto: "animated"),
@@ -6079,7 +6079,7 @@ extension Proto_Artwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     9: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6099,7 +6099,7 @@ extension Proto_Artwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -6134,7 +6134,7 @@ extension Proto_Artwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Artwork, rhs: Proto_Artwork) -> Bool {
+  public static func ==(lhs: Proto_Artwork, rhs: Proto_Artwork) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.alphaChannel != rhs.alphaChannel {return false}
     if lhs.animated != rhs.animated {return false}
@@ -6150,12 +6150,12 @@ extension Proto_Artwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
 }
 
 extension Proto_CharacterResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CharacterResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CharacterResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "characters"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6167,14 +6167,14 @@ extension Proto_CharacterResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.characters.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.characters, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CharacterResult, rhs: Proto_CharacterResult) -> Bool {
+  public static func ==(lhs: Proto_CharacterResult, rhs: Proto_CharacterResult) -> Bool {
     if lhs.characters != rhs.characters {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -6182,8 +6182,8 @@ extension Proto_CharacterResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_Character: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Character"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Character"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "akas"),
     3: .standard(proto: "country_name"),
@@ -6245,7 +6245,7 @@ extension Proto_Character: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -6273,7 +6273,7 @@ extension Proto_Character: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -6325,7 +6325,7 @@ extension Proto_Character: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Character, rhs: Proto_Character) -> Bool {
+  public static func ==(lhs: Proto_Character, rhs: Proto_Character) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -6354,12 +6354,12 @@ extension Proto_Character: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
 }
 
 extension Proto_CharacterMugShotResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CharacterMugShotResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CharacterMugShotResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "charactermugshots"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6371,14 +6371,14 @@ extension Proto_CharacterMugShotResult: SwiftProtobuf.Message, SwiftProtobuf._Me
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.charactermugshots.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.charactermugshots, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CharacterMugShotResult, rhs: Proto_CharacterMugShotResult) -> Bool {
+  public static func ==(lhs: Proto_CharacterMugShotResult, rhs: Proto_CharacterMugShotResult) -> Bool {
     if lhs.charactermugshots != rhs.charactermugshots {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -6386,8 +6386,8 @@ extension Proto_CharacterMugShotResult: SwiftProtobuf.Message, SwiftProtobuf._Me
 }
 
 extension Proto_CharacterMugShot: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CharacterMugShot"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CharacterMugShot"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "alpha_channel"),
     3: .same(proto: "animated"),
@@ -6398,7 +6398,7 @@ extension Proto_CharacterMugShot: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     8: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6417,7 +6417,7 @@ extension Proto_CharacterMugShot: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -6445,7 +6445,7 @@ extension Proto_CharacterMugShot: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CharacterMugShot, rhs: Proto_CharacterMugShot) -> Bool {
+  public static func ==(lhs: Proto_CharacterMugShot, rhs: Proto_CharacterMugShot) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.alphaChannel != rhs.alphaChannel {return false}
     if lhs.animated != rhs.animated {return false}
@@ -6460,12 +6460,12 @@ extension Proto_CharacterMugShot: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 }
 
 extension Proto_CollectionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "collections"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6477,14 +6477,14 @@ extension Proto_CollectionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.collections.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.collections, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionResult, rhs: Proto_CollectionResult) -> Bool {
+  public static func ==(lhs: Proto_CollectionResult, rhs: Proto_CollectionResult) -> Bool {
     if lhs.collections != rhs.collections {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -6492,8 +6492,8 @@ extension Proto_CollectionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 }
 
 extension Proto_Collection: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Collection"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Collection"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "created_at"),
     3: .same(proto: "games"),
@@ -6546,7 +6546,7 @@ extension Proto_Collection: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -6571,7 +6571,7 @@ extension Proto_Collection: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -6614,7 +6614,7 @@ extension Proto_Collection: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Collection, rhs: Proto_Collection) -> Bool {
+  public static func ==(lhs: Proto_Collection, rhs: Proto_Collection) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -6640,12 +6640,12 @@ extension Proto_Collection: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
 }
 
 extension Proto_CollectionMembershipResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionMembershipResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionMembershipResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "collectionmemberships"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6657,14 +6657,14 @@ extension Proto_CollectionMembershipResult: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.collectionmemberships.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.collectionmemberships, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionMembershipResult, rhs: Proto_CollectionMembershipResult) -> Bool {
+  public static func ==(lhs: Proto_CollectionMembershipResult, rhs: Proto_CollectionMembershipResult) -> Bool {
     if lhs.collectionmemberships != rhs.collectionmemberships {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -6672,8 +6672,8 @@ extension Proto_CollectionMembershipResult: SwiftProtobuf.Message, SwiftProtobuf
 }
 
 extension Proto_CollectionMembership: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionMembership"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionMembership"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "game"),
     3: .same(proto: "collection"),
@@ -6714,7 +6714,7 @@ extension Proto_CollectionMembership: SwiftProtobuf.Message, SwiftProtobuf._Mess
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -6735,7 +6735,7 @@ extension Proto_CollectionMembership: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -6766,7 +6766,7 @@ extension Proto_CollectionMembership: SwiftProtobuf.Message, SwiftProtobuf._Mess
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionMembership, rhs: Proto_CollectionMembership) -> Bool {
+  public static func ==(lhs: Proto_CollectionMembership, rhs: Proto_CollectionMembership) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -6788,12 +6788,12 @@ extension Proto_CollectionMembership: SwiftProtobuf.Message, SwiftProtobuf._Mess
 }
 
 extension Proto_CollectionMembershipTypeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionMembershipTypeResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionMembershipTypeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "collectionmembershiptypes"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6805,14 +6805,14 @@ extension Proto_CollectionMembershipTypeResult: SwiftProtobuf.Message, SwiftProt
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.collectionmembershiptypes.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.collectionmembershiptypes, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionMembershipTypeResult, rhs: Proto_CollectionMembershipTypeResult) -> Bool {
+  public static func ==(lhs: Proto_CollectionMembershipTypeResult, rhs: Proto_CollectionMembershipTypeResult) -> Bool {
     if lhs.collectionmembershiptypes != rhs.collectionmembershiptypes {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -6820,8 +6820,8 @@ extension Proto_CollectionMembershipTypeResult: SwiftProtobuf.Message, SwiftProt
 }
 
 extension Proto_CollectionMembershipType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionMembershipType"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionMembershipType"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .same(proto: "description"),
@@ -6831,7 +6831,7 @@ extension Proto_CollectionMembershipType: SwiftProtobuf.Message, SwiftProtobuf._
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6849,7 +6849,7 @@ extension Proto_CollectionMembershipType: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -6878,7 +6878,7 @@ extension Proto_CollectionMembershipType: SwiftProtobuf.Message, SwiftProtobuf._
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionMembershipType, rhs: Proto_CollectionMembershipType) -> Bool {
+  public static func ==(lhs: Proto_CollectionMembershipType, rhs: Proto_CollectionMembershipType) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.name != rhs.name {return false}
     if lhs.description_p != rhs.description_p {return false}
@@ -6892,12 +6892,12 @@ extension Proto_CollectionMembershipType: SwiftProtobuf.Message, SwiftProtobuf._
 }
 
 extension Proto_CollectionRelationResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionRelationResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionRelationResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "collectionrelations"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6909,14 +6909,14 @@ extension Proto_CollectionRelationResult: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.collectionrelations.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.collectionrelations, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionRelationResult, rhs: Proto_CollectionRelationResult) -> Bool {
+  public static func ==(lhs: Proto_CollectionRelationResult, rhs: Proto_CollectionRelationResult) -> Bool {
     if lhs.collectionrelations != rhs.collectionrelations {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -6924,8 +6924,8 @@ extension Proto_CollectionRelationResult: SwiftProtobuf.Message, SwiftProtobuf._
 }
 
 extension Proto_CollectionRelation: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionRelation"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionRelation"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "child_collection"),
     3: .standard(proto: "parent_collection"),
@@ -6935,7 +6935,7 @@ extension Proto_CollectionRelation: SwiftProtobuf.Message, SwiftProtobuf._Messag
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -6953,7 +6953,7 @@ extension Proto_CollectionRelation: SwiftProtobuf.Message, SwiftProtobuf._Messag
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -6982,7 +6982,7 @@ extension Proto_CollectionRelation: SwiftProtobuf.Message, SwiftProtobuf._Messag
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionRelation, rhs: Proto_CollectionRelation) -> Bool {
+  public static func ==(lhs: Proto_CollectionRelation, rhs: Proto_CollectionRelation) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._childCollection != rhs._childCollection {return false}
     if lhs._parentCollection != rhs._parentCollection {return false}
@@ -6996,12 +6996,12 @@ extension Proto_CollectionRelation: SwiftProtobuf.Message, SwiftProtobuf._Messag
 }
 
 extension Proto_CollectionRelationTypeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionRelationTypeResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionRelationTypeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "collectionrelationtypes"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7013,14 +7013,14 @@ extension Proto_CollectionRelationTypeResult: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.collectionrelationtypes.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.collectionrelationtypes, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionRelationTypeResult, rhs: Proto_CollectionRelationTypeResult) -> Bool {
+  public static func ==(lhs: Proto_CollectionRelationTypeResult, rhs: Proto_CollectionRelationTypeResult) -> Bool {
     if lhs.collectionrelationtypes != rhs.collectionrelationtypes {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -7028,8 +7028,8 @@ extension Proto_CollectionRelationTypeResult: SwiftProtobuf.Message, SwiftProtob
 }
 
 extension Proto_CollectionRelationType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionRelationType"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionRelationType"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .same(proto: "description"),
@@ -7073,7 +7073,7 @@ extension Proto_CollectionRelationType: SwiftProtobuf.Message, SwiftProtobuf._Me
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -7095,7 +7095,7 @@ extension Proto_CollectionRelationType: SwiftProtobuf.Message, SwiftProtobuf._Me
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -7129,7 +7129,7 @@ extension Proto_CollectionRelationType: SwiftProtobuf.Message, SwiftProtobuf._Me
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionRelationType, rhs: Proto_CollectionRelationType) -> Bool {
+  public static func ==(lhs: Proto_CollectionRelationType, rhs: Proto_CollectionRelationType) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -7152,12 +7152,12 @@ extension Proto_CollectionRelationType: SwiftProtobuf.Message, SwiftProtobuf._Me
 }
 
 extension Proto_CollectionTypeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionTypeResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionTypeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "collectiontypes"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7169,14 +7169,14 @@ extension Proto_CollectionTypeResult: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.collectiontypes.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.collectiontypes, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionTypeResult, rhs: Proto_CollectionTypeResult) -> Bool {
+  public static func ==(lhs: Proto_CollectionTypeResult, rhs: Proto_CollectionTypeResult) -> Bool {
     if lhs.collectiontypes != rhs.collectiontypes {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -7184,8 +7184,8 @@ extension Proto_CollectionTypeResult: SwiftProtobuf.Message, SwiftProtobuf._Mess
 }
 
 extension Proto_CollectionType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CollectionType"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CollectionType"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .same(proto: "description"),
@@ -7194,7 +7194,7 @@ extension Proto_CollectionType: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     6: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7211,7 +7211,7 @@ extension Proto_CollectionType: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -7237,7 +7237,7 @@ extension Proto_CollectionType: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CollectionType, rhs: Proto_CollectionType) -> Bool {
+  public static func ==(lhs: Proto_CollectionType, rhs: Proto_CollectionType) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.name != rhs.name {return false}
     if lhs.description_p != rhs.description_p {return false}
@@ -7250,12 +7250,12 @@ extension Proto_CollectionType: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
 }
 
 extension Proto_CompanyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CompanyResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CompanyResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "companies"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7267,14 +7267,14 @@ extension Proto_CompanyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.companies.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.companies, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CompanyResult, rhs: Proto_CompanyResult) -> Bool {
+  public static func ==(lhs: Proto_CompanyResult, rhs: Proto_CompanyResult) -> Bool {
     if lhs.companies != rhs.companies {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -7282,8 +7282,8 @@ extension Proto_CompanyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
 }
 
 extension Proto_Company: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Company"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Company"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "change_date"),
     3: .standard(proto: "change_date_category"),
@@ -7360,7 +7360,7 @@ extension Proto_Company: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -7393,7 +7393,7 @@ extension Proto_Company: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -7460,7 +7460,7 @@ extension Proto_Company: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Company, rhs: Proto_Company) -> Bool {
+  public static func ==(lhs: Proto_Company, rhs: Proto_Company) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -7494,12 +7494,12 @@ extension Proto_Company: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
 }
 
 extension Proto_CompanyLogoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CompanyLogoResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CompanyLogoResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "companylogos"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7511,14 +7511,14 @@ extension Proto_CompanyLogoResult: SwiftProtobuf.Message, SwiftProtobuf._Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.companylogos.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.companylogos, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CompanyLogoResult, rhs: Proto_CompanyLogoResult) -> Bool {
+  public static func ==(lhs: Proto_CompanyLogoResult, rhs: Proto_CompanyLogoResult) -> Bool {
     if lhs.companylogos != rhs.companylogos {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -7526,8 +7526,8 @@ extension Proto_CompanyLogoResult: SwiftProtobuf.Message, SwiftProtobuf._Message
 }
 
 extension Proto_CompanyLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CompanyLogo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CompanyLogo"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "alpha_channel"),
     3: .same(proto: "animated"),
@@ -7538,7 +7538,7 @@ extension Proto_CompanyLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     8: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7557,7 +7557,7 @@ extension Proto_CompanyLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -7585,7 +7585,7 @@ extension Proto_CompanyLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CompanyLogo, rhs: Proto_CompanyLogo) -> Bool {
+  public static func ==(lhs: Proto_CompanyLogo, rhs: Proto_CompanyLogo) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.alphaChannel != rhs.alphaChannel {return false}
     if lhs.animated != rhs.animated {return false}
@@ -7600,12 +7600,12 @@ extension Proto_CompanyLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension Proto_CompanyWebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CompanyWebsiteResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CompanyWebsiteResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "companywebsites"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7617,14 +7617,14 @@ extension Proto_CompanyWebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.companywebsites.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.companywebsites, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CompanyWebsiteResult, rhs: Proto_CompanyWebsiteResult) -> Bool {
+  public static func ==(lhs: Proto_CompanyWebsiteResult, rhs: Proto_CompanyWebsiteResult) -> Bool {
     if lhs.companywebsites != rhs.companywebsites {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -7632,8 +7632,8 @@ extension Proto_CompanyWebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._Mess
 }
 
 extension Proto_CompanyWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CompanyWebsite"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CompanyWebsite"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .same(proto: "trusted"),
@@ -7641,7 +7641,7 @@ extension Proto_CompanyWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     5: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7657,7 +7657,7 @@ extension Proto_CompanyWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -7676,7 +7676,7 @@ extension Proto_CompanyWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CompanyWebsite, rhs: Proto_CompanyWebsite) -> Bool {
+  public static func ==(lhs: Proto_CompanyWebsite, rhs: Proto_CompanyWebsite) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.category != rhs.category {return false}
     if lhs.trusted != rhs.trusted {return false}
@@ -7688,12 +7688,12 @@ extension Proto_CompanyWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
 }
 
 extension Proto_CoverResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".CoverResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".CoverResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "covers"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7705,14 +7705,14 @@ extension Proto_CoverResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.covers.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.covers, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_CoverResult, rhs: Proto_CoverResult) -> Bool {
+  public static func ==(lhs: Proto_CoverResult, rhs: Proto_CoverResult) -> Bool {
     if lhs.covers != rhs.covers {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -7720,8 +7720,8 @@ extension Proto_CoverResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension Proto_Cover: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Cover"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Cover"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "alpha_channel"),
     3: .same(proto: "animated"),
@@ -7771,7 +7771,7 @@ extension Proto_Cover: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -7795,7 +7795,7 @@ extension Proto_Cover: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -7835,7 +7835,7 @@ extension Proto_Cover: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Cover, rhs: Proto_Cover) -> Bool {
+  public static func ==(lhs: Proto_Cover, rhs: Proto_Cover) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -7860,12 +7860,12 @@ extension Proto_Cover: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
 }
 
 extension Proto_EventResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".EventResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".EventResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "events"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -7877,14 +7877,14 @@ extension Proto_EventResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.events.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.events, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_EventResult, rhs: Proto_EventResult) -> Bool {
+  public static func ==(lhs: Proto_EventResult, rhs: Proto_EventResult) -> Bool {
     if lhs.events != rhs.events {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -7892,8 +7892,8 @@ extension Proto_EventResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension Proto_Event: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Event"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Event"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .same(proto: "description"),
@@ -7958,7 +7958,7 @@ extension Proto_Event: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -7987,7 +7987,7 @@ extension Proto_Event: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -8042,7 +8042,7 @@ extension Proto_Event: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Event, rhs: Proto_Event) -> Bool {
+  public static func ==(lhs: Proto_Event, rhs: Proto_Event) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -8072,12 +8072,12 @@ extension Proto_Event: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
 }
 
 extension Proto_EventLogoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".EventLogoResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".EventLogoResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "eventlogos"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -8089,14 +8089,14 @@ extension Proto_EventLogoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.eventlogos.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.eventlogos, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_EventLogoResult, rhs: Proto_EventLogoResult) -> Bool {
+  public static func ==(lhs: Proto_EventLogoResult, rhs: Proto_EventLogoResult) -> Bool {
     if lhs.eventlogos != rhs.eventlogos {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -8104,8 +8104,8 @@ extension Proto_EventLogoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_EventLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".EventLogo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".EventLogo"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "event"),
     3: .standard(proto: "alpha_channel"),
@@ -8158,7 +8158,7 @@ extension Proto_EventLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -8183,7 +8183,7 @@ extension Proto_EventLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -8226,7 +8226,7 @@ extension Proto_EventLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_EventLogo, rhs: Proto_EventLogo) -> Bool {
+  public static func ==(lhs: Proto_EventLogo, rhs: Proto_EventLogo) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -8252,12 +8252,12 @@ extension Proto_EventLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
 }
 
 extension Proto_EventNetworkResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".EventNetworkResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".EventNetworkResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "eventnetworks"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -8269,14 +8269,14 @@ extension Proto_EventNetworkResult: SwiftProtobuf.Message, SwiftProtobuf._Messag
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.eventnetworks.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.eventnetworks, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_EventNetworkResult, rhs: Proto_EventNetworkResult) -> Bool {
+  public static func ==(lhs: Proto_EventNetworkResult, rhs: Proto_EventNetworkResult) -> Bool {
     if lhs.eventnetworks != rhs.eventnetworks {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -8284,8 +8284,8 @@ extension Proto_EventNetworkResult: SwiftProtobuf.Message, SwiftProtobuf._Messag
 }
 
 extension Proto_EventNetwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".EventNetwork"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".EventNetwork"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "event"),
     3: .same(proto: "url"),
@@ -8295,7 +8295,7 @@ extension Proto_EventNetwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -8313,7 +8313,7 @@ extension Proto_EventNetwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -8342,7 +8342,7 @@ extension Proto_EventNetwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_EventNetwork, rhs: Proto_EventNetwork) -> Bool {
+  public static func ==(lhs: Proto_EventNetwork, rhs: Proto_EventNetwork) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._event != rhs._event {return false}
     if lhs.url != rhs.url {return false}
@@ -8356,12 +8356,12 @@ extension Proto_EventNetwork: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
 }
 
 extension Proto_ExternalGameResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ExternalGameResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ExternalGameResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "externalgames"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -8373,14 +8373,14 @@ extension Proto_ExternalGameResult: SwiftProtobuf.Message, SwiftProtobuf._Messag
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.externalgames.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.externalgames, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ExternalGameResult, rhs: Proto_ExternalGameResult) -> Bool {
+  public static func ==(lhs: Proto_ExternalGameResult, rhs: Proto_ExternalGameResult) -> Bool {
     if lhs.externalgames != rhs.externalgames {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -8388,8 +8388,8 @@ extension Proto_ExternalGameResult: SwiftProtobuf.Message, SwiftProtobuf._Messag
 }
 
 extension Proto_ExternalGame: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ExternalGame"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ExternalGame"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .standard(proto: "created_at"),
@@ -8405,7 +8405,7 @@ extension Proto_ExternalGame: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     13: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -8429,7 +8429,7 @@ extension Proto_ExternalGame: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -8476,7 +8476,7 @@ extension Proto_ExternalGame: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ExternalGame, rhs: Proto_ExternalGame) -> Bool {
+  public static func ==(lhs: Proto_ExternalGame, rhs: Proto_ExternalGame) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.category != rhs.category {return false}
     if lhs._createdAt != rhs._createdAt {return false}
@@ -8496,12 +8496,12 @@ extension Proto_ExternalGame: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
 }
 
 extension Proto_FranchiseResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".FranchiseResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".FranchiseResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "franchises"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -8513,14 +8513,14 @@ extension Proto_FranchiseResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.franchises.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.franchises, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_FranchiseResult, rhs: Proto_FranchiseResult) -> Bool {
+  public static func ==(lhs: Proto_FranchiseResult, rhs: Proto_FranchiseResult) -> Bool {
     if lhs.franchises != rhs.franchises {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -8528,8 +8528,8 @@ extension Proto_FranchiseResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_Franchise: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Franchise"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Franchise"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "created_at"),
     3: .same(proto: "games"),
@@ -8540,7 +8540,7 @@ extension Proto_Franchise: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     8: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -8559,7 +8559,7 @@ extension Proto_Franchise: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -8591,7 +8591,7 @@ extension Proto_Franchise: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Franchise, rhs: Proto_Franchise) -> Bool {
+  public static func ==(lhs: Proto_Franchise, rhs: Proto_Franchise) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._createdAt != rhs._createdAt {return false}
     if lhs.games != rhs.games {return false}
@@ -8606,12 +8606,12 @@ extension Proto_Franchise: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
 }
 
 extension Proto_GameResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "games"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -8623,14 +8623,14 @@ extension Proto_GameResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.games.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.games, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameResult, rhs: Proto_GameResult) -> Bool {
+  public static func ==(lhs: Proto_GameResult, rhs: Proto_GameResult) -> Bool {
     if lhs.games != rhs.games {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -8638,8 +8638,8 @@ extension Proto_GameResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
 }
 
 extension Proto_Game: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Game"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Game"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "age_ratings"),
     3: .standard(proto: "aggregated_rating"),
@@ -8833,7 +8833,7 @@ extension Proto_Game: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -8905,7 +8905,7 @@ extension Proto_Game: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -9089,7 +9089,7 @@ extension Proto_Game: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Game, rhs: Proto_Game) -> Bool {
+  public static func ==(lhs: Proto_Game, rhs: Proto_Game) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -9162,12 +9162,12 @@ extension Proto_Game: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
 }
 
 extension Proto_GameEngineResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameEngineResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameEngineResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "gameengines"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9179,14 +9179,14 @@ extension Proto_GameEngineResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.gameengines.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.gameengines, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameEngineResult, rhs: Proto_GameEngineResult) -> Bool {
+  public static func ==(lhs: Proto_GameEngineResult, rhs: Proto_GameEngineResult) -> Bool {
     if lhs.gameengines != rhs.gameengines {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -9194,8 +9194,8 @@ extension Proto_GameEngineResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 }
 
 extension Proto_GameEngine: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameEngine"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameEngine"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "companies"),
     3: .standard(proto: "created_at"),
@@ -9248,7 +9248,7 @@ extension Proto_GameEngine: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -9273,7 +9273,7 @@ extension Proto_GameEngine: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -9316,7 +9316,7 @@ extension Proto_GameEngine: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameEngine, rhs: Proto_GameEngine) -> Bool {
+  public static func ==(lhs: Proto_GameEngine, rhs: Proto_GameEngine) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -9342,12 +9342,12 @@ extension Proto_GameEngine: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
 }
 
 extension Proto_GameEngineLogoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameEngineLogoResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameEngineLogoResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "gameenginelogos"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9359,14 +9359,14 @@ extension Proto_GameEngineLogoResult: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.gameenginelogos.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.gameenginelogos, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameEngineLogoResult, rhs: Proto_GameEngineLogoResult) -> Bool {
+  public static func ==(lhs: Proto_GameEngineLogoResult, rhs: Proto_GameEngineLogoResult) -> Bool {
     if lhs.gameenginelogos != rhs.gameenginelogos {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -9374,8 +9374,8 @@ extension Proto_GameEngineLogoResult: SwiftProtobuf.Message, SwiftProtobuf._Mess
 }
 
 extension Proto_GameEngineLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameEngineLogo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameEngineLogo"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "alpha_channel"),
     3: .same(proto: "animated"),
@@ -9386,7 +9386,7 @@ extension Proto_GameEngineLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     8: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9405,7 +9405,7 @@ extension Proto_GameEngineLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -9433,7 +9433,7 @@ extension Proto_GameEngineLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameEngineLogo, rhs: Proto_GameEngineLogo) -> Bool {
+  public static func ==(lhs: Proto_GameEngineLogo, rhs: Proto_GameEngineLogo) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.alphaChannel != rhs.alphaChannel {return false}
     if lhs.animated != rhs.animated {return false}
@@ -9448,12 +9448,12 @@ extension Proto_GameEngineLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
 }
 
 extension Proto_GameLocalizationResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameLocalizationResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameLocalizationResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "gamelocalizations"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9465,14 +9465,14 @@ extension Proto_GameLocalizationResult: SwiftProtobuf.Message, SwiftProtobuf._Me
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.gamelocalizations.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.gamelocalizations, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameLocalizationResult, rhs: Proto_GameLocalizationResult) -> Bool {
+  public static func ==(lhs: Proto_GameLocalizationResult, rhs: Proto_GameLocalizationResult) -> Bool {
     if lhs.gamelocalizations != rhs.gamelocalizations {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -9480,8 +9480,8 @@ extension Proto_GameLocalizationResult: SwiftProtobuf.Message, SwiftProtobuf._Me
 }
 
 extension Proto_GameLocalization: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameLocalization"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameLocalization"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .same(proto: "cover"),
@@ -9525,7 +9525,7 @@ extension Proto_GameLocalization: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -9547,7 +9547,7 @@ extension Proto_GameLocalization: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -9581,7 +9581,7 @@ extension Proto_GameLocalization: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameLocalization, rhs: Proto_GameLocalization) -> Bool {
+  public static func ==(lhs: Proto_GameLocalization, rhs: Proto_GameLocalization) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -9604,12 +9604,12 @@ extension Proto_GameLocalization: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 }
 
 extension Proto_GameModeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameModeResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameModeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "gamemodes"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9621,14 +9621,14 @@ extension Proto_GameModeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.gamemodes.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.gamemodes, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameModeResult, rhs: Proto_GameModeResult) -> Bool {
+  public static func ==(lhs: Proto_GameModeResult, rhs: Proto_GameModeResult) -> Bool {
     if lhs.gamemodes != rhs.gamemodes {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -9636,8 +9636,8 @@ extension Proto_GameModeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
 }
 
 extension Proto_GameMode: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameMode"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameMode"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "created_at"),
     3: .same(proto: "name"),
@@ -9647,7 +9647,7 @@ extension Proto_GameMode: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9665,7 +9665,7 @@ extension Proto_GameMode: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -9694,7 +9694,7 @@ extension Proto_GameMode: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameMode, rhs: Proto_GameMode) -> Bool {
+  public static func ==(lhs: Proto_GameMode, rhs: Proto_GameMode) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._createdAt != rhs._createdAt {return false}
     if lhs.name != rhs.name {return false}
@@ -9708,12 +9708,12 @@ extension Proto_GameMode: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
 }
 
 extension Proto_GameVersionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameVersionResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameVersionResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "gameversions"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9725,14 +9725,14 @@ extension Proto_GameVersionResult: SwiftProtobuf.Message, SwiftProtobuf._Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.gameversions.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.gameversions, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameVersionResult, rhs: Proto_GameVersionResult) -> Bool {
+  public static func ==(lhs: Proto_GameVersionResult, rhs: Proto_GameVersionResult) -> Bool {
     if lhs.gameversions != rhs.gameversions {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -9740,8 +9740,8 @@ extension Proto_GameVersionResult: SwiftProtobuf.Message, SwiftProtobuf._Message
 }
 
 extension Proto_GameVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameVersion"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameVersion"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "created_at"),
     3: .same(proto: "features"),
@@ -9752,7 +9752,7 @@ extension Proto_GameVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     8: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9771,7 +9771,7 @@ extension Proto_GameVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -9803,7 +9803,7 @@ extension Proto_GameVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameVersion, rhs: Proto_GameVersion) -> Bool {
+  public static func ==(lhs: Proto_GameVersion, rhs: Proto_GameVersion) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._createdAt != rhs._createdAt {return false}
     if lhs.features != rhs.features {return false}
@@ -9818,12 +9818,12 @@ extension Proto_GameVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension Proto_GameVersionFeatureResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameVersionFeatureResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameVersionFeatureResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "gameversionfeatures"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9835,14 +9835,14 @@ extension Proto_GameVersionFeatureResult: SwiftProtobuf.Message, SwiftProtobuf._
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.gameversionfeatures.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.gameversionfeatures, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameVersionFeatureResult, rhs: Proto_GameVersionFeatureResult) -> Bool {
+  public static func ==(lhs: Proto_GameVersionFeatureResult, rhs: Proto_GameVersionFeatureResult) -> Bool {
     if lhs.gameversionfeatures != rhs.gameversionfeatures {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -9850,8 +9850,8 @@ extension Proto_GameVersionFeatureResult: SwiftProtobuf.Message, SwiftProtobuf._
 }
 
 extension Proto_GameVersionFeature: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameVersionFeature"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameVersionFeature"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .same(proto: "description"),
@@ -9861,7 +9861,7 @@ extension Proto_GameVersionFeature: SwiftProtobuf.Message, SwiftProtobuf._Messag
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9879,7 +9879,7 @@ extension Proto_GameVersionFeature: SwiftProtobuf.Message, SwiftProtobuf._Messag
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -9904,7 +9904,7 @@ extension Proto_GameVersionFeature: SwiftProtobuf.Message, SwiftProtobuf._Messag
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameVersionFeature, rhs: Proto_GameVersionFeature) -> Bool {
+  public static func ==(lhs: Proto_GameVersionFeature, rhs: Proto_GameVersionFeature) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.category != rhs.category {return false}
     if lhs.description_p != rhs.description_p {return false}
@@ -9918,12 +9918,12 @@ extension Proto_GameVersionFeature: SwiftProtobuf.Message, SwiftProtobuf._Messag
 }
 
 extension Proto_GameVersionFeatureValueResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameVersionFeatureValueResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameVersionFeatureValueResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "gameversionfeaturevalues"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9935,14 +9935,14 @@ extension Proto_GameVersionFeatureValueResult: SwiftProtobuf.Message, SwiftProto
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.gameversionfeaturevalues.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.gameversionfeaturevalues, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameVersionFeatureValueResult, rhs: Proto_GameVersionFeatureValueResult) -> Bool {
+  public static func ==(lhs: Proto_GameVersionFeatureValueResult, rhs: Proto_GameVersionFeatureValueResult) -> Bool {
     if lhs.gameversionfeaturevalues != rhs.gameversionfeaturevalues {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -9950,8 +9950,8 @@ extension Proto_GameVersionFeatureValueResult: SwiftProtobuf.Message, SwiftProto
 }
 
 extension Proto_GameVersionFeatureValue: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameVersionFeatureValue"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameVersionFeatureValue"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "game"),
     3: .standard(proto: "game_feature"),
@@ -9960,7 +9960,7 @@ extension Proto_GameVersionFeatureValue: SwiftProtobuf.Message, SwiftProtobuf._M
     6: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -9977,7 +9977,7 @@ extension Proto_GameVersionFeatureValue: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -10003,7 +10003,7 @@ extension Proto_GameVersionFeatureValue: SwiftProtobuf.Message, SwiftProtobuf._M
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameVersionFeatureValue, rhs: Proto_GameVersionFeatureValue) -> Bool {
+  public static func ==(lhs: Proto_GameVersionFeatureValue, rhs: Proto_GameVersionFeatureValue) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._game != rhs._game {return false}
     if lhs._gameFeature != rhs._gameFeature {return false}
@@ -10016,12 +10016,12 @@ extension Proto_GameVersionFeatureValue: SwiftProtobuf.Message, SwiftProtobuf._M
 }
 
 extension Proto_GameVideoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameVideoResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameVideoResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "gamevideos"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10033,14 +10033,14 @@ extension Proto_GameVideoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.gamevideos.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.gamevideos, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameVideoResult, rhs: Proto_GameVideoResult) -> Bool {
+  public static func ==(lhs: Proto_GameVideoResult, rhs: Proto_GameVideoResult) -> Bool {
     if lhs.gamevideos != rhs.gamevideos {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10048,8 +10048,8 @@ extension Proto_GameVideoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_GameVideo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GameVideo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GameVideo"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "game"),
     3: .same(proto: "name"),
@@ -10057,7 +10057,7 @@ extension Proto_GameVideo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     5: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10073,7 +10073,7 @@ extension Proto_GameVideo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -10096,7 +10096,7 @@ extension Proto_GameVideo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GameVideo, rhs: Proto_GameVideo) -> Bool {
+  public static func ==(lhs: Proto_GameVideo, rhs: Proto_GameVideo) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._game != rhs._game {return false}
     if lhs.name != rhs.name {return false}
@@ -10108,12 +10108,12 @@ extension Proto_GameVideo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
 }
 
 extension Proto_GenreResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".GenreResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".GenreResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "genres"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10125,14 +10125,14 @@ extension Proto_GenreResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.genres.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.genres, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_GenreResult, rhs: Proto_GenreResult) -> Bool {
+  public static func ==(lhs: Proto_GenreResult, rhs: Proto_GenreResult) -> Bool {
     if lhs.genres != rhs.genres {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10140,8 +10140,8 @@ extension Proto_GenreResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension Proto_Genre: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Genre"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Genre"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "created_at"),
     3: .same(proto: "name"),
@@ -10151,7 +10151,7 @@ extension Proto_Genre: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10169,7 +10169,7 @@ extension Proto_Genre: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -10198,7 +10198,7 @@ extension Proto_Genre: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Genre, rhs: Proto_Genre) -> Bool {
+  public static func ==(lhs: Proto_Genre, rhs: Proto_Genre) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._createdAt != rhs._createdAt {return false}
     if lhs.name != rhs.name {return false}
@@ -10212,12 +10212,12 @@ extension Proto_Genre: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
 }
 
 extension Proto_InvolvedCompanyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".InvolvedCompanyResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".InvolvedCompanyResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "involvedcompanies"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10229,14 +10229,14 @@ extension Proto_InvolvedCompanyResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.involvedcompanies.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.involvedcompanies, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_InvolvedCompanyResult, rhs: Proto_InvolvedCompanyResult) -> Bool {
+  public static func ==(lhs: Proto_InvolvedCompanyResult, rhs: Proto_InvolvedCompanyResult) -> Bool {
     if lhs.involvedcompanies != rhs.involvedcompanies {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10244,8 +10244,8 @@ extension Proto_InvolvedCompanyResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
 }
 
 extension Proto_InvolvedCompany: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".InvolvedCompany"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".InvolvedCompany"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "company"),
     3: .standard(proto: "created_at"),
@@ -10258,7 +10258,7 @@ extension Proto_InvolvedCompany: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     10: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10279,7 +10279,7 @@ extension Proto_InvolvedCompany: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -10317,7 +10317,7 @@ extension Proto_InvolvedCompany: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_InvolvedCompany, rhs: Proto_InvolvedCompany) -> Bool {
+  public static func ==(lhs: Proto_InvolvedCompany, rhs: Proto_InvolvedCompany) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._company != rhs._company {return false}
     if lhs._createdAt != rhs._createdAt {return false}
@@ -10334,12 +10334,12 @@ extension Proto_InvolvedCompany: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_KeywordResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".KeywordResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".KeywordResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "keywords"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10351,14 +10351,14 @@ extension Proto_KeywordResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.keywords.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.keywords, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_KeywordResult, rhs: Proto_KeywordResult) -> Bool {
+  public static func ==(lhs: Proto_KeywordResult, rhs: Proto_KeywordResult) -> Bool {
     if lhs.keywords != rhs.keywords {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10366,8 +10366,8 @@ extension Proto_KeywordResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
 }
 
 extension Proto_Keyword: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Keyword"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Keyword"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "created_at"),
     3: .same(proto: "name"),
@@ -10377,7 +10377,7 @@ extension Proto_Keyword: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10395,7 +10395,7 @@ extension Proto_Keyword: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -10424,7 +10424,7 @@ extension Proto_Keyword: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Keyword, rhs: Proto_Keyword) -> Bool {
+  public static func ==(lhs: Proto_Keyword, rhs: Proto_Keyword) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._createdAt != rhs._createdAt {return false}
     if lhs.name != rhs.name {return false}
@@ -10438,12 +10438,12 @@ extension Proto_Keyword: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
 }
 
 extension Proto_LanguageResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".LanguageResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".LanguageResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "languages"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10455,14 +10455,14 @@ extension Proto_LanguageResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.languages.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.languages, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_LanguageResult, rhs: Proto_LanguageResult) -> Bool {
+  public static func ==(lhs: Proto_LanguageResult, rhs: Proto_LanguageResult) -> Bool {
     if lhs.languages != rhs.languages {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10470,8 +10470,8 @@ extension Proto_LanguageResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
 }
 
 extension Proto_Language: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Language"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Language"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .standard(proto: "native_name"),
@@ -10481,7 +10481,7 @@ extension Proto_Language: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10499,7 +10499,7 @@ extension Proto_Language: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -10528,7 +10528,7 @@ extension Proto_Language: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Language, rhs: Proto_Language) -> Bool {
+  public static func ==(lhs: Proto_Language, rhs: Proto_Language) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.name != rhs.name {return false}
     if lhs.nativeName != rhs.nativeName {return false}
@@ -10542,12 +10542,12 @@ extension Proto_Language: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
 }
 
 extension Proto_LanguageSupportResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".LanguageSupportResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".LanguageSupportResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "languagesupports"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10559,14 +10559,14 @@ extension Proto_LanguageSupportResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.languagesupports.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.languagesupports, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_LanguageSupportResult, rhs: Proto_LanguageSupportResult) -> Bool {
+  public static func ==(lhs: Proto_LanguageSupportResult, rhs: Proto_LanguageSupportResult) -> Bool {
     if lhs.languagesupports != rhs.languagesupports {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10574,8 +10574,8 @@ extension Proto_LanguageSupportResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
 }
 
 extension Proto_LanguageSupport: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".LanguageSupport"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".LanguageSupport"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "game"),
     3: .same(proto: "language"),
@@ -10616,7 +10616,7 @@ extension Proto_LanguageSupport: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -10637,7 +10637,7 @@ extension Proto_LanguageSupport: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -10668,7 +10668,7 @@ extension Proto_LanguageSupport: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_LanguageSupport, rhs: Proto_LanguageSupport) -> Bool {
+  public static func ==(lhs: Proto_LanguageSupport, rhs: Proto_LanguageSupport) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -10690,12 +10690,12 @@ extension Proto_LanguageSupport: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_LanguageSupportTypeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".LanguageSupportTypeResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".LanguageSupportTypeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "languagesupporttypes"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10707,14 +10707,14 @@ extension Proto_LanguageSupportTypeResult: SwiftProtobuf.Message, SwiftProtobuf.
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.languagesupporttypes.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.languagesupporttypes, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_LanguageSupportTypeResult, rhs: Proto_LanguageSupportTypeResult) -> Bool {
+  public static func ==(lhs: Proto_LanguageSupportTypeResult, rhs: Proto_LanguageSupportTypeResult) -> Bool {
     if lhs.languagesupporttypes != rhs.languagesupporttypes {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10722,8 +10722,8 @@ extension Proto_LanguageSupportTypeResult: SwiftProtobuf.Message, SwiftProtobuf.
 }
 
 extension Proto_LanguageSupportType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".LanguageSupportType"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".LanguageSupportType"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .standard(proto: "created_at"),
@@ -10731,7 +10731,7 @@ extension Proto_LanguageSupportType: SwiftProtobuf.Message, SwiftProtobuf._Messa
     5: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10747,7 +10747,7 @@ extension Proto_LanguageSupportType: SwiftProtobuf.Message, SwiftProtobuf._Messa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -10770,7 +10770,7 @@ extension Proto_LanguageSupportType: SwiftProtobuf.Message, SwiftProtobuf._Messa
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_LanguageSupportType, rhs: Proto_LanguageSupportType) -> Bool {
+  public static func ==(lhs: Proto_LanguageSupportType, rhs: Proto_LanguageSupportType) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.name != rhs.name {return false}
     if lhs._createdAt != rhs._createdAt {return false}
@@ -10782,12 +10782,12 @@ extension Proto_LanguageSupportType: SwiftProtobuf.Message, SwiftProtobuf._Messa
 }
 
 extension Proto_MultiplayerModeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".MultiplayerModeResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".MultiplayerModeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "multiplayermodes"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10799,14 +10799,14 @@ extension Proto_MultiplayerModeResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.multiplayermodes.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.multiplayermodes, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_MultiplayerModeResult, rhs: Proto_MultiplayerModeResult) -> Bool {
+  public static func ==(lhs: Proto_MultiplayerModeResult, rhs: Proto_MultiplayerModeResult) -> Bool {
     if lhs.multiplayermodes != rhs.multiplayermodes {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10814,8 +10814,8 @@ extension Proto_MultiplayerModeResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
 }
 
 extension Proto_MultiplayerMode: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".MultiplayerMode"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".MultiplayerMode"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "campaigncoop"),
     3: .same(proto: "dropin"),
@@ -10833,7 +10833,7 @@ extension Proto_MultiplayerMode: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     15: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10859,7 +10859,7 @@ extension Proto_MultiplayerMode: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -10912,7 +10912,7 @@ extension Proto_MultiplayerMode: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_MultiplayerMode, rhs: Proto_MultiplayerMode) -> Bool {
+  public static func ==(lhs: Proto_MultiplayerMode, rhs: Proto_MultiplayerMode) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.campaigncoop != rhs.campaigncoop {return false}
     if lhs.dropin != rhs.dropin {return false}
@@ -10934,12 +10934,12 @@ extension Proto_MultiplayerMode: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_NetworkTypeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".NetworkTypeResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".NetworkTypeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "networktypes"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10951,14 +10951,14 @@ extension Proto_NetworkTypeResult: SwiftProtobuf.Message, SwiftProtobuf._Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.networktypes.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.networktypes, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_NetworkTypeResult, rhs: Proto_NetworkTypeResult) -> Bool {
+  public static func ==(lhs: Proto_NetworkTypeResult, rhs: Proto_NetworkTypeResult) -> Bool {
     if lhs.networktypes != rhs.networktypes {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -10966,8 +10966,8 @@ extension Proto_NetworkTypeResult: SwiftProtobuf.Message, SwiftProtobuf._Message
 }
 
 extension Proto_NetworkType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".NetworkType"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".NetworkType"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .standard(proto: "event_networks"),
@@ -10976,7 +10976,7 @@ extension Proto_NetworkType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     6: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -10993,7 +10993,7 @@ extension Proto_NetworkType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11019,7 +11019,7 @@ extension Proto_NetworkType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_NetworkType, rhs: Proto_NetworkType) -> Bool {
+  public static func ==(lhs: Proto_NetworkType, rhs: Proto_NetworkType) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.name != rhs.name {return false}
     if lhs.eventNetworks != rhs.eventNetworks {return false}
@@ -11032,12 +11032,12 @@ extension Proto_NetworkType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension Proto_PlatformResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "platforms"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11049,14 +11049,14 @@ extension Proto_PlatformResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.platforms.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.platforms, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformResult, rhs: Proto_PlatformResult) -> Bool {
+  public static func ==(lhs: Proto_PlatformResult, rhs: Proto_PlatformResult) -> Bool {
     if lhs.platforms != rhs.platforms {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -11064,8 +11064,8 @@ extension Proto_PlatformResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
 }
 
 extension Proto_Platform: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Platform"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Platform"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "abbreviation"),
     3: .standard(proto: "alternative_name"),
@@ -11133,7 +11133,7 @@ extension Proto_Platform: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -11163,7 +11163,7 @@ extension Proto_Platform: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -11221,7 +11221,7 @@ extension Proto_Platform: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Platform, rhs: Proto_Platform) -> Bool {
+  public static func ==(lhs: Proto_Platform, rhs: Proto_Platform) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -11252,12 +11252,12 @@ extension Proto_Platform: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
 }
 
 extension Proto_PlatformFamilyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformFamilyResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformFamilyResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "platformfamilies"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11269,14 +11269,14 @@ extension Proto_PlatformFamilyResult: SwiftProtobuf.Message, SwiftProtobuf._Mess
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.platformfamilies.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.platformfamilies, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformFamilyResult, rhs: Proto_PlatformFamilyResult) -> Bool {
+  public static func ==(lhs: Proto_PlatformFamilyResult, rhs: Proto_PlatformFamilyResult) -> Bool {
     if lhs.platformfamilies != rhs.platformfamilies {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -11284,15 +11284,15 @@ extension Proto_PlatformFamilyResult: SwiftProtobuf.Message, SwiftProtobuf._Mess
 }
 
 extension Proto_PlatformFamily: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformFamily"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformFamily"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .same(proto: "slug"),
     4: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11307,7 +11307,7 @@ extension Proto_PlatformFamily: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -11323,7 +11323,7 @@ extension Proto_PlatformFamily: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformFamily, rhs: Proto_PlatformFamily) -> Bool {
+  public static func ==(lhs: Proto_PlatformFamily, rhs: Proto_PlatformFamily) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.name != rhs.name {return false}
     if lhs.slug != rhs.slug {return false}
@@ -11334,12 +11334,12 @@ extension Proto_PlatformFamily: SwiftProtobuf.Message, SwiftProtobuf._MessageImp
 }
 
 extension Proto_PlatformLogoResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformLogoResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformLogoResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "platformlogos"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11351,14 +11351,14 @@ extension Proto_PlatformLogoResult: SwiftProtobuf.Message, SwiftProtobuf._Messag
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.platformlogos.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.platformlogos, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformLogoResult, rhs: Proto_PlatformLogoResult) -> Bool {
+  public static func ==(lhs: Proto_PlatformLogoResult, rhs: Proto_PlatformLogoResult) -> Bool {
     if lhs.platformlogos != rhs.platformlogos {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -11366,8 +11366,8 @@ extension Proto_PlatformLogoResult: SwiftProtobuf.Message, SwiftProtobuf._Messag
 }
 
 extension Proto_PlatformLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformLogo"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformLogo"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "alpha_channel"),
     3: .same(proto: "animated"),
@@ -11378,7 +11378,7 @@ extension Proto_PlatformLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     8: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11397,7 +11397,7 @@ extension Proto_PlatformLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -11425,7 +11425,7 @@ extension Proto_PlatformLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformLogo, rhs: Proto_PlatformLogo) -> Bool {
+  public static func ==(lhs: Proto_PlatformLogo, rhs: Proto_PlatformLogo) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.alphaChannel != rhs.alphaChannel {return false}
     if lhs.animated != rhs.animated {return false}
@@ -11440,12 +11440,12 @@ extension Proto_PlatformLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
 }
 
 extension Proto_PlatformVersionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformVersionResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformVersionResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "platformversions"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11457,14 +11457,14 @@ extension Proto_PlatformVersionResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.platformversions.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.platformversions, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformVersionResult, rhs: Proto_PlatformVersionResult) -> Bool {
+  public static func ==(lhs: Proto_PlatformVersionResult, rhs: Proto_PlatformVersionResult) -> Bool {
     if lhs.platformversions != rhs.platformversions {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -11472,8 +11472,8 @@ extension Proto_PlatformVersionResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
 }
 
 extension Proto_PlatformVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformVersion"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformVersion"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "companies"),
     3: .same(proto: "connectivity"),
@@ -11556,7 +11556,7 @@ extension Proto_PlatformVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -11591,7 +11591,7 @@ extension Proto_PlatformVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -11664,7 +11664,7 @@ extension Proto_PlatformVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformVersion, rhs: Proto_PlatformVersion) -> Bool {
+  public static func ==(lhs: Proto_PlatformVersion, rhs: Proto_PlatformVersion) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -11700,12 +11700,12 @@ extension Proto_PlatformVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_PlatformVersionCompanyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformVersionCompanyResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformVersionCompanyResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "platformversioncompanies"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11717,14 +11717,14 @@ extension Proto_PlatformVersionCompanyResult: SwiftProtobuf.Message, SwiftProtob
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.platformversioncompanies.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.platformversioncompanies, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformVersionCompanyResult, rhs: Proto_PlatformVersionCompanyResult) -> Bool {
+  public static func ==(lhs: Proto_PlatformVersionCompanyResult, rhs: Proto_PlatformVersionCompanyResult) -> Bool {
     if lhs.platformversioncompanies != rhs.platformversioncompanies {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -11732,8 +11732,8 @@ extension Proto_PlatformVersionCompanyResult: SwiftProtobuf.Message, SwiftProtob
 }
 
 extension Proto_PlatformVersionCompany: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformVersionCompany"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformVersionCompany"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "comment"),
     3: .same(proto: "company"),
@@ -11742,7 +11742,7 @@ extension Proto_PlatformVersionCompany: SwiftProtobuf.Message, SwiftProtobuf._Me
     6: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11759,7 +11759,7 @@ extension Proto_PlatformVersionCompany: SwiftProtobuf.Message, SwiftProtobuf._Me
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11785,7 +11785,7 @@ extension Proto_PlatformVersionCompany: SwiftProtobuf.Message, SwiftProtobuf._Me
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformVersionCompany, rhs: Proto_PlatformVersionCompany) -> Bool {
+  public static func ==(lhs: Proto_PlatformVersionCompany, rhs: Proto_PlatformVersionCompany) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.comment != rhs.comment {return false}
     if lhs._company != rhs._company {return false}
@@ -11798,12 +11798,12 @@ extension Proto_PlatformVersionCompany: SwiftProtobuf.Message, SwiftProtobuf._Me
 }
 
 extension Proto_PlatformVersionReleaseDateResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformVersionReleaseDateResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformVersionReleaseDateResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "platformversionreleasedates"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11815,14 +11815,14 @@ extension Proto_PlatformVersionReleaseDateResult: SwiftProtobuf.Message, SwiftPr
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.platformversionreleasedates.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.platformversionreleasedates, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformVersionReleaseDateResult, rhs: Proto_PlatformVersionReleaseDateResult) -> Bool {
+  public static func ==(lhs: Proto_PlatformVersionReleaseDateResult, rhs: Proto_PlatformVersionReleaseDateResult) -> Bool {
     if lhs.platformversionreleasedates != rhs.platformversionreleasedates {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -11830,8 +11830,8 @@ extension Proto_PlatformVersionReleaseDateResult: SwiftProtobuf.Message, SwiftPr
 }
 
 extension Proto_PlatformVersionReleaseDate: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformVersionReleaseDate"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformVersionReleaseDate"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .standard(proto: "created_at"),
@@ -11845,7 +11845,7 @@ extension Proto_PlatformVersionReleaseDate: SwiftProtobuf.Message, SwiftProtobuf
     11: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11867,7 +11867,7 @@ extension Proto_PlatformVersionReleaseDate: SwiftProtobuf.Message, SwiftProtobuf
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -11908,7 +11908,7 @@ extension Proto_PlatformVersionReleaseDate: SwiftProtobuf.Message, SwiftProtobuf
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformVersionReleaseDate, rhs: Proto_PlatformVersionReleaseDate) -> Bool {
+  public static func ==(lhs: Proto_PlatformVersionReleaseDate, rhs: Proto_PlatformVersionReleaseDate) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.category != rhs.category {return false}
     if lhs._createdAt != rhs._createdAt {return false}
@@ -11926,12 +11926,12 @@ extension Proto_PlatformVersionReleaseDate: SwiftProtobuf.Message, SwiftProtobuf
 }
 
 extension Proto_PlatformWebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformWebsiteResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformWebsiteResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "platformwebsites"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11943,14 +11943,14 @@ extension Proto_PlatformWebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.platformwebsites.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.platformwebsites, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformWebsiteResult, rhs: Proto_PlatformWebsiteResult) -> Bool {
+  public static func ==(lhs: Proto_PlatformWebsiteResult, rhs: Proto_PlatformWebsiteResult) -> Bool {
     if lhs.platformwebsites != rhs.platformwebsites {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -11958,8 +11958,8 @@ extension Proto_PlatformWebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._Mes
 }
 
 extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlatformWebsite"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlatformWebsite"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .same(proto: "trusted"),
@@ -11967,7 +11967,7 @@ extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     5: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -11983,7 +11983,7 @@ extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -12002,7 +12002,7 @@ extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlatformWebsite, rhs: Proto_PlatformWebsite) -> Bool {
+  public static func ==(lhs: Proto_PlatformWebsite, rhs: Proto_PlatformWebsite) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.category != rhs.category {return false}
     if lhs.trusted != rhs.trusted {return false}
@@ -12014,12 +12014,12 @@ extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_PlayerPerspectiveResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlayerPerspectiveResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlayerPerspectiveResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "playerperspectives"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12031,14 +12031,14 @@ extension Proto_PlayerPerspectiveResult: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.playerperspectives.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.playerperspectives, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlayerPerspectiveResult, rhs: Proto_PlayerPerspectiveResult) -> Bool {
+  public static func ==(lhs: Proto_PlayerPerspectiveResult, rhs: Proto_PlayerPerspectiveResult) -> Bool {
     if lhs.playerperspectives != rhs.playerperspectives {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -12046,8 +12046,8 @@ extension Proto_PlayerPerspectiveResult: SwiftProtobuf.Message, SwiftProtobuf._M
 }
 
 extension Proto_PlayerPerspective: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".PlayerPerspective"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".PlayerPerspective"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "created_at"),
     3: .same(proto: "name"),
@@ -12057,7 +12057,7 @@ extension Proto_PlayerPerspective: SwiftProtobuf.Message, SwiftProtobuf._Message
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12075,7 +12075,7 @@ extension Proto_PlayerPerspective: SwiftProtobuf.Message, SwiftProtobuf._Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12104,7 +12104,7 @@ extension Proto_PlayerPerspective: SwiftProtobuf.Message, SwiftProtobuf._Message
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_PlayerPerspective, rhs: Proto_PlayerPerspective) -> Bool {
+  public static func ==(lhs: Proto_PlayerPerspective, rhs: Proto_PlayerPerspective) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._createdAt != rhs._createdAt {return false}
     if lhs.name != rhs.name {return false}
@@ -12118,12 +12118,12 @@ extension Proto_PlayerPerspective: SwiftProtobuf.Message, SwiftProtobuf._Message
 }
 
 extension Proto_RegionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".RegionResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".RegionResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "regions"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12135,14 +12135,14 @@ extension Proto_RegionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.regions.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.regions, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_RegionResult, rhs: Proto_RegionResult) -> Bool {
+  public static func ==(lhs: Proto_RegionResult, rhs: Proto_RegionResult) -> Bool {
     if lhs.regions != rhs.regions {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -12150,8 +12150,8 @@ extension Proto_RegionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
 }
 
 extension Proto_Region: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Region"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Region"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .same(proto: "category"),
@@ -12161,7 +12161,7 @@ extension Proto_Region: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12179,7 +12179,7 @@ extension Proto_Region: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12208,7 +12208,7 @@ extension Proto_Region: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Region, rhs: Proto_Region) -> Bool {
+  public static func ==(lhs: Proto_Region, rhs: Proto_Region) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.name != rhs.name {return false}
     if lhs.category != rhs.category {return false}
@@ -12222,12 +12222,12 @@ extension Proto_Region: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
 }
 
 extension Proto_ReleaseDateResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ReleaseDateResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ReleaseDateResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "releasedates"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12239,14 +12239,14 @@ extension Proto_ReleaseDateResult: SwiftProtobuf.Message, SwiftProtobuf._Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.releasedates.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.releasedates, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ReleaseDateResult, rhs: Proto_ReleaseDateResult) -> Bool {
+  public static func ==(lhs: Proto_ReleaseDateResult, rhs: Proto_ReleaseDateResult) -> Bool {
     if lhs.releasedates != rhs.releasedates {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -12254,8 +12254,8 @@ extension Proto_ReleaseDateResult: SwiftProtobuf.Message, SwiftProtobuf._Message
 }
 
 extension Proto_ReleaseDate: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ReleaseDate"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ReleaseDate"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .standard(proto: "created_at"),
@@ -12314,7 +12314,7 @@ extension Proto_ReleaseDate: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -12341,7 +12341,7 @@ extension Proto_ReleaseDate: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -12390,7 +12390,7 @@ extension Proto_ReleaseDate: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ReleaseDate, rhs: Proto_ReleaseDate) -> Bool {
+  public static func ==(lhs: Proto_ReleaseDate, rhs: Proto_ReleaseDate) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -12418,12 +12418,12 @@ extension Proto_ReleaseDate: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension Proto_ReleaseDateStatusResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ReleaseDateStatusResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ReleaseDateStatusResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "releasedatestatuses"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12435,14 +12435,14 @@ extension Proto_ReleaseDateStatusResult: SwiftProtobuf.Message, SwiftProtobuf._M
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.releasedatestatuses.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.releasedatestatuses, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ReleaseDateStatusResult, rhs: Proto_ReleaseDateStatusResult) -> Bool {
+  public static func ==(lhs: Proto_ReleaseDateStatusResult, rhs: Proto_ReleaseDateStatusResult) -> Bool {
     if lhs.releasedatestatuses != rhs.releasedatestatuses {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -12450,8 +12450,8 @@ extension Proto_ReleaseDateStatusResult: SwiftProtobuf.Message, SwiftProtobuf._M
 }
 
 extension Proto_ReleaseDateStatus: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ReleaseDateStatus"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ReleaseDateStatus"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "name"),
     3: .same(proto: "description"),
@@ -12460,7 +12460,7 @@ extension Proto_ReleaseDateStatus: SwiftProtobuf.Message, SwiftProtobuf._Message
     6: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12477,7 +12477,7 @@ extension Proto_ReleaseDateStatus: SwiftProtobuf.Message, SwiftProtobuf._Message
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12503,7 +12503,7 @@ extension Proto_ReleaseDateStatus: SwiftProtobuf.Message, SwiftProtobuf._Message
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ReleaseDateStatus, rhs: Proto_ReleaseDateStatus) -> Bool {
+  public static func ==(lhs: Proto_ReleaseDateStatus, rhs: Proto_ReleaseDateStatus) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.name != rhs.name {return false}
     if lhs.description_p != rhs.description_p {return false}
@@ -12516,12 +12516,12 @@ extension Proto_ReleaseDateStatus: SwiftProtobuf.Message, SwiftProtobuf._Message
 }
 
 extension Proto_ScreenshotResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ScreenshotResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ScreenshotResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "screenshots"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12533,14 +12533,14 @@ extension Proto_ScreenshotResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.screenshots.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.screenshots, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ScreenshotResult, rhs: Proto_ScreenshotResult) -> Bool {
+  public static func ==(lhs: Proto_ScreenshotResult, rhs: Proto_ScreenshotResult) -> Bool {
     if lhs.screenshots != rhs.screenshots {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -12548,8 +12548,8 @@ extension Proto_ScreenshotResult: SwiftProtobuf.Message, SwiftProtobuf._MessageI
 }
 
 extension Proto_Screenshot: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Screenshot"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Screenshot"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "alpha_channel"),
     3: .same(proto: "animated"),
@@ -12561,7 +12561,7 @@ extension Proto_Screenshot: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     9: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12581,7 +12581,7 @@ extension Proto_Screenshot: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -12616,7 +12616,7 @@ extension Proto_Screenshot: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Screenshot, rhs: Proto_Screenshot) -> Bool {
+  public static func ==(lhs: Proto_Screenshot, rhs: Proto_Screenshot) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.alphaChannel != rhs.alphaChannel {return false}
     if lhs.animated != rhs.animated {return false}
@@ -12632,12 +12632,12 @@ extension Proto_Screenshot: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
 }
 
 extension Proto_SearchResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".SearchResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".SearchResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "searches"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12649,14 +12649,14 @@ extension Proto_SearchResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.searches.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.searches, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_SearchResult, rhs: Proto_SearchResult) -> Bool {
+  public static func ==(lhs: Proto_SearchResult, rhs: Proto_SearchResult) -> Bool {
     if lhs.searches != rhs.searches {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -12664,8 +12664,8 @@ extension Proto_SearchResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImple
 }
 
 extension Proto_Search: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Search"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Search"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "alternative_name"),
     3: .same(proto: "character"),
@@ -12724,7 +12724,7 @@ extension Proto_Search: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -12751,7 +12751,7 @@ extension Proto_Search: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -12800,7 +12800,7 @@ extension Proto_Search: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Search, rhs: Proto_Search) -> Bool {
+  public static func ==(lhs: Proto_Search, rhs: Proto_Search) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -12828,12 +12828,12 @@ extension Proto_Search: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
 }
 
 extension Proto_TestDummyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".TestDummyResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".TestDummyResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "testdummies"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -12845,14 +12845,14 @@ extension Proto_TestDummyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.testdummies.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.testdummies, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_TestDummyResult, rhs: Proto_TestDummyResult) -> Bool {
+  public static func ==(lhs: Proto_TestDummyResult, rhs: Proto_TestDummyResult) -> Bool {
     if lhs.testdummies != rhs.testdummies {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -12860,8 +12860,8 @@ extension Proto_TestDummyResult: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
 }
 
 extension Proto_TestDummy: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".TestDummy"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".TestDummy"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "bool_value"),
     3: .standard(proto: "created_at"),
@@ -12935,7 +12935,7 @@ extension Proto_TestDummy: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     return _storage
   }
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     _ = _uniqueStorage()
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       while let fieldNumber = try decoder.nextFieldNumber() {
@@ -12967,7 +12967,7 @@ extension Proto_TestDummy: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every if/case branch local when no optimizations
@@ -13031,7 +13031,7 @@ extension Proto_TestDummy: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_TestDummy, rhs: Proto_TestDummy) -> Bool {
+  public static func ==(lhs: Proto_TestDummy, rhs: Proto_TestDummy) -> Bool {
     if lhs._storage !== rhs._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
         let _storage = _args.0
@@ -13064,12 +13064,12 @@ extension Proto_TestDummy: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
 }
 
 extension Proto_ThemeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".ThemeResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".ThemeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "themes"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13081,14 +13081,14 @@ extension Proto_ThemeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.themes.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.themes, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_ThemeResult, rhs: Proto_ThemeResult) -> Bool {
+  public static func ==(lhs: Proto_ThemeResult, rhs: Proto_ThemeResult) -> Bool {
     if lhs.themes != rhs.themes {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -13096,8 +13096,8 @@ extension Proto_ThemeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
 }
 
 extension Proto_Theme: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Theme"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Theme"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .standard(proto: "created_at"),
     3: .same(proto: "name"),
@@ -13107,7 +13107,7 @@ extension Proto_Theme: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     7: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13125,7 +13125,7 @@ extension Proto_Theme: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13154,7 +13154,7 @@ extension Proto_Theme: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Theme, rhs: Proto_Theme) -> Bool {
+  public static func ==(lhs: Proto_Theme, rhs: Proto_Theme) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs._createdAt != rhs._createdAt {return false}
     if lhs.name != rhs.name {return false}
@@ -13168,12 +13168,12 @@ extension Proto_Theme: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
 }
 
 extension Proto_WebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".WebsiteResult"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".WebsiteResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "websites"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13185,14 +13185,14 @@ extension Proto_WebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     if !self.websites.isEmpty {
       try visitor.visitRepeatedMessageField(value: self.websites, fieldNumber: 1)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_WebsiteResult, rhs: Proto_WebsiteResult) -> Bool {
+  public static func ==(lhs: Proto_WebsiteResult, rhs: Proto_WebsiteResult) -> Bool {
     if lhs.websites != rhs.websites {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
@@ -13200,8 +13200,8 @@ extension Proto_WebsiteResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImpl
 }
 
 extension Proto_Website: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
-  static let protoMessageName: String = _protobuf_package + ".Website"
-  static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+  public static let protoMessageName: String = _protobuf_package + ".Website"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .same(proto: "id"),
     2: .same(proto: "category"),
     3: .same(proto: "game"),
@@ -13210,7 +13210,7 @@ extension Proto_Website: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     6: .same(proto: "checksum"),
   ]
 
-  mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
     while let fieldNumber = try decoder.nextFieldNumber() {
       // The use of inline closures is to circumvent an issue where the compiler
       // allocates stack space for every case branch when no optimizations are
@@ -13227,7 +13227,7 @@ extension Proto_Website: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     }
   }
 
-  func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
     // The use of inline closures is to circumvent an issue where the compiler
     // allocates stack space for every if/case branch local when no optimizations
     // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
@@ -13253,7 +13253,7 @@ extension Proto_Website: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     try unknownFields.traverse(visitor: &visitor)
   }
 
-  static func ==(lhs: Proto_Website, rhs: Proto_Website) -> Bool {
+  public static func ==(lhs: Proto_Website, rhs: Proto_Website) -> Bool {
     if lhs.id != rhs.id {return false}
     if lhs.category != rhs.category {return false}
     if lhs._game != rhs._game {return false}
