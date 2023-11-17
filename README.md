@@ -1,6 +1,6 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/husnjak/IGDB-SWIFT-API#license)
 [![CocoaPods](https://img.shields.io/cocoapods/v/IGDB-SWIFT-API.svg)](https://cocoapods.org/pods/IGDB-SWIFT-API)
-[![test](https://github.com/husnjak/IGDB-SWIFT-API/workflows/test/badge.svg)](https://github.com/husnjak/IGDB-SWIFT-API/actions)
+[![test](https://github.com/husnjak/IGDB-SWIFT-API/workflows/Build%20&%20Test/badge.svg)](https://github.com/husnjak/IGDB-SWIFT-API/actions)
 
 # IGDB SWIFT-API
 A Swift wrapper for the IGDB.com Free Video Game Database API.
