@@ -1,4 +1,6 @@
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/husnjak/IGDB-SWIFT-API#license)
 [![CocoaPods](https://img.shields.io/cocoapods/v/IGDB-SWIFT-API.svg)](https://cocoapods.org/pods/IGDB-SWIFT-API)
+[![test](https://github.com/husnjak/IGDB-SWIFT-API/workflows/test/badge.svg)](https://github.com/husnjak/IGDB-SWIFT-API/actions)
 
 # IGDB SWIFT-API
 A Swift wrapper for the IGDB.com Free Video Game Database API.
@@ -31,7 +33,7 @@ You can either import this library using Xcode by simply pasting this repository
 Or if you have a `Package.swift` file you can add this:  
 ```swift
 dependencies: [
-.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.4.3"),
+.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.4.4"),
 ],
 targets: [
     .target(name: "MyTarget", dependencies: ["IGDB-SWIFT-API"]),
