@@ -10,7 +10,7 @@ jobs:
     runs-on: macos-latest
     environment: apitesting
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Build
       run: swift build
     - name: Run tests
