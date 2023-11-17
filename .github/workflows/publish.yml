@@ -7,9 +7,9 @@ on:
         required: true
         default: 'SNAPSHOT'
         description: "Packages require a package version, Keep SNAPSHOT for snapshot upload. Replace SNAPSHOT for a staging deploy."
-    release: 
-      types:
-        - created
+  release: 
+    types:
+      - created
 
 jobs:
   build:
