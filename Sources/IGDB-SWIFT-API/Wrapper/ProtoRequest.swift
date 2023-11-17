@@ -312,4 +312,61 @@ public extension IGDBWrapper {
         }, errorResponse: errorResponse)
     }
     
+    func events(apiCalypse: APICalypse, result: @escaping ([Proto_Event]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .EVENTS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_EventResult(serializedData: bytes).events
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func eventLogos(apiCalypse: APICalypse, result: @escaping ([Proto_EventLogo]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .EVENT_LOGOS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_EventLogoResult(serializedData: bytes).eventlogos
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func eventNetworks(apiCalypse: APICalypse, result: @escaping ([Proto_EventNetwork]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .EVENT_NETWORKS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_EventNetworkResult(serializedData: bytes).eventnetworks
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func networkTypes(apiCalypse: APICalypse, result: @escaping ([Proto_NetworkType]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .NETWORK_TYPES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_NetworkTypeResult(serializedData: bytes).networktypes
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func collectionRelationTypes(apiCalypse: APICalypse, result: @escaping ([Proto_CollectionRelationType]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .COLLECTION_RELATION_TYPES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_CollectionRelationTypeResult(serializedData: bytes).collectionrelationtypes
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func collectionTypes(apiCalypse: APICalypse, result: @escaping ([Proto_CollectionType]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .COLLECTION_TYPES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_CollectionTypeResult(serializedData: bytes).collectiontypes
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func collectionMemberships(apiCalypse: APICalypse, result: @escaping ([Proto_CollectionMembership]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .COLLECTION_MEMBERSHIPS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_CollectionMembershipResult(serializedData: bytes).collectionmemberships
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func collectionMembershipTypes(apiCalypse: APICalypse, result: @escaping ([Proto_CollectionMembershipType]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .COLLECTION_MEMBERSHIP_TYPES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_CollectionMembershipTypeResult(serializedData: bytes).collectionmembershiptypes
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    
 }

@@ -664,4 +664,110 @@ class TestProtobufRequest: XCTestCase {
         }
         waitForExpectations(timeout: 5, handler: nil)
     }
+    
+    func testEvents() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.events(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testEventLogos() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.eventLogos(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testEventNetworks() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.eventNetworks(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testNetworkTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.networkTypes(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testCollectionRelationTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.collectionRelationTypes(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testCollectionTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.collectionTypes(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testCollectionMemberships() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.collectionMemberships(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testCollectionMembershipTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.collectionMembershipTypes(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    
 }

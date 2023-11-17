@@ -16,8 +16,8 @@ import SwiftProtobuf
 // Please ensure that you are building against the same version of the API
 // that was used to generate this file.
 fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAPIVersionCheck {
-  struct _3: SwiftProtobuf.ProtobufAPIVersion_3 {}
-  typealias Version = _3
+  struct _2: SwiftProtobuf.ProtobufAPIVersion_2 {}
+  typealias Version = _2
 }
 
 public enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
@@ -64,6 +64,11 @@ public enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_AgeRatingCategoryEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_AgeRatingCategoryEnum] = [
     .ageratingCategoryNull,
@@ -75,8 +80,9 @@ public enum Proto_AgeRatingCategoryEnum: SwiftProtobuf.Enum {
     .classInd,
     .acb,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -218,6 +224,11 @@ public enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_AgeRatingRatingEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_AgeRatingRatingEnum] = [
     .ageratingRatingNull,
@@ -261,8 +272,9 @@ public enum Proto_AgeRatingRatingEnum: SwiftProtobuf.Enum {
     .acbR18,
     .acbRc,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -542,6 +554,11 @@ public enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_AgeRatingContentDescriptionCategoryEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_AgeRatingContentDescriptionCategoryEnum] = [
     .ageratingcontentdescriptionCategoryNull,
@@ -631,8 +648,9 @@ public enum Proto_AgeRatingContentDescriptionCategoryEnum: SwiftProtobuf.Enum {
     .classIndLinguagemImpropria,
     .classIndAtosCriminosos,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_GenderGenderEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -663,14 +681,20 @@ public enum Proto_GenderGenderEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_GenderGenderEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_GenderGenderEnum] = [
     .male,
     .female,
     .other,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -710,6 +734,11 @@ public enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_CharacterSpeciesEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_CharacterSpeciesEnum] = [
     .characterSpeciesNull,
@@ -719,8 +748,9 @@ public enum Proto_CharacterSpeciesEnum: SwiftProtobuf.Enum {
     .android,
     .unknown,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -766,6 +796,11 @@ public enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_DateFormatChangeDateCategoryEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_DateFormatChangeDateCategoryEnum] = [
     .yyyymmmmdd,
@@ -777,8 +812,9 @@ public enum Proto_DateFormatChangeDateCategoryEnum: SwiftProtobuf.Enum {
     .yyyyq4,
     .tbd,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -854,6 +890,11 @@ public enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_WebsiteCategoryEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_WebsiteCategoryEnum] = [
     .websiteCategoryNull,
@@ -875,8 +916,9 @@ public enum Proto_WebsiteCategoryEnum: SwiftProtobuf.Enum {
     .websiteGog,
     .websiteDiscord,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -961,6 +1003,11 @@ public enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_ExternalGameCategoryEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_ExternalGameCategoryEnum] = [
     .externalgameCategoryNull,
@@ -985,8 +1032,9 @@ public enum Proto_ExternalGameCategoryEnum: SwiftProtobuf.Enum {
     .externalgameXboxGamePassUltimateCloud,
     .externalgameGamejolt,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_ExternalGameMediaEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -1017,14 +1065,20 @@ public enum Proto_ExternalGameMediaEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_ExternalGameMediaEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_ExternalGameMediaEnum] = [
     .externalgameMediaNull,
     .externalgameDigital,
     .externalgamePhysical,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -1091,6 +1145,11 @@ public enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_GameCategoryEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_GameCategoryEnum] = [
     .mainGame,
@@ -1109,8 +1168,9 @@ public enum Proto_GameCategoryEnum: SwiftProtobuf.Enum {
     .pack,
     .update,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -1156,6 +1216,11 @@ public enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_GameStatusEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_GameStatusEnum] = [
     .released,
@@ -1167,8 +1232,9 @@ public enum Proto_GameStatusEnum: SwiftProtobuf.Enum {
     .rumored,
     .delisted,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_GameVersionFeatureCategoryEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -1196,13 +1262,19 @@ public enum Proto_GameVersionFeatureCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_GameVersionFeatureCategoryEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_GameVersionFeatureCategoryEnum] = [
     .boolean,
     .description_,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -1233,14 +1305,20 @@ public enum Proto_GameVersionFeatureValueIncludedFeatureEnum: SwiftProtobuf.Enum
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_GameVersionFeatureValueIncludedFeatureEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_GameVersionFeatureValueIncludedFeatureEnum] = [
     .notIncluded,
     .included,
     .preOrderOnly,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -1283,6 +1361,11 @@ public enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_PlatformCategoryEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_PlatformCategoryEnum] = [
     .platformCategoryNull,
@@ -1293,8 +1376,9 @@ public enum Proto_PlatformCategoryEnum: SwiftProtobuf.Enum {
     .portableConsole,
     .computer,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -1349,6 +1433,11 @@ public enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_RegionRegionEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_RegionRegionEnum] = [
     .regionRegionNull,
@@ -1363,8 +1452,9 @@ public enum Proto_RegionRegionEnum: SwiftProtobuf.Enum {
     .korea,
     .brazil,
   ]
-
 }
+
+#endif  // swift(>=4.2)
 
 public enum Proto_TestDummyEnumTestEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
@@ -1395,16 +1485,22 @@ public enum Proto_TestDummyEnumTestEnum: SwiftProtobuf.Enum {
     }
   }
 
+}
+
+#if swift(>=4.2)
+
+extension Proto_TestDummyEnumTestEnum: CaseIterable {
   // The compiler won't synthesize support with the UNRECOGNIZED case.
   public static let allCases: [Proto_TestDummyEnumTestEnum] = [
     .testdummyEnumTestNull,
     .enum1,
     .enum2,
   ]
-
 }
 
-public struct Proto_Count: Sendable {
+#endif  // swift(>=4.2)
+
+public struct Proto_Count {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1416,7 +1512,7 @@ public struct Proto_Count: Sendable {
   public init() {}
 }
 
-public struct Proto_MultiQueryResult: @unchecked Sendable {
+public struct Proto_MultiQueryResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1432,7 +1528,7 @@ public struct Proto_MultiQueryResult: @unchecked Sendable {
   public init() {}
 }
 
-public struct Proto_MultiQueryResultArray: Sendable {
+public struct Proto_MultiQueryResultArray {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1444,7 +1540,7 @@ public struct Proto_MultiQueryResultArray: Sendable {
   public init() {}
 }
 
-public struct Proto_AgeRatingResult: Sendable {
+public struct Proto_AgeRatingResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1456,7 +1552,7 @@ public struct Proto_AgeRatingResult: Sendable {
   public init() {}
 }
 
-public struct Proto_AgeRating: Sendable {
+public struct Proto_AgeRating {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1480,7 +1576,7 @@ public struct Proto_AgeRating: Sendable {
   public init() {}
 }
 
-public struct Proto_AgeRatingContentDescriptionResult: Sendable {
+public struct Proto_AgeRatingContentDescriptionResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1492,7 +1588,7 @@ public struct Proto_AgeRatingContentDescriptionResult: Sendable {
   public init() {}
 }
 
-public struct Proto_AgeRatingContentDescription: Sendable {
+public struct Proto_AgeRatingContentDescription {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1510,7 +1606,7 @@ public struct Proto_AgeRatingContentDescription: Sendable {
   public init() {}
 }
 
-public struct Proto_AlternativeNameResult: Sendable {
+public struct Proto_AlternativeNameResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1522,7 +1618,7 @@ public struct Proto_AlternativeNameResult: Sendable {
   public init() {}
 }
 
-public struct Proto_AlternativeName: Sendable {
+public struct Proto_AlternativeName {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1551,7 +1647,7 @@ public struct Proto_AlternativeName: Sendable {
   fileprivate var _game: Proto_Game? = nil
 }
 
-public struct Proto_ArtworkResult: Sendable {
+public struct Proto_ArtworkResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1563,7 +1659,7 @@ public struct Proto_ArtworkResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Artwork: Sendable {
+public struct Proto_Artwork {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1600,7 +1696,7 @@ public struct Proto_Artwork: Sendable {
   fileprivate var _game: Proto_Game? = nil
 }
 
-public struct Proto_CharacterResult: Sendable {
+public struct Proto_CharacterResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1612,7 +1708,7 @@ public struct Proto_CharacterResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Character: @unchecked Sendable {
+public struct Proto_Character {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1706,7 +1802,7 @@ public struct Proto_Character: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_CharacterMugShotResult: Sendable {
+public struct Proto_CharacterMugShotResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1718,7 +1814,7 @@ public struct Proto_CharacterMugShotResult: Sendable {
   public init() {}
 }
 
-public struct Proto_CharacterMugShot: Sendable {
+public struct Proto_CharacterMugShot {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1744,7 +1840,7 @@ public struct Proto_CharacterMugShot: Sendable {
   public init() {}
 }
 
-public struct Proto_CollectionResult: Sendable {
+public struct Proto_CollectionResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1756,7 +1852,7 @@ public struct Proto_CollectionResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Collection: @unchecked Sendable {
+public struct Proto_Collection {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1835,7 +1931,7 @@ public struct Proto_Collection: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_CollectionMembershipResult: Sendable {
+public struct Proto_CollectionMembershipResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1847,7 +1943,7 @@ public struct Proto_CollectionMembershipResult: Sendable {
   public init() {}
 }
 
-public struct Proto_CollectionMembership: @unchecked Sendable {
+public struct Proto_CollectionMembership {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1914,7 +2010,7 @@ public struct Proto_CollectionMembership: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_CollectionMembershipTypeResult: Sendable {
+public struct Proto_CollectionMembershipTypeResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1926,7 +2022,7 @@ public struct Proto_CollectionMembershipTypeResult: Sendable {
   public init() {}
 }
 
-public struct Proto_CollectionMembershipType: Sendable {
+public struct Proto_CollectionMembershipType {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1975,7 +2071,7 @@ public struct Proto_CollectionMembershipType: Sendable {
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_CollectionRelationResult: Sendable {
+public struct Proto_CollectionRelationResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -1987,7 +2083,7 @@ public struct Proto_CollectionRelationResult: Sendable {
   public init() {}
 }
 
-public struct Proto_CollectionRelation: Sendable {
+public struct Proto_CollectionRelation {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2052,7 +2148,7 @@ public struct Proto_CollectionRelation: Sendable {
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_CollectionRelationTypeResult: Sendable {
+public struct Proto_CollectionRelationTypeResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2064,7 +2160,7 @@ public struct Proto_CollectionRelationTypeResult: Sendable {
   public init() {}
 }
 
-public struct Proto_CollectionRelationType: @unchecked Sendable {
+public struct Proto_CollectionRelationType {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2132,7 +2228,7 @@ public struct Proto_CollectionRelationType: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_CollectionTypeResult: Sendable {
+public struct Proto_CollectionTypeResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2144,7 +2240,7 @@ public struct Proto_CollectionTypeResult: Sendable {
   public init() {}
 }
 
-public struct Proto_CollectionType: Sendable {
+public struct Proto_CollectionType {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2183,7 +2279,7 @@ public struct Proto_CollectionType: Sendable {
   fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_CompanyResult: Sendable {
+public struct Proto_CompanyResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2195,7 +2291,7 @@ public struct Proto_CompanyResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Company: @unchecked Sendable {
+public struct Proto_Company {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2330,7 +2426,7 @@ public struct Proto_Company: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_CompanyLogoResult: Sendable {
+public struct Proto_CompanyLogoResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2342,7 +2438,7 @@ public struct Proto_CompanyLogoResult: Sendable {
   public init() {}
 }
 
-public struct Proto_CompanyLogo: Sendable {
+public struct Proto_CompanyLogo {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2368,7 +2464,7 @@ public struct Proto_CompanyLogo: Sendable {
   public init() {}
 }
 
-public struct Proto_CompanyWebsiteResult: Sendable {
+public struct Proto_CompanyWebsiteResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2380,7 +2476,7 @@ public struct Proto_CompanyWebsiteResult: Sendable {
   public init() {}
 }
 
-public struct Proto_CompanyWebsite: Sendable {
+public struct Proto_CompanyWebsite {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2400,7 +2496,7 @@ public struct Proto_CompanyWebsite: Sendable {
   public init() {}
 }
 
-public struct Proto_CoverResult: Sendable {
+public struct Proto_CoverResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2412,7 +2508,7 @@ public struct Proto_CoverResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Cover: @unchecked Sendable {
+public struct Proto_Cover {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2482,7 +2578,7 @@ public struct Proto_Cover: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_EventResult: Sendable {
+public struct Proto_EventResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2494,7 +2590,7 @@ public struct Proto_EventResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Event: @unchecked Sendable {
+public struct Proto_Event {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2601,7 +2697,7 @@ public struct Proto_Event: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_EventLogoResult: Sendable {
+public struct Proto_EventLogoResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2613,7 +2709,7 @@ public struct Proto_EventLogoResult: Sendable {
   public init() {}
 }
 
-public struct Proto_EventLogo: @unchecked Sendable {
+public struct Proto_EventLogo {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2692,7 +2788,7 @@ public struct Proto_EventLogo: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_EventNetworkResult: Sendable {
+public struct Proto_EventNetworkResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2704,7 +2800,7 @@ public struct Proto_EventNetworkResult: Sendable {
   public init() {}
 }
 
-public struct Proto_EventNetwork: Sendable {
+public struct Proto_EventNetwork {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2761,7 +2857,7 @@ public struct Proto_EventNetwork: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_ExternalGameResult: Sendable {
+public struct Proto_ExternalGameResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2773,7 +2869,7 @@ public struct Proto_ExternalGameResult: Sendable {
   public init() {}
 }
 
-public struct Proto_ExternalGame: Sendable {
+public struct Proto_ExternalGame {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2842,7 +2938,7 @@ public struct Proto_ExternalGame: Sendable {
   fileprivate var _platform: Proto_Platform? = nil
 }
 
-public struct Proto_FranchiseResult: Sendable {
+public struct Proto_FranchiseResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2854,7 +2950,7 @@ public struct Proto_FranchiseResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Franchise: Sendable {
+public struct Proto_Franchise {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2897,7 +2993,7 @@ public struct Proto_Franchise: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_GameResult: Sendable {
+public struct Proto_GameResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -2909,7 +3005,7 @@ public struct Proto_GameResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Game: @unchecked Sendable {
+public struct Proto_Game {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3243,7 +3339,7 @@ public struct Proto_Game: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_GameEngineResult: Sendable {
+public struct Proto_GameEngineResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3255,7 +3351,7 @@ public struct Proto_GameEngineResult: Sendable {
   public init() {}
 }
 
-public struct Proto_GameEngine: @unchecked Sendable {
+public struct Proto_GameEngine {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3334,7 +3430,7 @@ public struct Proto_GameEngine: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_GameEngineLogoResult: Sendable {
+public struct Proto_GameEngineLogoResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3346,7 +3442,7 @@ public struct Proto_GameEngineLogoResult: Sendable {
   public init() {}
 }
 
-public struct Proto_GameEngineLogo: Sendable {
+public struct Proto_GameEngineLogo {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3372,7 +3468,7 @@ public struct Proto_GameEngineLogo: Sendable {
   public init() {}
 }
 
-public struct Proto_GameLocalizationResult: Sendable {
+public struct Proto_GameLocalizationResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3384,7 +3480,7 @@ public struct Proto_GameLocalizationResult: Sendable {
   public init() {}
 }
 
-public struct Proto_GameLocalization: @unchecked Sendable {
+public struct Proto_GameLocalization {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3456,7 +3552,7 @@ public struct Proto_GameLocalization: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_GameModeResult: Sendable {
+public struct Proto_GameModeResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3468,7 +3564,7 @@ public struct Proto_GameModeResult: Sendable {
   public init() {}
 }
 
-public struct Proto_GameMode: Sendable {
+public struct Proto_GameMode {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3509,7 +3605,7 @@ public struct Proto_GameMode: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_GameVersionResult: Sendable {
+public struct Proto_GameVersionResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3521,7 +3617,7 @@ public struct Proto_GameVersionResult: Sendable {
   public init() {}
 }
 
-public struct Proto_GameVersion: Sendable {
+public struct Proto_GameVersion {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3572,7 +3668,7 @@ public struct Proto_GameVersion: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_GameVersionFeatureResult: Sendable {
+public struct Proto_GameVersionFeatureResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3584,7 +3680,7 @@ public struct Proto_GameVersionFeatureResult: Sendable {
   public init() {}
 }
 
-public struct Proto_GameVersionFeature: Sendable {
+public struct Proto_GameVersionFeature {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3608,7 +3704,7 @@ public struct Proto_GameVersionFeature: Sendable {
   public init() {}
 }
 
-public struct Proto_GameVersionFeatureValueResult: Sendable {
+public struct Proto_GameVersionFeatureValueResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3620,7 +3716,7 @@ public struct Proto_GameVersionFeatureValueResult: Sendable {
   public init() {}
 }
 
-public struct Proto_GameVersionFeatureValue: Sendable {
+public struct Proto_GameVersionFeatureValue {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3659,7 +3755,7 @@ public struct Proto_GameVersionFeatureValue: Sendable {
   fileprivate var _gameFeature: Proto_GameVersionFeature? = nil
 }
 
-public struct Proto_GameVideoResult: Sendable {
+public struct Proto_GameVideoResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3671,7 +3767,7 @@ public struct Proto_GameVideoResult: Sendable {
   public init() {}
 }
 
-public struct Proto_GameVideo: Sendable {
+public struct Proto_GameVideo {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3700,7 +3796,7 @@ public struct Proto_GameVideo: Sendable {
   fileprivate var _game: Proto_Game? = nil
 }
 
-public struct Proto_GenreResult: Sendable {
+public struct Proto_GenreResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3712,7 +3808,7 @@ public struct Proto_GenreResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Genre: Sendable {
+public struct Proto_Genre {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3753,7 +3849,7 @@ public struct Proto_Genre: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_InvolvedCompanyResult: Sendable {
+public struct Proto_InvolvedCompanyResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3765,7 +3861,7 @@ public struct Proto_InvolvedCompanyResult: Sendable {
   public init() {}
 }
 
-public struct Proto_InvolvedCompany: Sendable {
+public struct Proto_InvolvedCompany {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3828,7 +3924,7 @@ public struct Proto_InvolvedCompany: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_KeywordResult: Sendable {
+public struct Proto_KeywordResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3840,7 +3936,7 @@ public struct Proto_KeywordResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Keyword: Sendable {
+public struct Proto_Keyword {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3881,7 +3977,7 @@ public struct Proto_Keyword: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_LanguageResult: Sendable {
+public struct Proto_LanguageResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3893,7 +3989,7 @@ public struct Proto_LanguageResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Language: Sendable {
+public struct Proto_Language {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3934,7 +4030,7 @@ public struct Proto_Language: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_LanguageSupportResult: Sendable {
+public struct Proto_LanguageSupportResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -3946,7 +4042,7 @@ public struct Proto_LanguageSupportResult: Sendable {
   public init() {}
 }
 
-public struct Proto_LanguageSupport: @unchecked Sendable {
+public struct Proto_LanguageSupport {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4013,7 +4109,7 @@ public struct Proto_LanguageSupport: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_LanguageSupportTypeResult: Sendable {
+public struct Proto_LanguageSupportTypeResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4025,7 +4121,7 @@ public struct Proto_LanguageSupportTypeResult: Sendable {
   public init() {}
 }
 
-public struct Proto_LanguageSupportType: Sendable {
+public struct Proto_LanguageSupportType {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4062,7 +4158,7 @@ public struct Proto_LanguageSupportType: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_MultiplayerModeResult: Sendable {
+public struct Proto_MultiplayerModeResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4074,7 +4170,7 @@ public struct Proto_MultiplayerModeResult: Sendable {
   public init() {}
 }
 
-public struct Proto_MultiplayerMode: Sendable {
+public struct Proto_MultiplayerMode {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4131,7 +4227,7 @@ public struct Proto_MultiplayerMode: Sendable {
   fileprivate var _platform: Proto_Platform? = nil
 }
 
-public struct Proto_NetworkTypeResult: Sendable {
+public struct Proto_NetworkTypeResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4143,7 +4239,7 @@ public struct Proto_NetworkTypeResult: Sendable {
   public init() {}
 }
 
-public struct Proto_NetworkType: Sendable {
+public struct Proto_NetworkType {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4182,7 +4278,7 @@ public struct Proto_NetworkType: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_PlatformResult: Sendable {
+public struct Proto_PlatformResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4194,7 +4290,7 @@ public struct Proto_PlatformResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Platform: @unchecked Sendable {
+public struct Proto_Platform {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4302,7 +4398,7 @@ public struct Proto_Platform: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_PlatformFamilyResult: Sendable {
+public struct Proto_PlatformFamilyResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4314,7 +4410,7 @@ public struct Proto_PlatformFamilyResult: Sendable {
   public init() {}
 }
 
-public struct Proto_PlatformFamily: Sendable {
+public struct Proto_PlatformFamily {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4332,7 +4428,7 @@ public struct Proto_PlatformFamily: Sendable {
   public init() {}
 }
 
-public struct Proto_PlatformLogoResult: Sendable {
+public struct Proto_PlatformLogoResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4344,7 +4440,7 @@ public struct Proto_PlatformLogoResult: Sendable {
   public init() {}
 }
 
-public struct Proto_PlatformLogo: Sendable {
+public struct Proto_PlatformLogo {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4370,7 +4466,7 @@ public struct Proto_PlatformLogo: Sendable {
   public init() {}
 }
 
-public struct Proto_PlatformVersionResult: Sendable {
+public struct Proto_PlatformVersionResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4382,7 +4478,7 @@ public struct Proto_PlatformVersionResult: Sendable {
   public init() {}
 }
 
-public struct Proto_PlatformVersion: @unchecked Sendable {
+public struct Proto_PlatformVersion {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4507,7 +4603,7 @@ public struct Proto_PlatformVersion: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_PlatformVersionCompanyResult: Sendable {
+public struct Proto_PlatformVersionCompanyResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4519,7 +4615,7 @@ public struct Proto_PlatformVersionCompanyResult: Sendable {
   public init() {}
 }
 
-public struct Proto_PlatformVersionCompany: Sendable {
+public struct Proto_PlatformVersionCompany {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4550,7 +4646,7 @@ public struct Proto_PlatformVersionCompany: Sendable {
   fileprivate var _company: Proto_Company? = nil
 }
 
-public struct Proto_PlatformVersionReleaseDateResult: Sendable {
+public struct Proto_PlatformVersionReleaseDateResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4562,7 +4658,7 @@ public struct Proto_PlatformVersionReleaseDateResult: Sendable {
   public init() {}
 }
 
-public struct Proto_PlatformVersionReleaseDate: Sendable {
+public struct Proto_PlatformVersionReleaseDate {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4627,7 +4723,7 @@ public struct Proto_PlatformVersionReleaseDate: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_PlatformWebsiteResult: Sendable {
+public struct Proto_PlatformWebsiteResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4639,7 +4735,7 @@ public struct Proto_PlatformWebsiteResult: Sendable {
   public init() {}
 }
 
-public struct Proto_PlatformWebsite: Sendable {
+public struct Proto_PlatformWebsite {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4659,7 +4755,7 @@ public struct Proto_PlatformWebsite: Sendable {
   public init() {}
 }
 
-public struct Proto_PlayerPerspectiveResult: Sendable {
+public struct Proto_PlayerPerspectiveResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4671,7 +4767,7 @@ public struct Proto_PlayerPerspectiveResult: Sendable {
   public init() {}
 }
 
-public struct Proto_PlayerPerspective: Sendable {
+public struct Proto_PlayerPerspective {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4712,7 +4808,7 @@ public struct Proto_PlayerPerspective: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_RegionResult: Sendable {
+public struct Proto_RegionResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4724,7 +4820,7 @@ public struct Proto_RegionResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Region: Sendable {
+public struct Proto_Region {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4765,7 +4861,7 @@ public struct Proto_Region: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_ReleaseDateResult: Sendable {
+public struct Proto_ReleaseDateResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4777,7 +4873,7 @@ public struct Proto_ReleaseDateResult: Sendable {
   public init() {}
 }
 
-public struct Proto_ReleaseDate: @unchecked Sendable {
+public struct Proto_ReleaseDate {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4878,7 +4974,7 @@ public struct Proto_ReleaseDate: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_ReleaseDateStatusResult: Sendable {
+public struct Proto_ReleaseDateStatusResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4890,7 +4986,7 @@ public struct Proto_ReleaseDateStatusResult: Sendable {
   public init() {}
 }
 
-public struct Proto_ReleaseDateStatus: Sendable {
+public struct Proto_ReleaseDateStatus {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4929,7 +5025,7 @@ public struct Proto_ReleaseDateStatus: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_ScreenshotResult: Sendable {
+public struct Proto_ScreenshotResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4941,7 +5037,7 @@ public struct Proto_ScreenshotResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Screenshot: Sendable {
+public struct Proto_Screenshot {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4978,7 +5074,7 @@ public struct Proto_Screenshot: Sendable {
   fileprivate var _game: Proto_Game? = nil
 }
 
-public struct Proto_SearchResult: Sendable {
+public struct Proto_SearchResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -4990,7 +5086,7 @@ public struct Proto_SearchResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Search: @unchecked Sendable {
+public struct Proto_Search {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5099,7 +5195,7 @@ public struct Proto_Search: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_TestDummyResult: Sendable {
+public struct Proto_TestDummyResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5111,7 +5207,7 @@ public struct Proto_TestDummyResult: Sendable {
   public init() {}
 }
 
-public struct Proto_TestDummy: @unchecked Sendable {
+public struct Proto_TestDummy {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5229,7 +5325,7 @@ public struct Proto_TestDummy: @unchecked Sendable {
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
-public struct Proto_ThemeResult: Sendable {
+public struct Proto_ThemeResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5241,7 +5337,7 @@ public struct Proto_ThemeResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Theme: Sendable {
+public struct Proto_Theme {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5282,7 +5378,7 @@ public struct Proto_Theme: Sendable {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
-public struct Proto_WebsiteResult: Sendable {
+public struct Proto_WebsiteResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5294,7 +5390,7 @@ public struct Proto_WebsiteResult: Sendable {
   public init() {}
 }
 
-public struct Proto_Website: Sendable {
+public struct Proto_Website {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
   // methods supported on all messages.
@@ -5324,6 +5420,136 @@ public struct Proto_Website: Sendable {
 
   fileprivate var _game: Proto_Game? = nil
 }
+
+#if swift(>=5.5) && canImport(_Concurrency)
+extension Proto_AgeRatingCategoryEnum: @unchecked Sendable {}
+extension Proto_AgeRatingRatingEnum: @unchecked Sendable {}
+extension Proto_AgeRatingContentDescriptionCategoryEnum: @unchecked Sendable {}
+extension Proto_GenderGenderEnum: @unchecked Sendable {}
+extension Proto_CharacterSpeciesEnum: @unchecked Sendable {}
+extension Proto_DateFormatChangeDateCategoryEnum: @unchecked Sendable {}
+extension Proto_WebsiteCategoryEnum: @unchecked Sendable {}
+extension Proto_ExternalGameCategoryEnum: @unchecked Sendable {}
+extension Proto_ExternalGameMediaEnum: @unchecked Sendable {}
+extension Proto_GameCategoryEnum: @unchecked Sendable {}
+extension Proto_GameStatusEnum: @unchecked Sendable {}
+extension Proto_GameVersionFeatureCategoryEnum: @unchecked Sendable {}
+extension Proto_GameVersionFeatureValueIncludedFeatureEnum: @unchecked Sendable {}
+extension Proto_PlatformCategoryEnum: @unchecked Sendable {}
+extension Proto_RegionRegionEnum: @unchecked Sendable {}
+extension Proto_TestDummyEnumTestEnum: @unchecked Sendable {}
+extension Proto_Count: @unchecked Sendable {}
+extension Proto_MultiQueryResult: @unchecked Sendable {}
+extension Proto_MultiQueryResultArray: @unchecked Sendable {}
+extension Proto_AgeRatingResult: @unchecked Sendable {}
+extension Proto_AgeRating: @unchecked Sendable {}
+extension Proto_AgeRatingContentDescriptionResult: @unchecked Sendable {}
+extension Proto_AgeRatingContentDescription: @unchecked Sendable {}
+extension Proto_AlternativeNameResult: @unchecked Sendable {}
+extension Proto_AlternativeName: @unchecked Sendable {}
+extension Proto_ArtworkResult: @unchecked Sendable {}
+extension Proto_Artwork: @unchecked Sendable {}
+extension Proto_CharacterResult: @unchecked Sendable {}
+extension Proto_Character: @unchecked Sendable {}
+extension Proto_CharacterMugShotResult: @unchecked Sendable {}
+extension Proto_CharacterMugShot: @unchecked Sendable {}
+extension Proto_CollectionResult: @unchecked Sendable {}
+extension Proto_Collection: @unchecked Sendable {}
+extension Proto_CollectionMembershipResult: @unchecked Sendable {}
+extension Proto_CollectionMembership: @unchecked Sendable {}
+extension Proto_CollectionMembershipTypeResult: @unchecked Sendable {}
+extension Proto_CollectionMembershipType: @unchecked Sendable {}
+extension Proto_CollectionRelationResult: @unchecked Sendable {}
+extension Proto_CollectionRelation: @unchecked Sendable {}
+extension Proto_CollectionRelationTypeResult: @unchecked Sendable {}
+extension Proto_CollectionRelationType: @unchecked Sendable {}
+extension Proto_CollectionTypeResult: @unchecked Sendable {}
+extension Proto_CollectionType: @unchecked Sendable {}
+extension Proto_CompanyResult: @unchecked Sendable {}
+extension Proto_Company: @unchecked Sendable {}
+extension Proto_CompanyLogoResult: @unchecked Sendable {}
+extension Proto_CompanyLogo: @unchecked Sendable {}
+extension Proto_CompanyWebsiteResult: @unchecked Sendable {}
+extension Proto_CompanyWebsite: @unchecked Sendable {}
+extension Proto_CoverResult: @unchecked Sendable {}
+extension Proto_Cover: @unchecked Sendable {}
+extension Proto_EventResult: @unchecked Sendable {}
+extension Proto_Event: @unchecked Sendable {}
+extension Proto_EventLogoResult: @unchecked Sendable {}
+extension Proto_EventLogo: @unchecked Sendable {}
+extension Proto_EventNetworkResult: @unchecked Sendable {}
+extension Proto_EventNetwork: @unchecked Sendable {}
+extension Proto_ExternalGameResult: @unchecked Sendable {}
+extension Proto_ExternalGame: @unchecked Sendable {}
+extension Proto_FranchiseResult: @unchecked Sendable {}
+extension Proto_Franchise: @unchecked Sendable {}
+extension Proto_GameResult: @unchecked Sendable {}
+extension Proto_Game: @unchecked Sendable {}
+extension Proto_GameEngineResult: @unchecked Sendable {}
+extension Proto_GameEngine: @unchecked Sendable {}
+extension Proto_GameEngineLogoResult: @unchecked Sendable {}
+extension Proto_GameEngineLogo: @unchecked Sendable {}
+extension Proto_GameLocalizationResult: @unchecked Sendable {}
+extension Proto_GameLocalization: @unchecked Sendable {}
+extension Proto_GameModeResult: @unchecked Sendable {}
+extension Proto_GameMode: @unchecked Sendable {}
+extension Proto_GameVersionResult: @unchecked Sendable {}
+extension Proto_GameVersion: @unchecked Sendable {}
+extension Proto_GameVersionFeatureResult: @unchecked Sendable {}
+extension Proto_GameVersionFeature: @unchecked Sendable {}
+extension Proto_GameVersionFeatureValueResult: @unchecked Sendable {}
+extension Proto_GameVersionFeatureValue: @unchecked Sendable {}
+extension Proto_GameVideoResult: @unchecked Sendable {}
+extension Proto_GameVideo: @unchecked Sendable {}
+extension Proto_GenreResult: @unchecked Sendable {}
+extension Proto_Genre: @unchecked Sendable {}
+extension Proto_InvolvedCompanyResult: @unchecked Sendable {}
+extension Proto_InvolvedCompany: @unchecked Sendable {}
+extension Proto_KeywordResult: @unchecked Sendable {}
+extension Proto_Keyword: @unchecked Sendable {}
+extension Proto_LanguageResult: @unchecked Sendable {}
+extension Proto_Language: @unchecked Sendable {}
+extension Proto_LanguageSupportResult: @unchecked Sendable {}
+extension Proto_LanguageSupport: @unchecked Sendable {}
+extension Proto_LanguageSupportTypeResult: @unchecked Sendable {}
+extension Proto_LanguageSupportType: @unchecked Sendable {}
+extension Proto_MultiplayerModeResult: @unchecked Sendable {}
+extension Proto_MultiplayerMode: @unchecked Sendable {}
+extension Proto_NetworkTypeResult: @unchecked Sendable {}
+extension Proto_NetworkType: @unchecked Sendable {}
+extension Proto_PlatformResult: @unchecked Sendable {}
+extension Proto_Platform: @unchecked Sendable {}
+extension Proto_PlatformFamilyResult: @unchecked Sendable {}
+extension Proto_PlatformFamily: @unchecked Sendable {}
+extension Proto_PlatformLogoResult: @unchecked Sendable {}
+extension Proto_PlatformLogo: @unchecked Sendable {}
+extension Proto_PlatformVersionResult: @unchecked Sendable {}
+extension Proto_PlatformVersion: @unchecked Sendable {}
+extension Proto_PlatformVersionCompanyResult: @unchecked Sendable {}
+extension Proto_PlatformVersionCompany: @unchecked Sendable {}
+extension Proto_PlatformVersionReleaseDateResult: @unchecked Sendable {}
+extension Proto_PlatformVersionReleaseDate: @unchecked Sendable {}
+extension Proto_PlatformWebsiteResult: @unchecked Sendable {}
+extension Proto_PlatformWebsite: @unchecked Sendable {}
+extension Proto_PlayerPerspectiveResult: @unchecked Sendable {}
+extension Proto_PlayerPerspective: @unchecked Sendable {}
+extension Proto_RegionResult: @unchecked Sendable {}
+extension Proto_Region: @unchecked Sendable {}
+extension Proto_ReleaseDateResult: @unchecked Sendable {}
+extension Proto_ReleaseDate: @unchecked Sendable {}
+extension Proto_ReleaseDateStatusResult: @unchecked Sendable {}
+extension Proto_ReleaseDateStatus: @unchecked Sendable {}
+extension Proto_ScreenshotResult: @unchecked Sendable {}
+extension Proto_Screenshot: @unchecked Sendable {}
+extension Proto_SearchResult: @unchecked Sendable {}
+extension Proto_Search: @unchecked Sendable {}
+extension Proto_TestDummyResult: @unchecked Sendable {}
+extension Proto_TestDummy: @unchecked Sendable {}
+extension Proto_ThemeResult: @unchecked Sendable {}
+extension Proto_Theme: @unchecked Sendable {}
+extension Proto_WebsiteResult: @unchecked Sendable {}
+extension Proto_Website: @unchecked Sendable {}
+#endif  // swift(>=5.5) && canImport(_Concurrency)
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
