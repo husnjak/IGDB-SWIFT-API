@@ -368,5 +368,18 @@ public extension IGDBWrapper {
         }, errorResponse: errorResponse)
     }
     
+    func popularityTypes(apiCalypse: APICalypse, result: @escaping ([Proto_PopularityType]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .POPULARITY_TYPES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_PopularityTypeResult(serializedData: bytes).popularitytypes
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func popularityPrimitives(apiCalypse: APICalypse, result: @escaping ([Proto_PopularityPrimitive]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .POPULARITY_PRIMITIVES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_PopularityPrimitiveResult(serializedData: bytes).popularityprimitives
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
     
 }

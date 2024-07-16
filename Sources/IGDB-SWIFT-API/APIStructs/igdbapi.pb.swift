@@ -1456,6 +1456,46 @@ extension Proto_RegionRegionEnum: CaseIterable {
 
 #endif  // swift(>=4.2)
 
+public enum Proto_PopularitySourcePopularitySourceEnum: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
+  case popularitysourcePopularitySourceNull // = 0
+  case igdb // = 121
+  case UNRECOGNIZED(Int)
+
+  public init() {
+    self = .popularitysourcePopularitySourceNull
+  }
+
+  public init?(rawValue: Int) {
+    switch rawValue {
+    case 0: self = .popularitysourcePopularitySourceNull
+    case 121: self = .igdb
+    default: self = .UNRECOGNIZED(rawValue)
+    }
+  }
+
+  public var rawValue: Int {
+    switch self {
+    case .popularitysourcePopularitySourceNull: return 0
+    case .igdb: return 121
+    case .UNRECOGNIZED(let i): return i
+    }
+  }
+
+}
+
+#if swift(>=4.2)
+
+extension Proto_PopularitySourcePopularitySourceEnum: CaseIterable {
+  // The compiler won't synthesize support with the UNRECOGNIZED case.
+  public static let allCases: [Proto_PopularitySourcePopularitySourceEnum] = [
+    .popularitysourcePopularitySourceNull,
+    .igdb,
+  ]
+}
+
+#endif  // swift(>=4.2)
+
 public enum Proto_TestDummyEnumTestEnum: SwiftProtobuf.Enum {
   public typealias RawValue = Int
   case testdummyEnumTestNull // = 0
@@ -4808,6 +4848,142 @@ public struct Proto_PlayerPerspective {
   fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
 }
 
+public struct Proto_PopularityPrimitiveResult {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  public var popularityprimitives: [Proto_PopularityPrimitive] = []
+
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  public init() {}
+}
+
+public struct Proto_PopularityPrimitive {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  public var id: UInt64 {
+    get {return _storage._id}
+    set {_uniqueStorage()._id = newValue}
+  }
+
+  public var gameID: Int32 {
+    get {return _storage._gameID}
+    set {_uniqueStorage()._gameID = newValue}
+  }
+
+  public var popularityType: Proto_PopularityType {
+    get {return _storage._popularityType ?? Proto_PopularityType()}
+    set {_uniqueStorage()._popularityType = newValue}
+  }
+  /// Returns true if `popularityType` has been explicitly set.
+  public var hasPopularityType: Bool {return _storage._popularityType != nil}
+  /// Clears the value of `popularityType`. Subsequent reads from it will return its default value.
+  public mutating func clearPopularityType() {_uniqueStorage()._popularityType = nil}
+
+  public var popularitySource: Proto_PopularitySourcePopularitySourceEnum {
+    get {return _storage._popularitySource}
+    set {_uniqueStorage()._popularitySource = newValue}
+  }
+
+  public var value: Double {
+    get {return _storage._value}
+    set {_uniqueStorage()._value = newValue}
+  }
+
+  public var calculatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+    get {return _storage._calculatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
+    set {_uniqueStorage()._calculatedAt = newValue}
+  }
+  /// Returns true if `calculatedAt` has been explicitly set.
+  public var hasCalculatedAt: Bool {return _storage._calculatedAt != nil}
+  /// Clears the value of `calculatedAt`. Subsequent reads from it will return its default value.
+  public mutating func clearCalculatedAt() {_uniqueStorage()._calculatedAt = nil}
+
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+    get {return _storage._createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
+    set {_uniqueStorage()._createdAt = newValue}
+  }
+  /// Returns true if `createdAt` has been explicitly set.
+  public var hasCreatedAt: Bool {return _storage._createdAt != nil}
+  /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
+  public mutating func clearCreatedAt() {_uniqueStorage()._createdAt = nil}
+
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+    get {return _storage._updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
+    set {_uniqueStorage()._updatedAt = newValue}
+  }
+  /// Returns true if `updatedAt` has been explicitly set.
+  public var hasUpdatedAt: Bool {return _storage._updatedAt != nil}
+  /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
+  public mutating func clearUpdatedAt() {_uniqueStorage()._updatedAt = nil}
+
+  public var checksum: String {
+    get {return _storage._checksum}
+    set {_uniqueStorage()._checksum = newValue}
+  }
+
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  public init() {}
+
+  fileprivate var _storage = _StorageClass.defaultInstance
+}
+
+public struct Proto_PopularityTypeResult {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  public var popularitytypes: [Proto_PopularityType] = []
+
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  public init() {}
+}
+
+public struct Proto_PopularityType {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  public var id: UInt64 = 0
+
+  public var popularitySource: Proto_PopularitySourcePopularitySourceEnum = .popularitysourcePopularitySourceNull
+
+  public var name: String = String()
+
+  public var createdAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+    get {return _createdAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
+    set {_createdAt = newValue}
+  }
+  /// Returns true if `createdAt` has been explicitly set.
+  public var hasCreatedAt: Bool {return self._createdAt != nil}
+  /// Clears the value of `createdAt`. Subsequent reads from it will return its default value.
+  public mutating func clearCreatedAt() {self._createdAt = nil}
+
+  public var updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp {
+    get {return _updatedAt ?? SwiftProtobuf.Google_Protobuf_Timestamp()}
+    set {_updatedAt = newValue}
+  }
+  /// Returns true if `updatedAt` has been explicitly set.
+  public var hasUpdatedAt: Bool {return self._updatedAt != nil}
+  /// Clears the value of `updatedAt`. Subsequent reads from it will return its default value.
+  public mutating func clearUpdatedAt() {self._updatedAt = nil}
+
+  public var checksum: String = String()
+
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  public init() {}
+
+  fileprivate var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
+  fileprivate var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
+}
+
 public struct Proto_RegionResult {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
@@ -5437,6 +5613,7 @@ extension Proto_GameVersionFeatureCategoryEnum: @unchecked Sendable {}
 extension Proto_GameVersionFeatureValueIncludedFeatureEnum: @unchecked Sendable {}
 extension Proto_PlatformCategoryEnum: @unchecked Sendable {}
 extension Proto_RegionRegionEnum: @unchecked Sendable {}
+extension Proto_PopularitySourcePopularitySourceEnum: @unchecked Sendable {}
 extension Proto_TestDummyEnumTestEnum: @unchecked Sendable {}
 extension Proto_Count: @unchecked Sendable {}
 extension Proto_MultiQueryResult: @unchecked Sendable {}
@@ -5533,6 +5710,10 @@ extension Proto_PlatformWebsiteResult: @unchecked Sendable {}
 extension Proto_PlatformWebsite: @unchecked Sendable {}
 extension Proto_PlayerPerspectiveResult: @unchecked Sendable {}
 extension Proto_PlayerPerspective: @unchecked Sendable {}
+extension Proto_PopularityPrimitiveResult: @unchecked Sendable {}
+extension Proto_PopularityPrimitive: @unchecked Sendable {}
+extension Proto_PopularityTypeResult: @unchecked Sendable {}
+extension Proto_PopularityType: @unchecked Sendable {}
 extension Proto_RegionResult: @unchecked Sendable {}
 extension Proto_Region: @unchecked Sendable {}
 extension Proto_ReleaseDateResult: @unchecked Sendable {}
@@ -5866,6 +6047,13 @@ extension Proto_RegionRegionEnum: SwiftProtobuf._ProtoNameProviding {
     8: .same(proto: "WORLDWIDE"),
     9: .same(proto: "KOREA"),
     10: .same(proto: "BRAZIL"),
+  ]
+}
+
+extension Proto_PopularitySourcePopularitySourceEnum: SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "POPULARITYSOURCE_POPULARITY_SOURCE_NULL"),
+    121: .same(proto: "IGDB"),
   ]
 }
 
@@ -6442,7 +6630,15 @@ extension Proto_Character: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     var _url: String = String()
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -6746,7 +6942,15 @@ extension Proto_Collection: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     var _asParentRelations: [Proto_CollectionRelation] = []
     var _asChildRelations: [Proto_CollectionRelation] = []
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -6918,7 +7122,15 @@ extension Proto_CollectionMembership: SwiftProtobuf.Message, SwiftProtobuf._Mess
     var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -7276,7 +7488,15 @@ extension Proto_CollectionRelationType: SwiftProtobuf.Message, SwiftProtobuf._Me
     var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -7552,7 +7772,15 @@ extension Proto_Company: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementa
     var _websites: [Proto_CompanyWebsite] = []
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -7972,7 +8200,15 @@ extension Proto_Cover: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     var _checksum: String = String()
     var _gameLocalization: Proto_GameLocalization? = nil
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -8154,7 +8390,15 @@ extension Proto_Event: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementati
     var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -8358,7 +8602,15 @@ extension Proto_EventLogo: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -8986,7 +9238,15 @@ extension Proto_Game: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementatio
     var _gameLocalizations: [Proto_GameLocalization] = []
     var _collections: [Proto_Collection] = []
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -9448,7 +9708,15 @@ extension Proto_GameEngine: SwiftProtobuf.Message, SwiftProtobuf._MessageImpleme
     var _url: String = String()
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -9728,7 +9996,15 @@ extension Proto_GameLocalization: SwiftProtobuf.Message, SwiftProtobuf._MessageI
     var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -10820,7 +11096,15 @@ extension Proto_LanguageSupport: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -11328,7 +11612,15 @@ extension Proto_Platform: SwiftProtobuf.Message, SwiftProtobuf._MessageImplement
     var _websites: [Proto_PlatformWebsite] = []
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -11746,7 +12038,15 @@ extension Proto_PlatformVersion: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     var _url: String = String()
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -12343,6 +12643,276 @@ extension Proto_PlayerPerspective: SwiftProtobuf.Message, SwiftProtobuf._Message
   }
 }
 
+extension Proto_PopularityPrimitiveResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = _protobuf_package + ".PopularityPrimitiveResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "popularityprimitives"),
+  ]
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every case branch when no optimizations are
+      // enabled. https://github.com/apple/swift-protobuf/issues/1034
+      switch fieldNumber {
+      case 1: try { try decoder.decodeRepeatedMessageField(value: &self.popularityprimitives) }()
+      default: break
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if !self.popularityprimitives.isEmpty {
+      try visitor.visitRepeatedMessageField(value: self.popularityprimitives, fieldNumber: 1)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  public static func ==(lhs: Proto_PopularityPrimitiveResult, rhs: Proto_PopularityPrimitiveResult) -> Bool {
+    if lhs.popularityprimitives != rhs.popularityprimitives {return false}
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
+}
+
+extension Proto_PopularityPrimitive: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = _protobuf_package + ".PopularityPrimitive"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "id"),
+    2: .standard(proto: "game_id"),
+    3: .standard(proto: "popularity_type"),
+    4: .standard(proto: "popularity_source"),
+    5: .same(proto: "value"),
+    6: .standard(proto: "calculated_at"),
+    7: .standard(proto: "created_at"),
+    8: .standard(proto: "updated_at"),
+    9: .same(proto: "checksum"),
+  ]
+
+  fileprivate class _StorageClass {
+    var _id: UInt64 = 0
+    var _gameID: Int32 = 0
+    var _popularityType: Proto_PopularityType? = nil
+    var _popularitySource: Proto_PopularitySourcePopularitySourceEnum = .popularitysourcePopularitySourceNull
+    var _value: Double = 0
+    var _calculatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
+    var _createdAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
+    var _updatedAt: SwiftProtobuf.Google_Protobuf_Timestamp? = nil
+    var _checksum: String = String()
+
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
+
+    private init() {}
+
+    init(copying source: _StorageClass) {
+      _id = source._id
+      _gameID = source._gameID
+      _popularityType = source._popularityType
+      _popularitySource = source._popularitySource
+      _value = source._value
+      _calculatedAt = source._calculatedAt
+      _createdAt = source._createdAt
+      _updatedAt = source._updatedAt
+      _checksum = source._checksum
+    }
+  }
+
+  fileprivate mutating func _uniqueStorage() -> _StorageClass {
+    if !isKnownUniquelyReferenced(&_storage) {
+      _storage = _StorageClass(copying: _storage)
+    }
+    return _storage
+  }
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        // The use of inline closures is to circumvent an issue where the compiler
+        // allocates stack space for every case branch when no optimizations are
+        // enabled. https://github.com/apple/swift-protobuf/issues/1034
+        switch fieldNumber {
+        case 1: try { try decoder.decodeSingularUInt64Field(value: &_storage._id) }()
+        case 2: try { try decoder.decodeSingularInt32Field(value: &_storage._gameID) }()
+        case 3: try { try decoder.decodeSingularMessageField(value: &_storage._popularityType) }()
+        case 4: try { try decoder.decodeSingularEnumField(value: &_storage._popularitySource) }()
+        case 5: try { try decoder.decodeSingularDoubleField(value: &_storage._value) }()
+        case 6: try { try decoder.decodeSingularMessageField(value: &_storage._calculatedAt) }()
+        case 7: try { try decoder.decodeSingularMessageField(value: &_storage._createdAt) }()
+        case 8: try { try decoder.decodeSingularMessageField(value: &_storage._updatedAt) }()
+        case 9: try { try decoder.decodeSingularStringField(value: &_storage._checksum) }()
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every if/case branch local when no optimizations
+      // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
+      // https://github.com/apple/swift-protobuf/issues/1182
+      if _storage._id != 0 {
+        try visitor.visitSingularUInt64Field(value: _storage._id, fieldNumber: 1)
+      }
+      if _storage._gameID != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._gameID, fieldNumber: 2)
+      }
+      try { if let v = _storage._popularityType {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 3)
+      } }()
+      if _storage._popularitySource != .popularitysourcePopularitySourceNull {
+        try visitor.visitSingularEnumField(value: _storage._popularitySource, fieldNumber: 4)
+      }
+      if _storage._value != 0 {
+        try visitor.visitSingularDoubleField(value: _storage._value, fieldNumber: 5)
+      }
+      try { if let v = _storage._calculatedAt {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 6)
+      } }()
+      try { if let v = _storage._createdAt {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 7)
+      } }()
+      try { if let v = _storage._updatedAt {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 8)
+      } }()
+      if !_storage._checksum.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._checksum, fieldNumber: 9)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  public static func ==(lhs: Proto_PopularityPrimitive, rhs: Proto_PopularityPrimitive) -> Bool {
+    if lhs._storage !== rhs._storage {
+      let storagesAreEqual: Bool = withExtendedLifetime((lhs._storage, rhs._storage)) { (_args: (_StorageClass, _StorageClass)) in
+        let _storage = _args.0
+        let rhs_storage = _args.1
+        if _storage._id != rhs_storage._id {return false}
+        if _storage._gameID != rhs_storage._gameID {return false}
+        if _storage._popularityType != rhs_storage._popularityType {return false}
+        if _storage._popularitySource != rhs_storage._popularitySource {return false}
+        if _storage._value != rhs_storage._value {return false}
+        if _storage._calculatedAt != rhs_storage._calculatedAt {return false}
+        if _storage._createdAt != rhs_storage._createdAt {return false}
+        if _storage._updatedAt != rhs_storage._updatedAt {return false}
+        if _storage._checksum != rhs_storage._checksum {return false}
+        return true
+      }
+      if !storagesAreEqual {return false}
+    }
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
+}
+
+extension Proto_PopularityTypeResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = _protobuf_package + ".PopularityTypeResult"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "popularitytypes"),
+  ]
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every case branch when no optimizations are
+      // enabled. https://github.com/apple/swift-protobuf/issues/1034
+      switch fieldNumber {
+      case 1: try { try decoder.decodeRepeatedMessageField(value: &self.popularitytypes) }()
+      default: break
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if !self.popularitytypes.isEmpty {
+      try visitor.visitRepeatedMessageField(value: self.popularitytypes, fieldNumber: 1)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  public static func ==(lhs: Proto_PopularityTypeResult, rhs: Proto_PopularityTypeResult) -> Bool {
+    if lhs.popularitytypes != rhs.popularitytypes {return false}
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
+}
+
+extension Proto_PopularityType: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = _protobuf_package + ".PopularityType"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .same(proto: "id"),
+    2: .standard(proto: "popularity_source"),
+    3: .same(proto: "name"),
+    4: .standard(proto: "created_at"),
+    5: .standard(proto: "updated_at"),
+    6: .same(proto: "checksum"),
+  ]
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      // The use of inline closures is to circumvent an issue where the compiler
+      // allocates stack space for every case branch when no optimizations are
+      // enabled. https://github.com/apple/swift-protobuf/issues/1034
+      switch fieldNumber {
+      case 1: try { try decoder.decodeSingularUInt64Field(value: &self.id) }()
+      case 2: try { try decoder.decodeSingularEnumField(value: &self.popularitySource) }()
+      case 3: try { try decoder.decodeSingularStringField(value: &self.name) }()
+      case 4: try { try decoder.decodeSingularMessageField(value: &self._createdAt) }()
+      case 5: try { try decoder.decodeSingularMessageField(value: &self._updatedAt) }()
+      case 6: try { try decoder.decodeSingularStringField(value: &self.checksum) }()
+      default: break
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    // The use of inline closures is to circumvent an issue where the compiler
+    // allocates stack space for every if/case branch local when no optimizations
+    // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
+    // https://github.com/apple/swift-protobuf/issues/1182
+    if self.id != 0 {
+      try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
+    }
+    if self.popularitySource != .popularitysourcePopularitySourceNull {
+      try visitor.visitSingularEnumField(value: self.popularitySource, fieldNumber: 2)
+    }
+    if !self.name.isEmpty {
+      try visitor.visitSingularStringField(value: self.name, fieldNumber: 3)
+    }
+    try { if let v = self._createdAt {
+      try visitor.visitSingularMessageField(value: v, fieldNumber: 4)
+    } }()
+    try { if let v = self._updatedAt {
+      try visitor.visitSingularMessageField(value: v, fieldNumber: 5)
+    } }()
+    if !self.checksum.isEmpty {
+      try visitor.visitSingularStringField(value: self.checksum, fieldNumber: 6)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  public static func ==(lhs: Proto_PopularityType, rhs: Proto_PopularityType) -> Bool {
+    if lhs.id != rhs.id {return false}
+    if lhs.popularitySource != rhs.popularitySource {return false}
+    if lhs.name != rhs.name {return false}
+    if lhs._createdAt != rhs._createdAt {return false}
+    if lhs._updatedAt != rhs._updatedAt {return false}
+    if lhs.checksum != rhs.checksum {return false}
+    if lhs.unknownFields != rhs.unknownFields {return false}
+    return true
+  }
+}
+
 extension Proto_RegionResult: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   public static let protoMessageName: String = _protobuf_package + ".RegionResult"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
@@ -12512,7 +13082,15 @@ extension Proto_ReleaseDate: SwiftProtobuf.Message, SwiftProtobuf._MessageImplem
     var _checksum: String = String()
     var _status: Proto_ReleaseDateStatus? = nil
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -12922,7 +13500,15 @@ extension Proto_Search: SwiftProtobuf.Message, SwiftProtobuf._MessageImplementat
     var _theme: Proto_Theme? = nil
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
@@ -13128,7 +13714,15 @@ extension Proto_TestDummy: SwiftProtobuf.Message, SwiftProtobuf._MessageImplemen
     var _url: String = String()
     var _checksum: String = String()
 
-    static let defaultInstance = _StorageClass()
+    #if swift(>=5.10)
+      // This property is used as the initial default value for new instances of the type.
+      // The type itself is protecting the reference to its storage via CoW semantics.
+      // This will force a copy to be made of this reference when the first mutation occurs;
+      // hence, it is safe to mark this as `nonisolated(unsafe)`.
+      static nonisolated(unsafe) let defaultInstance = _StorageClass()
+    #else
+      static let defaultInstance = _StorageClass()
+    #endif
 
     private init() {}
 
