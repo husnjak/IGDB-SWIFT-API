@@ -769,5 +769,30 @@ class TestProtobufRequest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
     }
     
+    func testPopularityTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.popularityTypes(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testPopularityPrimitives() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.popularityTypes(apiCalypse: APICalypse()) { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        } errorResponse: { error in
+            XCTAssert(false)
+        }
+        waitForExpectations(timeout: 5, handler: nil)
+    }
     
 }

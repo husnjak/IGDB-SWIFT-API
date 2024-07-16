@@ -181,5 +181,13 @@ public extension IGDBWrapper {
     func jsonWebsites(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiJsonRequest(endpoint: .WEBSITES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
     }
+    
+    func jsonPopularityTypes(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiJsonRequest(endpoint: .POPULARITY_TYPES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
+    }
+    
+    func jsonPopularityPrimitives(apiCalypse: APICalypse, result: @escaping (String) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiJsonRequest(endpoint: .POPULARITY_PRIMITIVES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: result, errorResponse: errorResponse)
+    }
 
 }
