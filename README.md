@@ -33,7 +33,7 @@ You can either import this library using Xcode by simply pasting this repository
 Or if you have a `Package.swift` file you can add this:  
 ```swift
 dependencies: [
-.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.4.5"),
+.package(url: "https://github.com/husnjak/IGDB-SWIFT-API.git", from: "0.5.0"),
 ],
 targets: [
     .target(name: "MyTarget", dependencies: ["IGDB-SWIFT-API"]),
@@ -82,7 +82,7 @@ The class `APICalypse` handles the new querying language, so that you don't need
   This method handles IGDB generated proto classes which returns Data to be used to fill the appropriate class.  
   ```swift
   wrapper.apiProtoRequest(endpoint: .GAMES, apicalypseQuery: "fields *;", dataResponse: { bytes in
-            let games: [Proto_Game] = try! Proto_GameResult(serializedData: bytes) // This converts Binary to a struct
+            let games: [Proto_Game] = try! Proto_GameResult(serializedBytes: bytes) // This converts Binary to a struct
         }, errorResponse: { error in
             // Do Something
         })

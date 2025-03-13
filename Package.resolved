@@ -2,21 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "Just",
-        "repositoryURL": "https://github.com/dduan/Just.git",
-        "state": {
-          "branch": null,
-          "revision": "1824bf84cf52d11d69ae20cfb89f0ce5bffa5650",
-          "version": "0.8.0"
-        }
-      },
-      {
         "package": "SwiftProtobuf",
         "repositoryURL": "https://github.com/apple/swift-protobuf.git",
         "state": {
           "branch": null,
-          "revision": "07f7f26ded8df9645c072f220378879c4642e063",
-          "version": "1.25.1"
+          "revision": "d72aed98f8253ec1aa9ea1141e28150f408cf17f",
+          "version": "1.29.0"
         }
       }
     ]
