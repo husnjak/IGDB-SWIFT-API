@@ -16,10 +16,26 @@ class TestProtobufRequest: XCTestCase {
         accessToken: ProcessInfo.processInfo.environment["access_token"]!
     )
     
+    private let apicalypseQuery = APICalypse().fields(fields: "*");
+    
     func testAgeRating() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.ageRatings(apiCalypse: APICalypse(), result: { result in
+        wrapper.ageRatings(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testAgeRatingCategories() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.ageRatingCategories(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -33,7 +49,35 @@ class TestProtobufRequest: XCTestCase {
     func testAgeRatingContentDescriptions() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.ageRatingContentDescriptions(apiCalypse: APICalypse(), result: { result in
+        wrapper.ageRatingContentDescriptions(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testAgeRatingContentDescriptionsV2() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.ageRatingContentDescriptionsV2(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testAgeRatingOrganizations() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.ageRatingOrganizations(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -47,7 +91,7 @@ class TestProtobufRequest: XCTestCase {
     func testAlternativeNames() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.alternativeNames(apiCalypse: APICalypse(), result: { result in
+        wrapper.alternativeNames(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -61,7 +105,7 @@ class TestProtobufRequest: XCTestCase {
     func testArtwork() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.artworks(apiCalypse: APICalypse(), result: { result in
+        wrapper.artworks(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -75,7 +119,35 @@ class TestProtobufRequest: XCTestCase {
     func testCharacters() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.characters(apiCalypse: APICalypse(), result: { result in
+        wrapper.characters(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testCharacterGenders() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.characterGenders(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testCharacterSpecies() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.characterSpecies(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -89,7 +161,7 @@ class TestProtobufRequest: XCTestCase {
     func testCollections() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.collections(apiCalypse: APICalypse(), result: { result in
+        wrapper.collections(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -103,7 +175,7 @@ class TestProtobufRequest: XCTestCase {
     func testCharacterMugShots() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.characterMugShots(apiCalypse: APICalypse(), result: { result in
+        wrapper.characterMugShots(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -117,7 +189,21 @@ class TestProtobufRequest: XCTestCase {
     func testCompanies() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.companies(apiCalypse: APICalypse(), result: { result in
+        wrapper.companies(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testCompanyStatuses() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.companyStatuses(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -131,7 +217,7 @@ class TestProtobufRequest: XCTestCase {
     func testComapnyWebsites() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.companyWebsites(apiCalypse: APICalypse(), result: { result in
+        wrapper.companyWebsites(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -145,7 +231,7 @@ class TestProtobufRequest: XCTestCase {
     func testCompantLogos() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.companyLogos(apiCalypse: APICalypse(), result: { result in
+        wrapper.companyLogos(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -159,7 +245,21 @@ class TestProtobufRequest: XCTestCase {
     func testCover() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.covers(apiCalypse: APICalypse(), result: { result in
+        wrapper.covers(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testDateFormats() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.dateFormats(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -173,7 +273,21 @@ class TestProtobufRequest: XCTestCase {
     func testExternalGames() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.externalGames(apiCalypse: APICalypse(), result: { result in
+        wrapper.externalGames(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testExternalGameSources() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.externalGameSources(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -187,7 +301,7 @@ class TestProtobufRequest: XCTestCase {
     func testFranschises() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.franschises(apiCalypse: APICalypse(), result: { result in
+        wrapper.franschises(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -220,6 +334,9 @@ class TestProtobufRequest: XCTestCase {
             let ageRatings = game.ageRatings
             let ageRating = ageRatings[0]
             XCTAssertFalse(ageRating.contentDescriptions.isEmpty)
+            XCTAssert(ageRating.hasOrganization)
+            XCTAssert(ageRating.hasRatingCategory)
+            XCTAssertFalse(ageRating.ratingContentDescriptions.isEmpty)
             
             XCTAssertFalse(ageRating.checksum.isEmpty)
             XCTAssertNotEqual(" ", ageRating.checksum)
@@ -278,7 +395,7 @@ class TestProtobufRequest: XCTestCase {
     func testGameEngines() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.gameEngines(apiCalypse: APICalypse(), result: { result in
+        wrapper.gameEngines(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -292,7 +409,7 @@ class TestProtobufRequest: XCTestCase {
     func testGameEngineLogos() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.gameEngineLogos(apiCalypse: APICalypse(), result: { result in
+        wrapper.gameEngineLogos(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -306,7 +423,49 @@ class TestProtobufRequest: XCTestCase {
     func testGameModes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.gameModes(apiCalypse: APICalypse(), result: { result in
+        wrapper.gameModes(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testGameReleaseFormats() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.gameReleaseFormats(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testGameStatuses() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.gameStatuses(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testGameTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.gameTypes(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -320,7 +479,7 @@ class TestProtobufRequest: XCTestCase {
     func testGameVersions() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.gameVersions(apiCalypse: APICalypse(), result: { result in
+        wrapper.gameVersions(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -334,7 +493,7 @@ class TestProtobufRequest: XCTestCase {
     func testGameVersionFeatures() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.gameVersionFeatures(apiCalypse: APICalypse(), result: { result in
+        wrapper.gameVersionFeatures(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -348,7 +507,7 @@ class TestProtobufRequest: XCTestCase {
     func testGameVersionFeatureValues() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.gameVersionFeatureValues(apiCalypse: APICalypse(), result: { result in
+        wrapper.gameVersionFeatureValues(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -362,7 +521,7 @@ class TestProtobufRequest: XCTestCase {
     func testGameVideos() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.gameVideos(apiCalypse: APICalypse(), result: { result in
+        wrapper.gameVideos(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -376,7 +535,7 @@ class TestProtobufRequest: XCTestCase {
     func testGenres() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.genres(apiCalypse: APICalypse(), result: { result in
+        wrapper.genres(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -390,7 +549,7 @@ class TestProtobufRequest: XCTestCase {
     func testInvolvedCompanies() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.involvedCompanies(apiCalypse: APICalypse(), result: { result in
+        wrapper.involvedCompanies(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -404,7 +563,7 @@ class TestProtobufRequest: XCTestCase {
     func testKeywords() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.keywords(apiCalypse: APICalypse(), result: { result in
+        wrapper.keywords(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -418,7 +577,7 @@ class TestProtobufRequest: XCTestCase {
     func testMultiplayerModes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.multiplayerModes(apiCalypse: APICalypse(), result: { result in
+        wrapper.multiplayerModes(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -432,7 +591,21 @@ class TestProtobufRequest: XCTestCase {
     func testPlatforms() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.platforms(apiCalypse: APICalypse(), result: { result in
+        wrapper.platforms(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testPlatformTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.platformTypes(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -446,7 +619,7 @@ class TestProtobufRequest: XCTestCase {
     func testPlatformLogos() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.platformLogos(apiCalypse: APICalypse(), result: { result in
+        wrapper.platformLogos(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -459,7 +632,7 @@ class TestProtobufRequest: XCTestCase {
     func testPlatformVersions() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.platformVersions(apiCalypse: APICalypse(), result: { result in
+        wrapper.platformVersions(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -472,7 +645,7 @@ class TestProtobufRequest: XCTestCase {
     func testPlatformVerisonCompanies() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.platformVersionCompanies(apiCalypse: APICalypse(), result: { result in
+        wrapper.platformVersionCompanies(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -485,7 +658,7 @@ class TestProtobufRequest: XCTestCase {
     func testPlatformVersionReleaseDates() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.platformVersionReleaseDates(apiCalypse: APICalypse(), result: { result in
+        wrapper.platformVersionReleaseDates(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -498,7 +671,7 @@ class TestProtobufRequest: XCTestCase {
     func testPlatformWebsites() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.platformWebsites(apiCalypse: APICalypse(), result: { result in
+        wrapper.platformWebsites(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -511,7 +684,7 @@ class TestProtobufRequest: XCTestCase {
     func testPlayerPerspectives() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.playerPerspectives(apiCalypse: APICalypse(), result: { result in
+        wrapper.playerPerspectives(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -524,7 +697,7 @@ class TestProtobufRequest: XCTestCase {
     func testPlatformFamilies() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.platformFamilies(apiCalypse: APICalypse(), result: { result in
+        wrapper.platformFamilies(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -537,7 +710,20 @@ class TestProtobufRequest: XCTestCase {
     func testReleaseDates() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.releaseDates(apiCalypse: APICalypse(), result: { result in
+        wrapper.releaseDates(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    func testReleaseDateRegions() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.releaseDateRegion(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -550,7 +736,7 @@ class TestProtobufRequest: XCTestCase {
     func testScreenshots() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.screenshots(apiCalypse: APICalypse(), result: { result in
+        wrapper.screenshots(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -563,7 +749,7 @@ class TestProtobufRequest: XCTestCase {
     func testSearch() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.search(apiCalypse: APICalypse(), result: { result in
+        wrapper.search(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -576,7 +762,7 @@ class TestProtobufRequest: XCTestCase {
     func testThemes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.themes(apiCalypse: APICalypse(), result: { result in
+        wrapper.themes(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -589,7 +775,21 @@ class TestProtobufRequest: XCTestCase {
     func testWebsites() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.websites(apiCalypse: APICalypse(), result: { result in
+        wrapper.websites(apiCalypse: apicalypseQuery, result: { result in
+            XCTAssertFalse(result.isEmpty)
+            
+            expectation.fulfill()
+        }) { error in
+            XCTAssert(false)
+        }
+        
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+    
+    func testWebsiteTypes() {
+        let expectation = self.expectation(description: "API Request")
+        
+        wrapper.websites(apiCalypse: apicalypseQuery, result: { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -603,7 +803,7 @@ class TestProtobufRequest: XCTestCase {
     func testLanguages() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.languages(apiCalypse: APICalypse()) { result in
+        wrapper.languages(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -616,7 +816,7 @@ class TestProtobufRequest: XCTestCase {
     func testLanguageSupports() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.languageSupports(apiCalypse: APICalypse()) { result in
+        wrapper.languageSupports(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -629,7 +829,7 @@ class TestProtobufRequest: XCTestCase {
     func testLanguageSupportTypes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.languageSupportTypes(apiCalypse: APICalypse()) { result in
+        wrapper.languageSupportTypes(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -642,7 +842,7 @@ class TestProtobufRequest: XCTestCase {
     func testGameLocalizations() {
         let expectation = self.expectation(description: "API Request")
 
-        wrapper.gameLocalizations(apiCalypse: APICalypse()) { result in
+        wrapper.gameLocalizations(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -655,7 +855,7 @@ class TestProtobufRequest: XCTestCase {
     func testRegions() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.regions(apiCalypse: APICalypse()) { result in
+        wrapper.regions(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -668,7 +868,7 @@ class TestProtobufRequest: XCTestCase {
     func testEvents() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.events(apiCalypse: APICalypse()) { result in
+        wrapper.events(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -681,7 +881,7 @@ class TestProtobufRequest: XCTestCase {
     func testEventLogos() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.eventLogos(apiCalypse: APICalypse()) { result in
+        wrapper.eventLogos(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -694,7 +894,7 @@ class TestProtobufRequest: XCTestCase {
     func testEventNetworks() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.eventNetworks(apiCalypse: APICalypse()) { result in
+        wrapper.eventNetworks(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -707,7 +907,7 @@ class TestProtobufRequest: XCTestCase {
     func testNetworkTypes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.networkTypes(apiCalypse: APICalypse()) { result in
+        wrapper.networkTypes(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -720,7 +920,7 @@ class TestProtobufRequest: XCTestCase {
     func testCollectionRelationTypes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.collectionRelationTypes(apiCalypse: APICalypse()) { result in
+        wrapper.collectionRelationTypes(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -733,7 +933,7 @@ class TestProtobufRequest: XCTestCase {
     func testCollectionTypes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.collectionTypes(apiCalypse: APICalypse()) { result in
+        wrapper.collectionTypes(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -746,7 +946,7 @@ class TestProtobufRequest: XCTestCase {
     func testCollectionMemberships() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.collectionMemberships(apiCalypse: APICalypse()) { result in
+        wrapper.collectionMemberships(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -759,7 +959,7 @@ class TestProtobufRequest: XCTestCase {
     func testCollectionMembershipTypes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.collectionMembershipTypes(apiCalypse: APICalypse()) { result in
+        wrapper.collectionMembershipTypes(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -772,7 +972,7 @@ class TestProtobufRequest: XCTestCase {
     func testPopularityTypes() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.popularityTypes(apiCalypse: APICalypse()) { result in
+        wrapper.popularityTypes(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()
@@ -785,7 +985,7 @@ class TestProtobufRequest: XCTestCase {
     func testPopularityPrimitives() {
         let expectation = self.expectation(description: "API Request")
         
-        wrapper.popularityTypes(apiCalypse: APICalypse()) { result in
+        wrapper.popularityTypes(apiCalypse: apicalypseQuery) { result in
             XCTAssertFalse(result.isEmpty)
             
             expectation.fulfill()

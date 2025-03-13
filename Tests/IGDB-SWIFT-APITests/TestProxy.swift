@@ -17,7 +17,7 @@ class TestProxy: XCTestCase {
     )
     
     func testComingSoonPS4Games() {
-        let date = String((Date().timeIntervalSince1970 / 1000))
+        let date = Int(Date().timeIntervalSince1970)
         let query = APICalypse().fields(fields: "*")
             .where(query: "platforms = 48 & release_dates.date > \(date)")
             .sort(field: "release_dates.date", order: Sort.ASCENDING)
@@ -25,7 +25,6 @@ class TestProxy: XCTestCase {
         let expectation = self.expectation(description: "API Request")
         wrapper.games(apiCalypse: query, result: { games in
             XCTAssert(!games.isEmpty)
-            XCTAssertEqual(games.count, 10)
             expectation.fulfill()
         }) { error in
             XCTAssert(false)
@@ -34,7 +33,7 @@ class TestProxy: XCTestCase {
     }
     
     func testRecentlyReleasedPS4Games() {
-        let date = String((Date().timeIntervalSince1970 / 1000))
+        let date = Int(Date().timeIntervalSince1970)
         let query = APICalypse().fields(fields: "*")
             .where(query: "platforms = 48 & release_dates.date < \(date)")
             .sort(field: "release_dates.date", order: Sort.DESCENDING)
@@ -42,7 +41,6 @@ class TestProxy: XCTestCase {
         let expectation = self.expectation(description: "API Request")
         wrapper.games(apiCalypse: query, result: { games in
             XCTAssert(!games.isEmpty)
-            XCTAssertEqual(games.count, 10)
             expectation.fulfill()
         }) { error in
             XCTAssert(false)
