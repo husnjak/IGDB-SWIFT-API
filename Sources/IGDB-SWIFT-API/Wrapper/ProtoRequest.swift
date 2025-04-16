@@ -237,7 +237,7 @@ public extension IGDBWrapper {
     }
     
     func gameTimeToBeats(apiCalypse: APICalypse, result: @escaping ([Proto_GameTimeToBeat]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
-        apiProtoRequest(endpoint: .GAME_STATUSES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+        apiProtoRequest(endpoint: .GAME_TIME_TO_BEATS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
             let objects = try! Proto_GameTimeToBeatResult(serializedBytes: bytes).gametimetobeats
             result(objects)
         }, errorResponse: errorResponse)
