@@ -25,6 +25,7 @@ public extension IGDBWrapper {
         }, errorResponse: errorResponse)
     }
     
+    @available(*, deprecated, message: "Use ageRatingContentDescriptionsV2 instead.")
     func ageRatingContentDescriptions(apiCalypse: APICalypse, result: @escaping ([Proto_AgeRatingContentDescription]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiProtoRequest(endpoint: .AGE_RATING_CONTENT_DESCRIPTIONS, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
             let objects = try! Proto_AgeRatingContentDescriptionResult(serializedBytes: bytes).ageratingcontentdescriptions
@@ -231,6 +232,13 @@ public extension IGDBWrapper {
     func gameStatuses(apiCalypse: APICalypse, result: @escaping ([Proto_GameStatus]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
         apiProtoRequest(endpoint: .GAME_STATUSES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
             let objects = try! Proto_GameStatusResult(serializedBytes: bytes).gamestatuses
+            result(objects)
+        }, errorResponse: errorResponse)
+    }
+    
+    func gameTimeToBeats(apiCalypse: APICalypse, result: @escaping ([Proto_GameTimeToBeat]) -> (Void), errorResponse: @escaping (RequestException) -> (Void)) {
+        apiProtoRequest(endpoint: .GAME_STATUSES, apicalypseQuery: apiCalypse.buildQuery(), dataResponse: { bytes -> (Void) in
+            let objects = try! Proto_GameTimeToBeatResult(serializedBytes: bytes).gametimetobeats
             result(objects)
         }, errorResponse: errorResponse)
     }

@@ -7,12 +7,6 @@
 // For information on using the generated types, please see the documentation:
 //   https://github.com/apple/swift-protobuf/
 
-//
-//  igdbapi.proto
-//  IGDB-SWIFT-API
-//
-//  Created by Husnjak, Filip on 2025-03-13.
-
 import Foundation
 import SwiftProtobuf
 
@@ -5667,9 +5661,20 @@ public struct Proto_PlatformWebsite {
 
   public var checksum: String = String()
 
+  public var type: Proto_WebsiteType {
+    get {return _type ?? Proto_WebsiteType()}
+    set {_type = newValue}
+  }
+  /// Returns true if `type` has been explicitly set.
+  public var hasType: Bool {return self._type != nil}
+  /// Clears the value of `type`. Subsequent reads from it will return its default value.
+  public mutating func clearType() {self._type = nil}
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public init() {}
+
+  fileprivate var _type: Proto_WebsiteType? = nil
 }
 
 public struct Proto_PlayerPerspectiveResult {
@@ -15078,6 +15083,7 @@ extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     3: .same(proto: "trusted"),
     4: .same(proto: "url"),
     5: .same(proto: "checksum"),
+    6: .same(proto: "type"),
   ]
 
   public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
@@ -15091,12 +15097,17 @@ extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
       case 3: try { try decoder.decodeSingularBoolField(value: &self.trusted) }()
       case 4: try { try decoder.decodeSingularStringField(value: &self.url) }()
       case 5: try { try decoder.decodeSingularStringField(value: &self.checksum) }()
+      case 6: try { try decoder.decodeSingularMessageField(value: &self._type) }()
       default: break
       }
     }
   }
 
   public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    // The use of inline closures is to circumvent an issue where the compiler
+    // allocates stack space for every if/case branch local when no optimizations
+    // are enabled. https://github.com/apple/swift-protobuf/issues/1034 and
+    // https://github.com/apple/swift-protobuf/issues/1182
     if self.id != 0 {
       try visitor.visitSingularUInt64Field(value: self.id, fieldNumber: 1)
     }
@@ -15112,6 +15123,9 @@ extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     if !self.checksum.isEmpty {
       try visitor.visitSingularStringField(value: self.checksum, fieldNumber: 5)
     }
+    try { if let v = self._type {
+      try visitor.visitSingularMessageField(value: v, fieldNumber: 6)
+    } }()
     try unknownFields.traverse(visitor: &visitor)
   }
 
@@ -15121,6 +15135,7 @@ extension Proto_PlatformWebsite: SwiftProtobuf.Message, SwiftProtobuf._MessageIm
     if lhs.trusted != rhs.trusted {return false}
     if lhs.url != rhs.url {return false}
     if lhs.checksum != rhs.checksum {return false}
+    if lhs._type != rhs._type {return false}
     if lhs.unknownFields != rhs.unknownFields {return false}
     return true
   }
