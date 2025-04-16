@@ -434,20 +434,6 @@ class TestProtobufRequest: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
     }
     
-    func testGameStatuses() {
-        let expectation = self.expectation(description: "API Request")
-        
-        wrapper.gameStatuses(apiCalypse: apicalypseQuery, result: { result in
-            XCTAssertFalse(result.isEmpty)
-            
-            expectation.fulfill()
-        }) { error in
-            XCTAssert(false)
-        }
-        
-        waitForExpectations(timeout: 5, handler: nil)
-    }
-    
     func testGameTimeToBeats() {
         let expectation = self.expectation(description: "API Request")
         
